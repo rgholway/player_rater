@@ -15,3 +15,8 @@
  *= require foundation_and_overrides
 
  */
+ .container {
+     width: 130px;
+     height: 130px;
+     background-size: cover;
+ }​

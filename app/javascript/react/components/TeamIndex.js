@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import SoccerField from './SoccerField'
+import TeamTile from './TeamTile'
 
-
-class PlayerIndex extends Component {
+class TeamIndex extends Component {
   constructor(props) {
     super(props);
-    this.state = { players: [] };
+    this.state = { teams: [] };
   }
 
   componentDidMount() {
-    fetch(`/api/v1/teams/${this.props.params.team_id}/players`)
+    fetch('/api/v1/teams')
     .then(response => {
       if (response.ok) {
         return response;
@@ -21,19 +20,18 @@ class PlayerIndex extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ players: body });
+      this.setState({ teams: body });
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   render() {
     return (
-      <div><SoccerField
-        players={this.state.players}
+      <TeamTile
+        teams= {this.state.teams}
       />
-      </div>
     )
   }
 }
 
-export default PlayerIndex
+export default TeamIndex
