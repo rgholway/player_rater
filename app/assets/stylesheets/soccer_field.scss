@@ -1,0 +1,556 @@
+.world {
+  position: absolute;
+  left: 75%;
+  margin-left: -300px;
+  width: 800px;
+  height: 870px;
+  transform: translateZ(-210px);
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.stage {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  perspective-origin: 75% -200px;
+  perspective: 1100px;
+  z-index: 1;
+  top: -50px;
+
+}
+
+.field {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  z-index: 2;
+  transform: rotateX(50deg) translateZ(0);
+  transform-origin: 50% 50%;
+  box-sizing: content-box;
+}
+
+.field__texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.field__texture--gradient {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
+  z-index: 4;
+}
+
+.field__texture--grass {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/grass2.png");
+  background-repeat: repeat;
+  background-size: 75px 75px;
+  background-position: -20px -20px;
+}
+
+.field__line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  z-index: 4;
+}
+
+.field__line--goal {
+  width: 16%;
+  height: 6%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 4%;
+  pointer-events: none;
+}
+
+.field__line--goal--far {
+  top: 4%;
+  bottom: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc {
+  width: 20%;
+  height: 20%;
+  overflow: hidden;
+  bottom: 16%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc:after {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  content: ' ';
+  display: block;
+  border-radius: 50% 50% 0 0;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc--far {
+  bottom: auto;
+  top: 16%;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc--far:after {
+  bottom: 70%;
+  top: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-radius: 0 0 50% 50%;
+  pointer-events: none;
+}
+
+.field__line--penalty {
+  width: 44%;
+  height: 16%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0%;
+  pointer-events: none;
+}
+
+.field__line--penalty--far {
+  top: 0%;
+  bottom: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  pointer-events: none;
+}
+
+.field__line--outline {
+  width: 92%;
+  height: 92%;
+  top: 4%;
+  left: 4%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  z-index: 5;
+
+}
+
+.field__line--mid {
+  top: 50%;
+  width: 100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+.field__line--circle {
+  width: 20%;
+  height: 20%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.player__stage {
+  position: absolute;
+
+  display: inline-block;
+  z-index: 5;
+}
+
+.player__stage--goalie {
+  height: 82px;
+  width: 82px;
+  top: 88%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--goalie--name {
+  height: 25px;
+  width: 75px;
+  top: 98.5%;
+  left: 46%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--rightback--name {
+  height: 30px;
+  width: 200px;
+  top: 86%;
+  right: -9%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--rightcenterback--name {
+  height: 30px;
+  width: 200px;
+  top: 89%;
+  right: 12%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--leftcenterback--name {
+  height: 30px;
+  width: 200px;
+  top: 89%;
+  left: 31%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--leftback--name {
+  height: 30px;
+  width: 200px;
+  top: 86%;
+  left: 8%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--defensivecentermidfield--name {
+  height: 30px;
+  width: 200px;
+  top: 70%;
+  left: 45% ;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--leftcentermidfield--name {
+  height: 30px;
+  width: 200px;
+  top: 60.5%;
+  left: 22% ;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--rightcentermidfield--name {
+  height: 30px;
+  width: 200px;
+  top: 60.5%;
+  left: 65%;
+  color: black;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+}
+
+.player__stage--rightforward--name {
+  height: 30px;
+  width: 200px;
+  top: 33%;
+  left: 75%;
+  color: black;
+  border: none;
+  font-size: 25px;
+  position: absolute;
+}
+
+.player__stage--leftforward--name {
+  height: 30px;
+  width: 200px;
+  top: 33%;
+  left: 15.5%;
+  color: black;
+  border: none;
+  font-size: 23px;
+  position: absolute;
+}
+
+.player__stage--centerforward--name {
+  height: 30px;
+  width: 200px;
+  top: 22%;
+  left: 43.5%;
+  color: black;
+  border: none;
+  font-size: 23px;
+  position: absolute;
+  z-index: 6;
+}
+
+.player__stage--info--goalie {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 90%;
+  right: 23%;
+  z-index: 6;
+}
+
+.player__stage--info--rightback {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 76%;
+  right: 18%;
+  z-index: 6;
+}
+
+.player__stage--info--leftback {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 76%;
+  left: 19.5%;
+  z-index: 6;
+}
+
+.player__stage--info--rightcenterback {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 80%;
+  left: 38%;
+  z-index: 6;
+}
+
+.player__stage--info--leftcenterback {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 80%;
+  left: 8%;
+  z-index: 6;
+}
+
+.player__stage--info--defensivecentermidfield {
+  height: 85px;
+  width: 170px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 58%;
+  right: 19%;
+  z-index: 6;
+}
+
+.player__stage--info--leftcentermidfield {
+  height: 85px;
+  width: 170px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 47%;
+  left: 38%;
+  z-index: 6;
+}
+
+.player__stage--info--rightcentermidfield {
+  height: 85px;
+  width: 170px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 47%;
+  right: -2%;
+  z-index: 6;
+}
+
+.player__stage--info--rightforward {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 18%;
+  right: 29%;
+  z-index: 6;
+}
+
+.player__stage--info--leftforward {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 18%;
+  right: 44%;
+  z-index: 6;
+}
+
+.player__stage--info--centerforward {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-color: lightgray;
+  top: 9%;
+  right: 13%;
+  z-index: 6;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.player__stage--rightback {
+  height: 87px;
+  width: 87px;
+  top: 62%;
+  right: 5%;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--rightcenterback {
+  height: 87px;
+  width: 87px;
+  top: 69%;
+  left: 30%;
+  right: 0%;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--leftcenterback {
+  height: 87px;
+  width: 87px;
+  top: 69%;
+  left: -30%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--leftback {
+  height: 87px;
+  width: 87px;
+  top: 62%;
+  left: -5%;
+  right: 500px;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--defensivecentermidfield {
+  height: 110px;
+  width: 110px;
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--leftcentermidfield {
+  height: 110px;
+  width: 110px;
+  top: 70px;
+  left: 0;
+  right: 300px;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--rightcentermidfield {
+  height: 110px;
+  width: 110px;
+  top: 70px;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+
+.player__stage--rightforward {
+  height: 130px;
+  width: 130px;
+  top: 0px;
+  left: 450px;
+  right: 0;
+  bottom: 400px;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--leftforward {
+  height: 130px;
+  width: 130px;
+  top: 0px;
+  left: 0;
+  right: 450px;
+  bottom: 400px;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.player__stage--centerforward {
+  height: 130px;
+  width: 130px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 550px;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
