@@ -9,6 +9,10 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string :games
       t.string :photo
 
+      t.belongs_to :team
+
+      t.timestamps null: false
+
     end
   end
 end
