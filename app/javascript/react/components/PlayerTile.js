@@ -11,7 +11,7 @@ const PlayerTile = props => {
 
   return(
     <div>
-      <input className={`player__stage player__stage--${props.position}`} type="image" src={props.photo} onMouseEnter={handleMouseEnter} onMouseLeave={onMouseLeave}></input>
+      <a href={`/players/${props.id}`}><input className={`player__stage player__stage--${props.position}`} type="image" src={props.photo} onMouseEnter={handleMouseEnter} onMouseLeave={onMouseLeave}></input></a>
       <h6 className={`player__stage player__stage--${props.position}--name`}>{props.lastName}</h6>
       <div className={`${props.hiddenStatus}`}>
         <ul>

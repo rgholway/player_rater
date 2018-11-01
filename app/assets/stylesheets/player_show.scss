@@ -1,0 +1,65 @@
+.player__spot {
+  position: absolute;
+  height: 900px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.player__show {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.form {
+  position: absolute;
+  margin-top: 17%;
+  height: 70%;
+  width: 65%;
+  margin-left: 35%;
+  background-color: yellow;
+  z-index: 5;
+}
+
+.form--new__rating {
+  width: 100%;
+  background-color: green;
+  z-index: 4;
+
+}
+
+.player__spot--team {
+  position: absolute;
+  height: 17%;
+  background-color: green;
+  color: white;
+  z-index: 8;
+}
+
+.player__show--info {
+  position: absolute;
+  margin-top: 10.25%;
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+  color: white;
+  z-index: 6;
+  word-wrap: break-word;
+}
+
+.player__spot--form {
+  position: absolute;
+  margin-top: 10.3%;
+  height: 10%;
+  width: 65%;
+  margin-left: 35%;
+  background-color: pink;
+  z-index: 7;
+  text-align: center;
+}
