@@ -8,10 +8,11 @@ Rails.application.routes.draw do
         resources :players, only: [:index, :show]
       end
       resources :players, only: [:index, :show] do
-        resources :reviews, only: [:index]
+        resources :ratings, only: [:index, :create, :new]
       end
     end
   end
   root 'players#index'
   get '/teams/:team_id/players', to: 'players#index'
+  get '/players/:id', to: 'players#index'
 end

@@ -35,6 +35,7 @@ class SoccerField extends Component {
       return(
         <PlayerTile
           key= {player.id}
+          id= {player.id}
           photo= {player.photo}
           onMouseEnter= {this.playerHandleEnter}
           handleLeave= {this.handleLeave}
