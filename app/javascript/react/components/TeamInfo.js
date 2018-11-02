@@ -8,7 +8,7 @@ class TeamInfo extends Component {
 }
   render() {
     return(
-        <a href={`teams/${this.props.id}/players`}><input className={`badge__icon badge__icon--${this.props.name}`} type="image" src={this.props.badge}></input></a>
+        <a href={`teams/${this.props.id}`}><input className={`badge__icon badge__icon--${this.props.name}`} type="image" src={this.props.badge}></input></a>
     )
   }
 }

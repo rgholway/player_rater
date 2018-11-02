@@ -12,12 +12,12 @@ teams = [
   {name: "Napoli", city: "Naples", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000083.png"},
   {name: "Sassuolo", city: "Sassuolo", nickname: "I Neroverdi", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000180.png"},
   {name: "Cagliari", city: "Cagliari", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000230.png"},
-  {name: "Parma", city: "Parma", nickname: "Gialloblu", badge: "https://i.pinimg.com/originals/ac/a7/97/aca7979bdc00add6bb7a1beb2557641c.png"},
+  {name: "Parma", city: "Parma", nickname: "I Gialloblu", badge: "https://i.pinimg.com/originals/ac/a7/97/aca7979bdc00add6bb7a1beb2557641c.png"},
   {name: "SPAL", city: "Ferrara", nickname: "I Biancoazzuri", badge: "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4377.png"},
   {name: "Udinese", city: "Udinese", nickname: "Bianconeri Friuliani", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/55.png"},
-  {name: "Bologna", city: "Bologna", nickname: "La Rossa", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000157.png"},
+  {name: "Bologna", city: "Bologna", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000157.png"},
   {name: "Empoli", city: "Empoli", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000229.png"},
-  {name: "Frosinone", city: "Frosinone", nickname: "Giallazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000382.png"},
+  {name: "Frosinone", city: "Frosinone", nickname: "I Giallazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000382.png"},
   {name: "ChievoVerona", city: "Verona", nickname: "I Gialloblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000158.png"}
 ]
 
@@ -58,4 +58,24 @@ juventus_players = [
 ]
 juventus_players.each do |player|
   Player.create(player)
+end
+
+wins = [
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id}
+]
+
+wins.each do |win|
+  Win.create(win)
 end

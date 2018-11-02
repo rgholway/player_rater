@@ -27,9 +27,11 @@ class TeamIndex extends Component {
 
   render() {
     return (
-      <TeamTile
-        teams= {this.state.teams}
-      />
+      <div className="team">
+        <TeamTile
+          teams= {this.state.teams}
+          />
+      </div>
     )
   }
 }

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.top__players {
+  position: absolute;
+  background-color: lightgray;
+  right: 2.50%;
+  top: 60%;
+  height: 50%;
+  width: 35%;
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.score--title {
+  position: absolute;
+  background-color: lightgray;
+  right: 2.50%;
+  top: 49.9%;
+  height: 10.1%;
+  width: 35%;
+  z-index: 2;
+  border-bottom: solid 3px;
+  border-color: black;
+}
+
+.position--goalie {
+  position: absolute;
+  top: 0%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.scorer--text {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 250%;
+}
+
+.player--text__position  {
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 125%;
+}
+
+.player--text__first  {
+  text-align: right;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 125%;
+}
+
+.player--text__last {
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 125%;
+}
+
+.position--rightback {
+  position: absolute;
+  top: 9%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--leftback {
+  position: absolute;
+  top: 18%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.position--rightcenterback {
+  position: absolute;
+  top: 27%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--leftcenterback {
+  position: absolute;
+  top: 36%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--defensivecentermidfield {
+  position: absolute;
+  top: 45%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--leftcentermidfield {
+  position: absolute;
+  top: 54%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--rightcentermidfield {
+  position: absolute;
+  top: 63%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--rightforward {
+  position: absolute;
+  top: 72%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.position--leftforward {
+  position: absolute;
+  top: 81%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+.position--centerforward {
+  position: absolute;
+  top: 90%;
+  height: 9%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.firstName--goalie {
+  position: absolute;
+  top: 0%;
+  height: 9%;
+  left: 33%;
+  z-index: 8;
+  width: 33%;
+}
+
+.firstName--rightback {
+  position: absolute;
+  top: 9%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--leftback {
+  position: absolute;
+  top: 18%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.firstName--rightcenterback {
+  position: absolute;
+  top: 27%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--leftcenterback {
+  position: absolute;
+  top: 36%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--defensivecentermidfield {
+  position: absolute;
+  top: 45%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--leftcentermidfield {
+  position: absolute;
+  top: 54%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--rightcentermidfield {
+  position: absolute;
+  top: 63%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--rightforward {
+  position: absolute;
+  top: 72%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.firstName--leftforward {
+  position: absolute;
+  top: 81%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.firstName--centerforward {
+  position: absolute;
+  top: 90%;
+  height: 9%;
+  left: 33%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--goalie {
+  position: absolute;
+  top: 0%;
+  height: 9%;
+  left: 67%;
+  z-index: 8;
+  width: 33%;
+}
+
+.lastName--rightback {
+  position: absolute;
+  top: 9%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--leftback {
+  position: absolute;
+  top: 18%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.lastName--rightcenterback {
+  position: absolute;
+  top: 27%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--leftcenterback {
+  position: absolute;
+  top: 36%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--defensivecentermidfield {
+  position: absolute;
+  top: 45%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--leftcentermidfield {
+  position: absolute;
+  top: 54%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--rightcentermidfield {
+  position: absolute;
+  top: 63%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--rightforward {
+  position: absolute;
+  top: 72%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+
+.lastName--leftforward {
+  position: absolute;
+  top: 81%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}
+
+.lastName--centerforward {
+  position: absolute;
+  top: 90%;
+  height: 9%;
+  left: 67%;
+  z-index: 7;
+  width: 33%;
+}

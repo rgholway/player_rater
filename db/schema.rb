@@ -10,10 +10,58 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_31_183845) do
+ActiveRecord::Schema.define(version: 2018_11_02_140430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "assists", force: :cascade do |t|
+    t.bigint "game_id", null: false
+    t.bigint "player_id", null: false
+    t.index ["game_id"], name: "index_assists_on_game_id"
+    t.index ["player_id"], name: "index_assists_on_player_id"
+  end
+
+  create_table "draws", force: :cascade do |t|
+    t.bigint "team_id", null: false
+    t.index ["team_id"], name: "index_draws_on_team_id"
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string "home_team", null: false
+    t.string "away_team", null: false
+    t.string "home_score", null: false
+    t.string "away_score", null: false
+    t.string "date", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "goals", force: :cascade do |t|
+    t.bigint "game_id", null: false
+    t.bigint "player_id", null: false
+    t.index ["game_id"], name: "index_goals_on_game_id"
+    t.index ["player_id"], name: "index_goals_on_player_id"
+  end
+
+  create_table "losses", force: :cascade do |t|
+    t.bigint "team_id", null: false
+    t.index ["team_id"], name: "index_losses_on_team_id"
+  end
+
+  create_table "matchup", force: :cascade do |t|
+    t.bigint "game_id", null: false
+    t.bigint "team_id", null: false
+    t.index ["game_id"], name: "index_matchup_on_game_id"
+    t.index ["team_id"], name: "index_matchup_on_team_id"
+  end
+
+  create_table "matchups", force: :cascade do |t|
+    t.bigint "game_id", null: false
+    t.bigint "team_id", null: false
+    t.index ["game_id"], name: "index_matchups_on_game_id"
+    t.index ["team_id"], name: "index_matchups_on_team_id"
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "first_name", null: false
@@ -60,6 +108,11 @@ ActiveRecord::Schema.define(version: 2018_10_31_183845) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "wins", force: :cascade do |t|
+    t.bigint "team_id", null: false
+    t.index ["team_id"], name: "index_wins_on_team_id"
   end
 
 end

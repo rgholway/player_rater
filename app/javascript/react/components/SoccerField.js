@@ -51,23 +51,25 @@ class SoccerField extends Component {
       )
     })
     return(
-      <div className="stage">
-        <div className="world">
-          <div className="terrain">
-            <div className="field">
-              <div className="field__texture field__texture--gradient"></div>
-              <div className="field__texture field__texture--gradient-b"></div>
-              <div className="field__texture field__texture--grass"></div>
-              <div className="field__line field__line--goal"></div>
-              <div className="field__line field__line--goal field__line--goal--far"></div>
-              <div className="field__line field__line--outline">
-                <div> {playerArray} </div>
-                <div className="field__line field__line--penalty"> </div>
-                <div className="field__line field__line--penalty-arc"></div>
-                <div className="field__line field__line--penalty-arc field__line--penalty-arc--far"></div>
-                <div className="field__line field__line--mid"></div>
-                <div className="field__line field__line--circle"></div>
-                <div className="field__line field__line--penalty field__line--penalty--far"></div>
+      <div className="team">
+        <div className="stage">
+          <div className="world">
+            <div className="terrain">
+              <div className="field">
+                <div className="field__texture field__texture--gradient"></div>
+                <div className="field__texture field__texture--gradient-b"></div>
+                <div className="field__texture field__texture--grass"></div>
+                <div className="field__line field__line--goal"></div>
+                <div className="field__line field__line--goal field__line--goal--far"></div>
+                <div className="field__line field__line--outline">
+                  <div> {playerArray} </div>
+                  <div className="field__line field__line--penalty"> </div>
+                  <div className="field__line field__line--penalty-arc"></div>
+                  <div className="field__line field__line--penalty-arc field__line--penalty-arc--far"></div>
+                  <div className="field__line field__line--mid"></div>
+                  <div className="field__line field__line--circle"></div>
+                  <div className="field__line field__line--penalty field__line--penalty--far"></div>
+                </div>
               </div>
             </div>
           </div>

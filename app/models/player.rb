@@ -5,4 +5,7 @@ class Player < ApplicationRecord
 
   has_many :ratings
 
+  has_many :goals
+  has_many :assists
+
 end
