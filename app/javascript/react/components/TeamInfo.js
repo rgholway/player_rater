@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { browserHistory } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 class TeamInfo extends Component {
   constructor(props) {
@@ -8,7 +8,9 @@ class TeamInfo extends Component {
 }
   render() {
     return(
-        <a href={`teams/${this.props.id}`}><input className={`badge__icon badge__icon--${this.props.name}`} type="image" src={this.props.badge}></input></a>
+      <div>
+        <Link to={`teams/${this.props.id}`}><img className={`badge__icon badge__icon--${this.props.name}`} src={this.props.badge} alt={this.props.name}/></Link>
+        </div>
     )
   }
 }

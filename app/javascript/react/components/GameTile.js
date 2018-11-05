@@ -32,7 +32,7 @@ render() {
   let gamesArray = this.props.games.map(game => {
     return(
       <div key={game.id}>
-        <a href={`/teams/${this.props.teamId}/players`}><div className={`game--${game.id}`}>
+        <a href={`/teams/${this.props.teamId}/games/${game.id}`}><div className={`game--${game.week}`}>
         <h1 className="home_team"> {game.home_team} </h1>
         <h1 className="away_team"> {game.away_team} </h1>
         <h1 className="home_score"> {game.home_score} </h1>

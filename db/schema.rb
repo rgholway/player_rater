@@ -33,11 +33,14 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
     t.string "home_score", null: false
     t.string "away_score", null: false
     t.string "date", null: false
+    t.string "week", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "goals", force: :cascade do |t|
+    t.string "team", null: false
+    t.string "minute", null: false
     t.bigint "game_id", null: false
     t.bigint "player_id", null: false
     t.index ["game_id"], name: "index_goals_on_game_id"
@@ -47,13 +50,6 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
   create_table "losses", force: :cascade do |t|
     t.bigint "team_id", null: false
     t.index ["team_id"], name: "index_losses_on_team_id"
-  end
-
-  create_table "matchup", force: :cascade do |t|
-    t.bigint "game_id", null: false
-    t.bigint "team_id", null: false
-    t.index ["game_id"], name: "index_matchup_on_game_id"
-    t.index ["team_id"], name: "index_matchup_on_team_id"
   end
 
   create_table "matchups", force: :cascade do |t|
@@ -71,6 +67,9 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
     t.string "goals"
     t.string "games"
     t.string "photo"
+    t.string "nation"
+    t.string "short_position"
+    t.string "full_position"
     t.bigint "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -79,7 +78,7 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
 
   create_table "ratings", force: :cascade do |t|
     t.integer "score", null: false
-    t.string "description", null: false
+    t.text "description", null: false
     t.bigint "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -94,6 +93,7 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
     t.string "stadium"
     t.string "stadium_location"
     t.string "head_coach"
+    t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -47,10 +47,20 @@
   margin-top: 10.25%;
   height: 100%;
   width: 35%;
-  background-color: blue;
-  color: white;
+  color: black;
   z-index: 6;
   word-wrap: break-word;
+}
+
+.player--total--rating {
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  height: 15%;
+  width: 17%;
+  z-index: 8;
+  text-align: center;
+  font-size: 400%;
 }
 
 .player__spot--form {
@@ -62,4 +72,19 @@
   background-color: pink;
   z-index: 7;
   text-align: center;
+}
+
+.score__low {
+  background-color: darkred;
+}
+.score__medium {
+  background-color: lightyellow;
+}
+
+.score__high {
+  background-color: lightgreen;
+}
+
+.score__highest {
+  background-color: darkgreen;
 }

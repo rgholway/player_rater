@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import Wins from './Wins'
 
-class Standings extends Component {
+class GoalInfo extends Component {
   constructor(props) {
-    super(props);
-    this.state = { wins: [],
-            draws: [],
-            losses: []
-          }
-        this.fetchWins = this.fetchWins.bind(this)
-      }
+    super(props)
+    this.state = {player: ""}
+    this.fetchPlayer = this.fetchPlayer.bind(this)
+  }
 
-  fetchWins() {
-    fetch(`/api/v1/wins`)
+  fetchPlayer() {
+    fetch(`/api/v1/players/${this.props.player}`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -24,24 +20,23 @@ class Standings extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ wins: body });
+      this.setState({ player: body });
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   componentDidMount() {
-    this.fetchWins()
+    this.fetchPlayer()
   }
 
   render() {
     return(
-      <div>
-        <Wins
-        wins={this.state.wins}
-        />
+    <div>
+      <div className="home__goal--1">
+      '{this.props.minute} {this.state.player.first_name} {this.state.player.last_name}
       </div>
-    )
+    </div>
+    )}
   }
-}
 
-export default Standings
+  export default GoalInfo

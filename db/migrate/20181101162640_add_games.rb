@@ -6,6 +6,7 @@ class AddGames < ActiveRecord::Migration[5.2]
       t.string :home_score, null: false
       t.string :away_score, null: false
       t.string :date, null: false
+      t.string :week, null: false
 
       t.timestamps null: false
     end

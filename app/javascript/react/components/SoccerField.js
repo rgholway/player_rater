@@ -11,15 +11,17 @@ class SoccerField extends Component {
       selectedClassName: "hidden",
       selectedNumber: "",
       selectedFirstName: "",
-      selectedLastName: ""
-     }
+      selectedLastName: "",
+      selectedNation: "",
+      selectedNationPhoto: ""
+         }
      this.playerHandleEnter = this.playerHandleEnter.bind(this)
      this.handleLeave = this.handleLeave.bind(this)
   }
 
-  playerHandleEnter(key, className, num, firstName, lastName) {
+  playerHandleEnter(key, className, num, firstName, lastName, nation, nation_photo) {
     this.setState({[key]: className, selectedClassName: className, selectedNumber: num,
-        selectedFirstName: firstName, selectedLastName: lastName})
+        selectedFirstName: firstName, selectedLastName: lastName, selectedNation: nation, selectedNationPhoto: nation_photo})
   }
 
   handleLeave() {
@@ -43,15 +45,18 @@ class SoccerField extends Component {
           firstName= {player.first_name}
           number= {player.number}
           hiddenStatus={this.state.selectedClassName}
-          position= {player.position}
+          css= {player.position}
+          short= {player.short_position}
           selectedNumber= {this.state.selectedNumber}
           selectedFirstName= {this.state.selectedFirstName}
           selectedLastName= {this.state.selectedLastName}
+          nation= {player.nation}
+          selectedNation= {this.state.selectedNation}
+          game={this.props.game}
         />
       )
     })
     return(
-      <div className="team">
         <div className="stage">
           <div className="world">
             <div className="terrain">
@@ -74,7 +79,6 @@ class SoccerField extends Component {
             </div>
           </div>
         </div>
-      </div>
     )}
   }
 

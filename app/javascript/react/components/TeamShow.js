@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GameTile from './GameTile'
 import TopPlayer from './TopPlayer'
+import TeamIndex from './TeamInfo'
 
 class TeamShow extends Component {
   constructor(props) {

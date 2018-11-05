@@ -13,11 +13,22 @@ Rails.application.routes.draw do
       resources :teams, only: [:index, :show] do
         resources :games, only: [:index, :show]
       end
-        resources :wins, only: [:index, :show]
+      resources :games, only: [:index, :show] do
+        resources :players, only: [:index, :show]
       end
+      resources :games, only: [:index, :show] do
+        resources :goals, only: [:index]
+      end
+      resources :games, only: [:index, :show] do
+        resources :ratings, only: [:index]
+      end
+      resources :goals, only: :index
+    end
   end
   root 'players#index'
   get '/teams/:team_id/players', to: 'players#index'
   get '/players/:id', to: 'players#index'
   get '/teams/:id', to: 'players#index'
+  get '/teams/:team_id/games/:id', to: 'players#index'
+  get 'games/:game_id/players/:player_id', to: 'players#index'
 end

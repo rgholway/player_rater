@@ -30,7 +30,7 @@ class PlayerShow extends Component{
 
   addNewRating(formPayload){
   let jsonStringInfo = JSON.stringify(formPayload)
-  fetch(`/api/v1/players/${this.props.params.id}/ratings`, {
+  fetch(`/api/v1/players/${this.props.params.player_id}/ratings`, {
     method: 'POST',
     body: jsonStringInfo,
     headers: {
@@ -56,7 +56,7 @@ class PlayerShow extends Component{
   }
 
   fetchPlayer(){
-    fetch(`/api/v1/players/${this.props.params.id}`)
+    fetch(`/api/v1/players/${this.props.params.player_id}`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -74,7 +74,7 @@ class PlayerShow extends Component{
   }
 
   fetchRating(){
-    fetch(`/api/v1/players/${this.props.params.id}/ratings`)
+    fetch(`/api/v1/players/${this.props.params.player_id}/ratings`)
     .then(response => {
       if (response.ok) {
         return response;
