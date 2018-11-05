@@ -8,6 +8,9 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string :goals
       t.string :games
       t.string :photo
+      t.string :nation
+      t.string :short_position
+      t.string :full_position
 
       t.belongs_to :team
 

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.schedule {
+  position: absolute;
+  top: 35%;
+  height: 15%;
+  width: 95%;
+  z-index: 6;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+  border-color: black;
+}
+
+.game--1 {
+  top: 2.5%;
+  position: absolute;
+  left: 5%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--2 {
+  top: 2.5%;
+  position: absolute;
+  left: 23.2%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--3 {
+  top: 2.5%;
+  position: absolute;
+  left: 41.4%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--4 {
+  top: 2.5%;
+  position: absolute;
+  left: 59.6%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+.game--5 {
+  top: 2.5%;
+  position: absolute;
+  left: 77.8%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.left__arrow {
+  position: absolute;
+  width: 4.5%;
+  background-color: darkgray;
+  height: 100%;
+}
+
+.right__arrow {
+  position: absolute;
+  left: 95%;
+  width: 5%;
+  background-color: darkgray;
+  height: 100%;
+}
+
+.home_team {
+  position: absolute;
+  font-size: 150%;
+  padding-bottom: 5%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.away_team {
+  top: 50%;
+  position: absolute;
+  border-color: darkgray;
+  font-size: 150%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.home_score {
+  position: absolute;
+  font-size: 150%;
+  left: 85%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.away_score {
+  position: absolute;
+  font-size: 150%;
+  left: 85%;
+  top: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+}

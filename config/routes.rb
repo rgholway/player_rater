@@ -4,15 +4,31 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :teams, only: :index do
+      resources :teams, only: [:index, :show] do
         resources :players, only: [:index, :show]
       end
       resources :players, only: [:index, :show] do
         resources :ratings, only: [:index, :create, :new]
       end
+      resources :teams, only: [:index, :show] do
+        resources :games, only: [:index, :show]
+      end
+      resources :games, only: [:index, :show] do
+        resources :players, only: [:index, :show]
+      end
+      resources :games, only: [:index, :show] do
+        resources :goals, only: [:index]
+      end
+      resources :games, only: [:index, :show] do
+        resources :ratings, only: [:index]
+      end
+      resources :goals, only: :index
     end
   end
   root 'players#index'
   get '/teams/:team_id/players', to: 'players#index'
   get '/players/:id', to: 'players#index'
+  get '/teams/:id', to: 'players#index'
+  get '/teams/:team_id/games/:id', to: 'players#index'
+  get 'games/:game_id/players/:player_id', to: 'players#index'
 end

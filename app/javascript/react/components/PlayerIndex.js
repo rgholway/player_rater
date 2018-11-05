@@ -6,10 +6,11 @@ class PlayerIndex extends Component {
   constructor(props) {
     super(props);
     this.state = { players: [] };
+    this.fetchPlayers = this.fetchPlayers.bind(this)
   }
 
-  componentDidMount() {
-    fetch(`/api/v1/teams/${this.props.params.team_id}/players`)
+  fetchPlayers() {
+    fetch(`/api/v1/teams/${this.props.team}/players`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -26,10 +27,15 @@ class PlayerIndex extends Component {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
+  componentDidMount() {
+    this.fetchPlayers()
+  }
+
   render() {
     return (
       <div><SoccerField
         players={this.state.players}
+        game={this.props.game}
       />
       </div>
     )
