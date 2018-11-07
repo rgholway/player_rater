@@ -9,6 +9,8 @@ class AddTeams < ActiveRecord::Migration[5.2]
         t.string :stadium_location
         t.string :head_coach
         t.integer :points
+        t.string :lat
+        t.string :long 
 
         t.timestamps null: false
       end

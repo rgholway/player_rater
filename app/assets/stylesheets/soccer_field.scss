@@ -180,7 +180,6 @@
 
 .player__stage {
   position: absolute;
-
   display: inline-block;
   z-index: 5;
 }
@@ -196,18 +195,8 @@
   z-index: 6;
 }
 
-.player__stage--info--rightback {
-  height: 90px;
-  width: 180px;
-  background-color: white;
-  border: solid 2px black;
-  top: 64%;
-  right: 22%;
-  z-index: 9;
-}
-
 .player__stage--info--name {
-  width: 100%;
+  width: auto;
   color: black;
   height: 10%;
   font-family: 'Roboto Mono', monospace;
@@ -227,7 +216,7 @@
 }
 
 .player__stage--info--nation {
-  width: 50%;
+  width: auto;
   max-height: 10%;
   color: black;
   font-family: 'Roboto Mono', monospace;
@@ -236,103 +225,113 @@
   margin-bottom: 50%;
 }
 
-.player__stage--info--leftback {
-  height: 75px;
-  width: 150px;
+.player__stage--info--score {
+  max-height: 10%;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  z-index: 9;
+  margin-left: 50%;
+  margin-bottom: 0%;
+}
+
+.player__stage--info--rightback {
+  height: 90px;
+  width: 250px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 76%;
-  left: 19.5%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 64%;
+  right: 22%;
+  z-index: 9;
+}
+
+.player__stage--info--leftback {
+  height: 90px;
+  width: 250px;
+  background-color: white;
+  border: solid 2px black;
+  top: 64%;
+  left: 22%;
+  z-index: 9;
 }
 
 .player__stage--info--rightcenterback {
-  height: 75px;
-  width: 150px;
+  height: 90px;
+  width: 250px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 80%;
-  left: 38%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 68%;
+  left: 22%;
+  z-index: 9;
 }
 
 .player__stage--info--leftcenterback {
-  height: 75px;
-  width: 150px;
+  height: 90px;
+  width: 250px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 80%;
-  left: 8%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 68%;
+  right: 22%;
+  z-index: 9;
 }
 
 .player__stage--info--defensivecentermidfield {
-  height: 85px;
-  width: 170px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 58%;
-  right: 19%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 40%;
+  right: 3%;
+  z-index: 9;
 }
 
 .player__stage--info--leftcentermidfield {
-  height: 85px;
-  width: 170px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 47%;
-  left: 38%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 35%;
+  left: 34.5%;
+  z-index: 9;
 }
 
 .player__stage--info--rightcentermidfield {
-  height: 85px;
-  width: 170px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 47%;
-  right: -2%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 35%;
+  right: 34.5%;
+  z-index: 9;
 }
 
 .player__stage--info--rightforward {
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 18%;
-  right: 29%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 8%;
+  right: 30%;
+  z-index: 9;
 }
 
 .player__stage--info--leftforward {
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 18%;
-  right: 44%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 8%;
+  left: 30%;
+  z-index: 9;
 }
 
 .player__stage--info--centerforward {
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 280px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 9%;
-  right: 13%;
-  z-index: 6;
+  border: solid 2px black;
+  top: 5%;
+  left: 2%;
+  z-index: 9;
 }
 
 .hidden {
@@ -416,7 +415,7 @@
 .player__stage--rightback__name {
   position: absolute;
   top: 80%;
-  height: 17%;
+  height: 18%;
   width: 100%;
   color: white;
   text-align: center;
@@ -504,7 +503,7 @@
 .player__stage--leftback__name {
   position: absolute;
   top: 80%;
-  height: 17%;
+  height: 18%;
   width: 100%;
   color: white;;
   text-align: center;
@@ -1006,7 +1005,7 @@
 .player__stage--rightcentermidfield__name {
   position: absolute;
   top: 80%;
-  height: 18%;
+  height: 19%;
   width: 100%;
   color: white;
   text-align: center;
@@ -1105,7 +1104,7 @@
 .player__stage--leftcentermidfield__name {
   position: absolute;
   top: 80%;
-  height: 18%;
+  height: 19%;
   width: 100%;
   color: white;
   text-align: center;
@@ -1204,7 +1203,7 @@
 .player__stage--rightforward__name {
   position: absolute;
   top: 80%;
-  height: 18%;
+  height: 18.5%;
   width: 100%;
   color: white;
   text-align: center;
@@ -1303,7 +1302,7 @@
 .player__stage--leftforward__name {
   position: absolute;
   top: 80%;
-  height: 18%;
+  height: 18.5%;
   width: 100%;
   color: white;
   text-align: center;
@@ -1402,7 +1401,7 @@
 .player__stage--centerforward__name {
   position: absolute;
   top: 80%;
-  height: 18%;
+  height: 18.8%;
   width: 100%;
   color: white;
   text-align: center;

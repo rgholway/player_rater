@@ -14,17 +14,16 @@ render() {
   let ratingsArray = this.props.ratings.map(rating => {
     totalScore += rating.score
     return(
-      <div key={rating.id}>{rating.score}
-      <p>{rating.description}</p>
+      <div key={rating.id}>
+        <h1 className="player__rate--rating">{rating.description} {rating.score}</h1>
       </div>
     )
   })
 
     return(
       <div>
-      <div>{ratingsArray}<div className="player--total--rating">
-      <h1>{(totalScore/length).toFixed(1)}</h1></div>
-      </div>
+      <div className="player__rate--ratings">{ratingsArray}</div>
+      <h1 className="player__rate--total--score">{(totalScore/length).toFixed(1)}</h1>
       </div>
     )}
   }

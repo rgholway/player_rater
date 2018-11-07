@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 .team {
+  position: absolute;
   height: 1200px;
+  top: 4.7%;
   width: 95%;
   margin-left: 2.5%;
   background-color: #E8E8E8;
@@ -12,24 +14,41 @@
 
 .title {
   position: absolute;
-  top: 30.5%;
+  top: 25.5%;
   height: 4.5%;
-  width: 95%;
+  width: 100%;
   z-index: 8;
-
 }
 
 .title__text {
   position: absolute;
-  left: 36%;
+  left: 40%;
   font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
 
+.stadium__title {
+  position: absolute;
+  left: 0.5%;
+  top: 45%;
+  font-size: 2.5vw;
+  width: auto;
+  background-color: #D3D3D3;
+  border-bottom: solid 2.5px black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.map__location {
+  height: 30%;
+  width: 30%;
+  top: 80%;
+  background-color: red;
 }
 
 .Fiorentina--background {
   position: absolute;
   height: 25%;
-  width: 95%;
+  width: 100%;
   background: linear-gradient(135deg, #272467, #BE81BD );
   border-bottom: solid 3px;
   border-color: black;
@@ -46,7 +65,7 @@
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 56%;
+  left: 60%;
   top: 30%;
 }
 
@@ -60,6 +79,7 @@
 
 .Juventus--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, black, white);
@@ -91,6 +111,7 @@
 
 .AC_Milan--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, black, red);
@@ -121,6 +142,7 @@
 
 .Inter_Milan--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, black, #005DAB);
@@ -151,6 +173,7 @@
 
 .Roma--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #A61D37, #F58220);
@@ -182,6 +205,7 @@
 
 .Lazio--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #00AEEF, white);
@@ -212,6 +236,7 @@
 
 .Torino--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #8A1F1A, #B83727);
@@ -242,6 +267,7 @@
 
 .Atalanta--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #0973BA,  black);
@@ -272,6 +298,7 @@
 
 .Genoa--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(45deg, #E2383F, #00275D);
@@ -302,6 +329,7 @@
 
 .Sampdoria--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #2550A2, #00275D);
@@ -333,6 +361,7 @@
 
 .Napoli--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #0855A1, #49AEE0);
@@ -364,6 +393,7 @@
 
 .Sassuolo--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(45deg, #00A54F, #221E1F);
@@ -395,6 +425,7 @@
 
 .Cagliari--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #B00C28, #002250);
@@ -426,6 +457,7 @@
 
 .Parma--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #162883, #FFD500);
@@ -457,6 +489,7 @@
 
 .SPAL--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #0196E9, white);
@@ -489,6 +522,7 @@
 
 .Udinese--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(45deg, black, #A19333, white);
@@ -520,6 +554,7 @@
 
 .Bologna--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #17529C, #F04C44);
@@ -551,6 +586,7 @@
 
 .Empoli--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #16305A, #2C94CE);
@@ -582,6 +618,7 @@
 
 .Frosinone--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #2E56A6, #F4DA34);
@@ -613,6 +650,7 @@
 
 .ChievoVerona--background {
   position: absolute;
+  top: 5.25%;
   height: 25%;
   width: 95%;
   background: linear-gradient(135deg, #0066B3, #FFEA01);

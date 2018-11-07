@@ -94,6 +94,8 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
     t.string "stadium_location"
     t.string "head_coach"
     t.integer "points"
+    t.string "lat"
+    t.string "long"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

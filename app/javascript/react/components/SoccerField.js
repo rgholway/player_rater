@@ -13,19 +13,36 @@ class SoccerField extends Component {
       selectedFirstName: "",
       selectedLastName: "",
       selectedNation: "",
-      selectedNationPhoto: ""
+      selectedNationPhoto: "",
+      selectedId: "",
+      ratings: []
          }
      this.playerHandleEnter = this.playerHandleEnter.bind(this)
      this.handleLeave = this.handleLeave.bind(this)
   }
 
-  playerHandleEnter(key, className, num, firstName, lastName, nation, nation_photo) {
-    this.setState({[key]: className, selectedClassName: className, selectedNumber: num,
-        selectedFirstName: firstName, selectedLastName: lastName, selectedNation: nation, selectedNationPhoto: nation_photo})
-  }
+  playerHandleEnter(key, className, num, firstName, lastName, nation, id) {
+        fetch(`/api/v1/players/${id}/ratings`)
+        .then(response => {
+          if (response.ok) {
+            return response;
+          } else {
+            let errorMessage = `${response.status} (${response.statusText})`,
+            error = new Error(errorMessage);
+            throw(error);
+          }
+        })
+        .then(response => response.json())
+        .then(body => {
+          this.setState({[key]: className, selectedClassName: className, selectedNumber: num,
+              selectedFirstName: firstName, selectedLastName: lastName, selectedNation: nation, selectedId: id, ratings: body})
+        })
+
+        .catch(error => console.error(`Error in fetch: ${error.message}`));
+      }
 
   handleLeave() {
-    this.setState({selectedClassName: "hidden"})
+    this.setState({selectedClassName: "hidden", ratings: []})
   }
 
   handleClick(event) {
@@ -33,6 +50,11 @@ class SoccerField extends Component {
   }
 
   render() {
+    console.log(this.state.ratings)
+    let totalScore = 0
+    this.state.ratings.map(rating => {
+      totalScore += rating.score
+    })
     let playerArray = this.props.players.map(player => {
       return(
         <PlayerTile
@@ -52,7 +74,9 @@ class SoccerField extends Component {
           selectedLastName= {this.state.selectedLastName}
           nation= {player.nation}
           selectedNation= {this.state.selectedNation}
+          selectedId= {this.state.selectedId}
           game={this.props.game}
+          totalScore={(totalScore/this.state.ratings.length).toFixed(1)}
         />
       )
     })

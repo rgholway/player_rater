@@ -12,7 +12,7 @@ export const App = (props) => {
     <Router history={browserHistory}>
       <Route path="/" component={TeamIndex}/>
       <Route path="/teams/:team_id/players" component={PlayerIndex}/>
-      <Route path="/players/:id" component={RatePlayer}/>
+      <Route path="/players/:player_id" component={PlayerShow}/>
       <Route path="/teams/:id" component={TeamShow} />
       <Route path="/teams/:team_id/games/:id" component={GameShow} />
       <Route path="games/:game_id/players/:player_id" component={PlayerShow} />
