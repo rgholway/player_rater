@@ -7,7 +7,7 @@ for(let i = 1; i < 11; i++){
 }
     return(
       <div>
-    <label>{props.label}</label>
+    <label className="player__rate--text">{props.label}</label>
       <select name={props.name} onChange={props.handleScoreChange}>
         {nums}
       </select>

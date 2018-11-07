@@ -1,0 +1,45 @@
+.player__image {
+  position: absolute;
+  height: 50%;
+  width: 17%;
+}
+
+.player__first--name {
+  position: absolute;
+  left: 21%;
+  top: 7%;
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: solid 2.5px black;
+}
+
+.player__position {
+  position: absolute;
+  left: 21%;
+  top: 25%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.player__background {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 30%;
+  opacity: 0.3;
+}
+
+.player__team {
+  position: absolute;
+  position: absolute;
+  left: 21%;
+  top: 17%;
+  width: auto;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.player__nation {
+  position: absolute;
+  left: 21%;
+  top: 33%;
+  font-family: 'Roboto Mono', monospace;
+}

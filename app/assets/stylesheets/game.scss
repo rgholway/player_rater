@@ -2,83 +2,212 @@
 
 .schedule {
   position: absolute;
-  top: 35%;
+  top: 30%;
   height: 15%;
-  width: 95%;
+  width: 100%;
   z-index: 6;
   border-top: solid 3px;
   border-bottom: solid 3px;
   border-color: black;
+  overflow: scroll;
 }
 
-.game--1 {
-  top: 2.5%;
+.game--1-- {
+  top: 4%;
   position: absolute;
-  left: 5%;
+  left: 1%;
   height: 92%;
   width: 17%;
   background-color: white;
 }
 
-.game--2 {
-  top: 2.5%;
+.game--1--selected {
+  top: 4%;
   position: absolute;
-  left: 23.2%;
+  left: 1%;
   height: 92%;
   width: 17%;
-  background-color: white;
-}
-
-.game--3 {
-  top: 2.5%;
-  position: absolute;
-  left: 41.4%;
-  height: 92%;
-  width: 17%;
-  background-color: white;
-}
-
-.game--4 {
-  top: 2.5%;
-  position: absolute;
-  left: 59.6%;
-  height: 92%;
-  width: 17%;
-  background-color: white;
-}
-.game--5 {
-  top: 2.5%;
-  position: absolute;
-  left: 77.8%;
-  height: 92%;
-  width: 17%;
-  background-color: white;
-}
-
-.left__arrow {
-  position: absolute;
-  width: 4.5%;
   background-color: darkgray;
-  height: 100%;
 }
 
-.right__arrow {
+.game--2-- {
+  top: 4%;
   position: absolute;
-  left: 95%;
-  width: 5%;
+  left: 19.2%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--2--2selected {
+  top: 4%;
+  position: absolute;
+  left: 19.2%;
+  height: 92%;
+  width: 17%;
   background-color: darkgray;
-  height: 100%;
+}
+
+.game--3-- {
+  top: 4%;
+  position: absolute;
+  left: 37.4%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--3--3selected {
+  top: 4%;
+  position: absolute;
+  left: 37.4%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--4-- {
+  top: 4%;
+  position: absolute;
+  left: 55.6%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--4--4selected {
+  top: 4%;
+  position: absolute;
+  left: 55.6%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--5-- {
+  top: 4%;
+  position: absolute;
+  left: 73.8%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--5--5selected {
+  top: 4%;
+  position: absolute;
+  left: 73.8%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--6-- {
+  top: 4%;
+  position: absolute;
+  left: 92.2%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--6--6selected {
+  top: 4%;
+  position: absolute;
+  left: 92.2%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--7-- {
+  top: 4%;
+  position: absolute;
+  left: 110.4%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--7--7selected {
+  top: 4%;
+  position: absolute;
+  left: 110.4%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--8-- {
+  top: 4%;
+  position: absolute;
+  left: 128.6%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--8--8selected {
+  top: 4%;
+  position: absolute;
+  left: 128.6%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--9-- {
+  top: 4%;
+  position: absolute;
+  left: 146.8%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--9--9selected {
+  top: 4%;
+  position: absolute;
+  left: 146.8%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
+}
+
+.game--10-- {
+  top: 4%;
+  position: absolute;
+  left: 165%;
+  height: 92%;
+  width: 17%;
+  background-color: white;
+}
+
+.game--10--10selected {
+  top: 4%;
+  position: absolute;
+  left: 165%;
+  height: 92%;
+  width: 17%;
+  background-color: darkgray;
 }
 
 .home_team {
   position: absolute;
+  top: 5%;
   font-size: 150%;
+  left: 7%;
   padding-bottom: 5%;
+  width: 93%;
+  height: 40%;
   font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: solid 1px lightgray;
 }
 
 .away_team {
+  position: absolute;
   top: 50%;
+  left: 7%;
   position: absolute;
   border-color: darkgray;
   font-size: 150%;
@@ -87,15 +216,35 @@
 
 .home_score {
   position: absolute;
+  top: 5%;
+  width: 10%;
+  height: 80%;
   font-size: 150%;
   left: 85%;
   font-family: 'Roboto Condensed', sans-serif;
+  border-left: solid 1px lightgray;
+  padding-bottom: 28%;
+  text-align: right;
 }
 
 .away_score {
   position: absolute;
+  width: 10%;
   font-size: 150%;
   left: 85%;
   top: 50%;
+  text-align: right;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.date {
+  position: absolute;
+  width: 20%;
+  font-size: 150%;
+  left: 60%;
+  top: 30%;
+  text-align: right;
+  opacity: 0.2;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 10;
 }

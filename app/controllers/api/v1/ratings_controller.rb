@@ -4,7 +4,7 @@ class Api::V1::RatingsController < ApplicationController
   end
 
   def index
-    render json: Player.find(params[:player_id]).ratings
+    render json: Player.find(params[:player_id]).ratings.order("created_at DESC")
   end
 
   def create

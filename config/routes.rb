@@ -19,10 +19,6 @@ Rails.application.routes.draw do
       resources :games, only: [:index, :show] do
         resources :goals, only: [:index]
       end
-      resources :games, only: [:index, :show] do
-        resources :ratings, only: [:index]
-      end
-      resources :goals, only: :index
     end
   end
   root 'players#index'

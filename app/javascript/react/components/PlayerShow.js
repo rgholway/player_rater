@@ -10,7 +10,8 @@ class PlayerShow extends Component{
       player: "",
       ratingDescription: "",
       ratingScore: "",
-      ratings: []
+      ratings: [],
+      team: ""
     }
     this.handleDescriptionChange = this.handleDescriptionChange.bind(this)
     this.handleScoreChange = this.handleScoreChange.bind(this)
@@ -29,22 +30,22 @@ class PlayerShow extends Component{
   }
 
   addNewRating(formPayload){
-  let jsonStringInfo = JSON.stringify(formPayload)
-  fetch(`/api/v1/players/${this.props.params.player_id}/ratings`, {
-    method: 'POST',
-    body: jsonStringInfo,
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json' },
-    credentials: 'same-origin'
-  })
-  .then(formPayload => formPayload.json())
-  .then(formPayload => {
-    this.setState({
-      ratings: this.state.ratings.concat(formPayload)
-    })
-  })
-}
+    let jsonStringInfo = JSON.stringify(formPayload)
+      fetch(`/api/v1/players/${this.props.params.player_id}/ratings`, {
+        method: 'POST',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      .then(formPayload => {
+        this.setState({
+          ratings: this.state.ratings.concat(formPayload)
+        })
+      })
+    }
 
   handleSubmit(event) {
   event.preventDefault()
@@ -70,6 +71,23 @@ class PlayerShow extends Component{
     .then(body => {
       this.setState({ player: body });
     })
+    .then(body => {
+      fetch(`/api/v1/teams/${this.state.player.team_id}`)
+      .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage);
+          throw(error);
+        }
+      })
+      .then(response => response.json())
+      .then(body => {
+        this.setState({ team: body });
+      })
+
+    })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
@@ -88,48 +106,46 @@ class PlayerShow extends Component{
     .then(body => {
       this.setState({ ratings: body });
     })
+
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.fetchRating()
     this.fetchPlayer()
   }
 
   render() {
+    console.log(this.state.ratings)
     return(
-      <div className="player__spot">
-      <div className="player__spot player__spot--team">
-      {this.state.player.first_name}</div>
-      <div className="player__spot player__spot--form"><h1>Rate {this.state.player.first_name} {this.state.player.last_name}</h1></div>
-      <form className = "form" onSubmit={this.handleSubmit}>
-      <ScoreTile
-        content={this.state.ratingScore}
-        label= {`What rating does ${this.state.player.last_name} deserve?`}
-        name="rating-score"
-        handleScoreChange={this.handleScoreChange}
-      />
-      <DescriptionTile
-          content={this.state.ratingDescription}
-          label= {`How did ${this.state.player.last_name} play?`}
-          name="rating-description"
-          handleDescriptionChange={this.handleDescriptionChange}
-      />
+      <div className="rate">
+          <img src={this.state.player.photo} />
+          <img className="player__background" src={this.state.team.badge}/>
+          <h1 className="player__rate--name">{this.state.player.first_name} {this.state.player.last_name} </h1>
+          <h1 className="player__rate--position">{this.state.player.full_position} #{this.state.player.number} </h1>
+          <h1 className="player__rate--text--title">Average Score:</h1>
+          <h1 className="player__rate--form--title {">Rate {this.state.player.first_name} {this.state.player.last_name}</h1>
+          <form className = "player__rate--form" onSubmit={this.handleSubmit}>
+            <ScoreTile
+              content={this.state.ratingScore}
+              label= {`What rating does ${this.state.player.last_name} deserve?`}
+              name="rating-score"
+              handleScoreChange={this.handleScoreChange}
+              />
+              <DescriptionTile
+                content={this.state.ratingDescription}
+                label= {`How did ${this.state.player.last_name} play?`}
+                name="rating-description"
+                handleDescriptionChange={this.handleDescriptionChange}
+                />
 
-      <input className="button" type="submit" value="Add Rating"/>
-
-
-
-
-      </form>
-      <div className="player__show"></div>
-      <div className="player__show player__show--info">
-      <div>
-      <RatingTile
-      ratings= {this.state.ratings}
-      />
-      </div>
-      </div>
+              <input className="button" type="submit" value="Add Rating"/>
+          </form>
+          <div>
+              <RatingTile
+                ratings= {this.state.ratings}
+                  />
+                  </div>
       </div>
     )}
   }

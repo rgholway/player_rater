@@ -10,7 +10,6 @@ class GoalTile extends Component {
      };
   }
     render() {
-      debugger;
       let goalsArray = this.props.goals.map(goal => {
         return (
           <GoalIndex

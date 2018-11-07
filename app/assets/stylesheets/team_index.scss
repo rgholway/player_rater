@@ -1,11 +1,55 @@
+.app__background {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  height: 100px;
+  width: 95%;
+  background-color: #E8E8E8
+}
+
 .badge__stage {
-  top: 6.4%;
+  top: 0%;
   position: absolute;
   height: 90px;
-  width: 95%;
-  left: 2.5%;
+  width: 100%;
   background-color: #414449;
   z-index: 8;
+}
+
+.title__index {
+  position: absolute;
+  top: 8%;
+  height: 9%;
+  width: 100%;
+  font-family: 'Sarpanch', sans-serif;
+  text-align: center;
+}
+
+.flag--green {
+  position: absolute;
+  height: 1%;
+  top: 15%;
+  width: 33%;
+  background-color: #429347;
+}
+
+.flag--white {
+  position: absolute;
+  height: 1%;
+  top: 15%;
+  left: 33%;
+  width: 34%;
+  background-color: white;
+  z-index: 2;
+}
+
+.flag--red {
+  position: absolute;
+  height: 1%;
+  top: 15%;
+  left: 67%;
+  width: 33%;
+  background-color: #CE3037;
 }
 
 .badge__icon {

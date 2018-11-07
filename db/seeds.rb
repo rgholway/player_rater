@@ -1,24 +1,24 @@
 teams = [
-  {name: "Fiorentina", city: "Florence", nickname: "La Viola", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000111.png", points: ""},
-  {name: "Juventus", city: "Turin", nickname: "I Bianconeri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000070.png", points: ""},
-  {name: "AC_Milan", city: "Milan", nickname: "I Rossoneri", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png", points: ""},
-  {name: "Inter_Milan", city: "Milan", nickname: "I Nerrazzuri", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/44.png", points: ""},
-  {name: "Roma", city: "Rome", nickname: "I Giallorossi", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000084.png", points: ""},
-  {name: "Lazio", city: "Rome", nickname: "I Biancocelesti", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/46.png", points: ""},
-  {name: "Torino", city: "Turin", nickname: "I Granata", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/54.png", points: ""},
-  {name: "Atalanta", city: "Atalanta", nickname: "I Nerrazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000181.png", points: ""},
-  {name: "Genoa", city: "Genoa", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/110556.png", points: ""},
-  {name: "Sampdoria", city: "Genoa", nickname: "Blucerchiati", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/1837.png", points: ""},
-  {name: "Napoli", city: "Naples", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000083.png", points: ""},
-  {name: "Sassuolo", city: "Sassuolo", nickname: "I Neroverdi", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000180.png", points: ""},
-  {name: "Cagliari", city: "Cagliari", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000230.png", points: ""},
-  {name: "Parma", city: "Parma", nickname: "I Gialloblu", badge: "https://i.pinimg.com/originals/ac/a7/97/aca7979bdc00add6bb7a1beb2557641c.png", points: ""},
-  {name: "SPAL", city: "Ferrara", nickname: "I Biancoazzuri", badge: "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4377.png", points: ""},
-  {name: "ChievoVerona", city: "Verona", nickname: "I Gialloblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000158.png", points: ""},
-  {name: "Udinese", city: "Udinese", nickname: "Bianconeri Friuliani", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/55.png", points: ""},
-  {name: "Bologna", city: "Bologna", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000157.png", points: ""},
-  {name: "Empoli", city: "Empoli", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000229.png", points: ""},
-  {name: "Frosinone", city: "Frosinone", nickname: "I Giallazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000382.png", points: ""}
+  {name: "Fiorentina", city: "Florence", nickname: "La Viola", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000111.png", points: "", lat: "43.7808", long: "11.2826", stadium: "Stadio Artemio Franchi"},
+  {name: "Juventus", city: "Turin", nickname: "I Bianconeri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000070.png", points: "", lat: "45.1096", long: "7.6413", stadium: "Allianz Arena"},
+  {name: "AC_Milan", city: "Milan", nickname: "I Rossoneri", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png", points: "", lat: "45.4781", long: "9.1240", stadium: "San Siro"},
+  {name: "Inter_Milan", city: "Milan", nickname: "I Nerrazzuri", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/44.png", points: "", lat: "45.4781", long: "9.1240", stadium: "San Siro"},
+  {name: "Roma", city: "Rome", nickname: "I Giallorossi", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000084.png", points: "", lat: "41.9341", long: "12.4547", stadium: "Stadio Olimpico"},
+  {name: "Lazio", city: "Rome", nickname: "I Biancocelesti", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/46.png", points: "", lat: "41.9341", long: "12.4547", stadium: "Stadio Olimpico"},
+  {name: "Torino", city: "Turin", nickname: "I Granata", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/54.png", points: "", lat: "45.0418", long: "7.6501", stadium: "Stadio Olimpico Grande Torino"},
+  {name: "Atalanta", city: "Atalanta", nickname: "I Nerrazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000181.png", points: "", lat: "45.7092", long: "9.6808", stadium:"Stadio Atleti Azzurri d'Italia"},
+  {name: "Genoa", city: "Genoa", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/110556.png", points: "", lat: "44.4165", long: "8.9525", stadium: "Stadio Luigi Ferraris" },
+  {name: "Sampdoria", city: "Genoa", nickname: "Blucerchiati", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/1837.png", points: "", lat: "44.4165", long: "8.9525", stadium: "Stadio Luigi Ferraris"},
+  {name: "Napoli", city: "Naples", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000083.png", points: "", lat: "40.8279", long: "14.1931", stadium: "Stadio San Paolo"},
+  {name: "Sassuolo", city: "Sassuolo", nickname: "I Neroverdi", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000180.png", points: "", lat: "44.7145", long: "10.6497", stadium: "Stadio Mapei "},
+  {name: "Cagliari", city: "Cagliari", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000230.png", points: "", lat: "39.1998", long: "9.1375", stadium: "Sardegna Arena"},
+  {name: "Parma", city: "Parma", nickname: "I Gialloblu", badge: "https://i.pinimg.com/originals/ac/a7/97/aca7979bdc00add6bb7a1beb2557641c.png", points: "", lat: "44.7948", long: "10.3383", stadium: "Stadio Ennio Tardini"},
+  {name: "SPAL", city: "Ferrara", nickname: "I Biancoazzuri", badge: "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4377.png", points: "", lat: "44.8402", long: "11.6080", stadium: "Stadio Paolo Mazza"},
+  {name: "ChievoVerona", city: "Verona", nickname: "I Gialloblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000158.png", points: "", lat: "45.4353", long: "10.9686", stadium: "Stadio Marc'Antonio Bentegodi"},
+  {name: "Udinese", city: "Udinese", nickname: "Bianconeri Friuliani", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/55.png", points: "", lat: "46.0815", long: "13.1998", stadium: "Stadio Friuli"},
+  {name: "Bologna", city: "Bologna", nickname: "I Rossoblu", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000157.png", points: "", lat: "44.4923", long: "11.3100", stadium: "Stadio Renato Dall'Ara"},
+  {name: "Empoli", city: "Empoli", nickname: "Gli Azzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000229.png", points: "", lat: "43.7265", long: "10.9548", stadium: "Stadio Carlo Castellani"},
+  {name: "Frosinone", city: "Frosinone", nickname: "I Giallazzuri", badge: "https://futhead.cursecdn.com/static/img/17/items/badges/6000382.png", points: "", lat: "41.6341", long: "13.3219", stadium: "Stadio Benito Stirpe"}
 ]
 
 teams.each do |team|
@@ -47,7 +47,12 @@ fiorentina_games = [
   {home_team: "Fiorentina", away_team: "Udinese", home_score: "1", away_score: "0", date: "9/2", week: "2"},
   {home_team: "Napoli", away_team: "Fiorentina", home_score: "1", away_score: "0", date: "9/15", week: "3"},
   {home_team: "Sampdoria", away_team: "Fiorentina", home_score: "1", away_score: "1", date: "9/19", week: "4"},
-  {home_team: "Fiorentina", away_team: "SPAL", home_score: "3", away_score: "0", date: "9/22", week: "5"}
+  {home_team: "Fiorentina", away_team: "SPAL", home_score: "3", away_score: "0", date: "9/22", week: "5"},
+  {home_team: "Inter Milan", away_team: "Fiorentina", home_score: "2", away_score: "1", date: "9/25", week: "6"},
+  {home_team: "Fiorentina", away_team: "Atalanta", home_score: "2", away_score: "0", date: "9/30", week: "7"},
+  {home_team: "Lazio", away_team: "Fiorentina", home_score: "1", away_score: "0", date: "10/7", week: "8"},
+  {home_team: "Fiorentina", away_team: "Cagliari", home_score: "1", away_score: "1", date: "10/21", week: "9"},
+  {home_team: "Torino", away_team: "Fiorentina", home_score: "1", away_score: "1", date: "10/27", week: "10"}
 ]
 
 fiorentina_games.each do |game|
@@ -55,11 +60,16 @@ fiorentina_games.each do |game|
 end
 
 fiorentina_matchups = [
-  {game_id: 21, team_id: fiorentina.id},
-  {game_id: 22, team_id: fiorentina.id},
-  {game_id: 23, team_id: fiorentina.id},
-  {game_id: 24, team_id: fiorentina.id},
-  {game_id: 25, team_id: fiorentina.id},
+  {game_id: 1, team_id: fiorentina.id},
+  {game_id: 2, team_id: fiorentina.id},
+  {game_id: 3, team_id: fiorentina.id},
+  {game_id: 4, team_id: fiorentina.id},
+  {game_id: 5, team_id: fiorentina.id},
+  {game_id: 6, team_id: fiorentina.id},
+  {game_id: 7, team_id: fiorentina.id},
+  {game_id: 8, team_id: fiorentina.id},
+  {game_id: 9, team_id: fiorentina.id},
+  {game_id: 10, team_id: fiorentina.id}
 ]
 
 fiorentina_matchups.each do |matchup|

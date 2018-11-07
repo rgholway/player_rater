@@ -4,13 +4,13 @@
   <title>PlayerRater</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
-  
+
     <%= javascript_include_tag "vendor/modernizr" %>
-  
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
+
   <nav class="top-bar">
     <ul class="title-area">
       <li class="name">
@@ -35,18 +35,25 @@
       <%= value %>
     </div>
   <%- end -%>
-
+  <div id="map" style="height:30%; width: 32%; top: 62%; left:2.75%; z-index: 5;"></div>
+  <script>
+    var map;
+    function initMap() {
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxnHzBWgF6lrFcT79qgE7p3aqdsc87bQ&callback=initMap"
+  async defer></script>
   <%= yield %>
 
   <%= javascript_include_tag 'application' %>
-  
-  <%- if Rails.env.development? || Rails.env.test? -%> 
+
+  <%- if Rails.env.development? || Rails.env.test? -%>
     <%= javascript_tag do %>
       window.railsEnv = '<%= Rails.env %>'
     <%- end -%>
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
-  
+
   <%= yield :extra_footer %>
 </body>
 </html>

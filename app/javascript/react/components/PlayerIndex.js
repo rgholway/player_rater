@@ -33,10 +33,11 @@ class PlayerIndex extends Component {
 
   render() {
     return (
-      <div><SoccerField
-        players={this.state.players}
-        game={this.props.game}
-      />
+      <div>
+        <SoccerField
+          players={this.state.players}
+          game={this.props.game}
+          />
       </div>
     )
   }
