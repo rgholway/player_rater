@@ -14,8 +14,8 @@ render() {
   let ratingsArray = this.props.ratings.map(rating => {
     totalScore += rating.score
     return(
-      <div key={rating.id}>
-        <h1 className="player__rate--rating">{rating.description} {rating.score}</h1>
+      <div key={rating.id} className="player__rate--rating">
+        <h1 className="player__rate--description">{rating.description}</h1>
       </div>
     )
   })

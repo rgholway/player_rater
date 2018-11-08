@@ -119,7 +119,7 @@ class PlayerShow extends Component{
     console.log(this.state.ratings)
     return(
       <div className="rate">
-          <img src={this.state.player.photo} />
+          <img className= "player__image" src={this.state.player.photo} />
           <img className="player__background" src={this.state.team.badge}/>
           <h1 className="player__rate--name">{this.state.player.first_name} {this.state.player.last_name} </h1>
           <h1 className="player__rate--position">{this.state.player.full_position} #{this.state.player.number} </h1>
@@ -144,8 +144,8 @@ class PlayerShow extends Component{
           <div>
               <RatingTile
                 ratings= {this.state.ratings}
-                  />
-                  </div>
+                />
+          </div>
       </div>
     )}
   }

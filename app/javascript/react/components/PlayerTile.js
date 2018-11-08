@@ -31,7 +31,8 @@ render(){
       <div className={`${this.props.hiddenStatus}`}>
           <p className="player__stage--info--name">{this.props.selectedFirstName} {this.props.selectedLastName}</p>
           <p className="player__stage--info--number">#{this.props.selectedNumber}</p>
-          <p className="player__stage--info--nation">Score: {this.props.totalScore}</p>
+          <p className="player__stage--info--nation">{this.props.selectedNation}</p>
+          <p className="player__stage--info--score">Score: {this.props.totalScore}</p>
       </div>
     </div>
   )}

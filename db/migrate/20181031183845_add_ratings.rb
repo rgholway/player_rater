@@ -5,6 +5,7 @@ class AddRatings < ActiveRecord::Migration[5.2]
       t.text :description, null: false
 
       t.belongs_to :player
+      t.belongs_to :user
 
       t.timestamps null: false
     end
