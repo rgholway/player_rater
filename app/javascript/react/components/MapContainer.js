@@ -24,7 +24,7 @@ class MapContainer extends Component {
 
   render() {
    return(
-     <div id="map" style={{height: '500px', width: '500px', top: '610px', left: '50px', border: 'solid 1px black'}}></div>
+     <div id="map" className="map__location"></div>
    )
   }
 }
