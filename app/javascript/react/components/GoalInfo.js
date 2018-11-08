@@ -32,7 +32,7 @@ class GoalInfo extends Component {
   render() {
     return(
     <div>
-      <div className="home__goal--1">
+      <div className={`${this.props.team}__goal`}>
       '{this.props.minute} {this.state.player.first_name} {this.state.player.last_name}
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TeamTile from './TeamTile'
-import GoalTile from './GoalTile'
 
 class TeamIndex extends Component {
   constructor(props) {
@@ -42,11 +41,7 @@ class TeamIndex extends Component {
           teams= {this.state.teams}
           />
       </div>
-        <div>
-        <GoalTile
-          goals = {this.state.goals}
-          />
-          </div>
+
       </div>
     )
   }

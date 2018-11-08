@@ -1,0 +1,64 @@
+.form__email {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  height: auto;
+  width: 50%;
+  font-family: 'Orbitron', monospace;
+}
+
+.form__password {
+  top: 13%;
+  left: 30%;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  font-family: 'Orbitron', monospace;
+}
+
+.form__confirmation {
+  top: 21%;
+  left: 30%;
+  position: absolute;
+  height: auto;
+  width: 50%;
+  font-family: 'Orbitron', monospace;
+}
+
+.submit {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: 'Orbitron', monospace;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Orbitron', monospace;
+  border-bottom: solid 1.5px black;
+}
+
+.remember {
+  position: absolute;
+  top: 22%;
+  left: 60%;
+  font-family: 'Orbitron', monospace;
+}
+
+.text {
+  font-family: 'Orbitron', monospace;
+  max-height: 5px;
+  z-index: 10;
+}
+
+.right__link {
+  position: absolute;
+  right: 0%;
+}
+
+.submit__log--in {
+  position: absolute;
+  top: 22%;
+  left: 40%;
+  font-family: 'Orbitron', monospace;
+}

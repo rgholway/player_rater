@@ -8,7 +8,7 @@ class Api::V1::RatingsController < ApplicationController
   end
 
   def create
-    new_rating = Rating.create(description: rating_params[:description], score: rating_params[:score], player_id: rating_params[:player_id])
+    new_rating = Rating.create(description: rating_params[:description], score: rating_params[:score], player_id: rating_params[:player_id], user: current_user)
     render json: new_rating
   end
 

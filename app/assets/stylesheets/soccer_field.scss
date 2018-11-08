@@ -2,15 +2,13 @@
 
 .gray {
   height: 1700px;
-  width: 95%;
+  width: 100%;
   background-color: #E8E8E8;
-  margin-left: 2.5%;
 }
 
 .world {
   position: absolute;
   top: 70%;
-  left: 35%;
   width: 125%;
   height: 230%;
   transform: translateZ(-210px);
@@ -22,18 +20,19 @@
   position: absolute;
   width: 50%;
   height: 50%;
-  perspective-origin: 75% -200px;
+  left: 15%;
+  perspective-origin: 60% -200px;
   perspective: 1100px;
-  z-index: 1;
-  top: -50px;
+  z-index: 0;
+  top: 50px;
 
 }
 
 .field {
   position: absolute;
-  top: 30%;
+  top: 0%;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background-color: #eee;
   z-index: 2;
   transform: rotateX(50deg) translateZ(0);
@@ -185,53 +184,54 @@
 }
 
 .player__stage--info--goalie {
-  height: 75px;
-  width: 150px;
+  height: 90px;
+  width: 250px;
   background-color: white;
-  border: solid 3px rgba(255, 255, 255, 0.5);
-  border-color: lightgray;
-  top: 90%;
-  right: 23%;
-  z-index: 6;
+  top: 88%;
+  right: 12%;
+  z-index: 9;
 }
 
 .player__stage--info--name {
+  position: absolute;
   width: auto;
   color: black;
   height: 10%;
   font-family: 'Roboto Mono', monospace;
   top: 10%;
-  margin-left: 5%;
+  left: 5%;
+  margin-right: 0;
   z-index: 9;
 }
 
 .player__stage--info--number {
-  width: 100%;
+  position: absolute;
+  width: auto;
+  height: auto;
   color: black;
   height: 10%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Cairo', sans-serif;
   top: 10%;
-  margin-left: 5%;
+  left: 80%;
   z-index: 9;
-}
-
-.player__stage--info--nation {
-  width: auto;
-  max-height: 10%;
-  color: black;
-  font-family: 'Roboto Mono', monospace;
-  z-index: 9;
-  margin-left: 5%;
-  margin-bottom: 50%;
 }
 
 .player__stage--info--score {
-  max-height: 10%;
+  position: absolute;
   color: black;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Cairo', sans-serif;
   z-index: 9;
-  margin-left: 50%;
-  margin-bottom: 0%;
+  top: 70%;
+  left: 5%;
+}
+
+.player__stage--info--nation {
+  position: absolute;
+  color: black;
+  font-family: 'Cairo', sans-serif;
+  z-index: 9;
+  top: 40%;
+  left: 5%;
 }
 
 .player__stage--info--rightback {
@@ -260,7 +260,7 @@
   background-color: white;
   border: solid 2px black;
   top: 68%;
-  left: 22%;
+  left: 27%;
   z-index: 9;
 }
 
@@ -270,7 +270,7 @@
   background-color: white;
   border: solid 2px black;
   top: 68%;
-  right: 22%;
+  right: 27%;
   z-index: 9;
 }
 
@@ -280,7 +280,7 @@
   background-color: white;
   border: solid 2px black;
   top: 40%;
-  right: 3%;
+  right: 7%;
   z-index: 9;
 }
 
@@ -330,7 +330,7 @@
   background-color: white;
   border: solid 2px black;
   top: 5%;
-  left: 2%;
+  left: 6%;
   z-index: 9;
 }
 

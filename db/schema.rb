@@ -80,9 +80,11 @@ ActiveRecord::Schema.define(version: 2018_11_02_140430) do
     t.integer "score", null: false
     t.text "description", null: false
     t.bigint "player_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["player_id"], name: "index_ratings_on_player_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "teams", force: :cascade do |t|

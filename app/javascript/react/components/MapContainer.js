@@ -1,15 +1,33 @@
-import React from 'react'
-const google = window.google;
+import React, { Component } from 'react';
 
-const MapContainer = props => {
-  let map = new google.maps.Map(document.getElementById('map'), {
-     zoom: 16,
-     center: {lat: Number(props.latitude), lng: Number(props.long)}
-   })
+class MapContainer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      }
+    this.initMap = this.initMap.bind(this)
+  }
+
+  componentDidMount() {
+    window.initMap = this.initMap
+    loadJS("https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxnHzBWgF6lrFcT79qgE7p3aqdsc87bQ&callback=initMap")
+  }
+
+  initMap() {
+    console.log(this.props.latitude)
+    console.log(this.props.long)
+    let map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: {lat: Number(this.props.latitude), lng: Number(this.props.long)}
+    })
+  }
+
+  render() {
    return(
-     <div className="map__location"> </div>
+     <div id="map" style={{height: '500px', width: '500px', top: '610px', left: '50px', border: 'solid 1px black'}}></div>
    )
   }
+}
 
   export default MapContainer;
 

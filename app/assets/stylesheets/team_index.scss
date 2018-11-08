@@ -8,11 +8,12 @@
 }
 
 .badge__stage {
-  top: 0%;
   position: absolute;
+  top: 0%;
   height: 90px;
   width: 100%;
-  background-color: #414449;
+  border-top: solid 1px white;
+  background-color: #333333;
   z-index: 8;
 }
 

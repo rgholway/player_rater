@@ -2,21 +2,23 @@
   position: absolute;
   width: 50%;
   margin-left: 26.5%;
-  margin-top: 5.5%;
+  margin-top: 10.5%;
   font-size: 90%;
   height: 50%;
+  font-family: 'Cairo', sans-serif;
 }
 
-.home__goal--1 {
+.home1__goal {
   position: absolute;
   width: 25%;
   top: 0%;
   left: 0%;
   height: 25%;
   z-index: 9;
+  font-family: 'Cairo', sans-serif;
 }
 
-.home__goal--2 {
+.home2__goal {
   position: absolute;
   width: 25%;
   top: 25%;
@@ -80,11 +82,11 @@
 }
 
 
-.away__goal--1 {
+.away1__goal {
   position: absolute;
   width: 25%;
   top: 0%;
-  right: 0%;
+  right: 5%;
   height: 25%;
   z-index: 9;
 }

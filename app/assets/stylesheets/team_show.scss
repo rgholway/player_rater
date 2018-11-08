@@ -7,8 +7,7 @@
   position: absolute;
   height: 1200px;
   top: 4.7%;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   background-color: #E8E8E8;
 }
 
@@ -29,20 +28,21 @@
 
 .stadium__title {
   position: absolute;
-  left: 0.5%;
+  left: 50px;
   top: 45%;
   font-size: 2.5vw;
-  width: auto;
-  background-color: #D3D3D3;
+  width: 500px;
   border-bottom: solid 2.5px black;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
 }
 
 .map__location {
   height: 30%;
-  width: 30%;
-  top: 80%;
-  background-color: red;
+  width: 32%;
+  top: 65%;
+  left:1%;
+  z-index: 5;
 }
 
 .Fiorentina--background {
@@ -52,6 +52,7 @@
   background: linear-gradient(135deg, #272467, #BE81BD );
   border-bottom: solid 3px;
   border-color: black;
+  border-top: solid 1px white;
 }
 
 .Fiorentina--background__badge {
@@ -79,9 +80,8 @@
 
 .Juventus--background {
   position: absolute;
-  top: 5.25%;
   height: 25%;
-  width: 95%;
+  width: 100%;
   background: linear-gradient(135deg, black, white);
 }
 
@@ -97,7 +97,7 @@
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 59%;
   top: 30%;
 }
 
@@ -105,7 +105,7 @@
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 27%;
   top: 30%;
 }
 
@@ -173,9 +173,11 @@
 
 .Roma--background {
   position: absolute;
-  top: 5.25%;
   height: 25%;
-  width: 95%;
+  width: 100%;
+  border-bottom: solid 3px;
+  border-color: black;
+  border-top: solid 1px white;
   background: linear-gradient(135deg, #A61D37, #F58220);
 }
 
@@ -191,7 +193,7 @@
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 60%;
   top: 30%;
 }
 
@@ -199,7 +201,7 @@
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 29%;
   top: 30%;
 }
 

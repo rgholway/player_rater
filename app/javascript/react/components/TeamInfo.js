@@ -9,7 +9,7 @@ class TeamInfo extends Component {
   render() {
     return(
       <div>
-        <Link to={`teams/${this.props.id}`}><img className={`badge__icon badge__icon--${this.props.name}`} src={this.props.badge} alt={this.props.name}/></Link>
+        <a href={`teams/${this.props.id}`}><img className={`badge__icon badge__icon--${this.props.name}`} src={this.props.badge} alt={this.props.name}/></a>
         </div>
     )
   }
