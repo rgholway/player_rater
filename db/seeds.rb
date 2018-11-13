@@ -113,17 +113,17 @@ juventus_matchups.each do |matchup|
 end
 
 juventus_players = [
-  {first_name: "Wojciech", last_name: "Szczesny", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://pbs.twimg.com/profile_images/891114812796796928/PVjctqFC.jpg", team: juventus},
-  {first_name: "Joao", last_name: "Cancelo", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://b.fssta.com/uploads/application/soccer/players/649337.vresize.350.425.medium.73.png", team: juventus},
-  {first_name: "Leonardo", last_name: "Bonucci", number: "19", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo: "http://www4.pictures.zimbio.com/gi/Leonardo+Bonucci+Juventus+FC+v+AC+Milan+Serie+jiq1utkVIk_l.jpg", team: juventus},
-  {first_name: "Giorgio", last_name: "Chiellini", number: "3", position: "leftcenterback", short_position: "CB", full_position: "Center Back",photo: "https://cdn.images.dailystar.co.uk/dynamic/58/photos/242000/620x/Giorgio-Chiellini-649385.jpg", team: juventus},
-  {first_name: "Alex", last_name: "Sandro", number: "12", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://images.performgroup.com/di/library/GOAL/46/84/alex-sandro-juventus_ljtik0hfcmgm16evpyhrbz94v.jpg", team: juventus},
-  {first_name: "Blaise", last_name: "Matuidi", number: "14", position: "defensivecentermidfield",short_position: "CDM", full_position: "Center Defensive Mid", photo: "https://www.africatopsports.com/wp-content/uploads/2017/11/matuidi-juventus-710x509.jpg", team: juventus},
-  {first_name: "Miralem", last_name: "Pjanic", number: "5", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "http://cdn.24.co.za/files/Cms/General/d/7830/f188732bdce34745bdf33b50c5e6b65e.png", team: juventus},
-  {first_name: "Paulo", last_name: "Dybala", number: "10", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://pbs.twimg.com/media/DZpXs0QX4AAiqQi.jpg", team: juventus},
+  {first_name: "Wojciech", last_name: "Szczesny", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_75/75667.jpg", team: juventus, nation: "Poland"},
+  {first_name: "Joao", last_name: "Cancelo", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_176/176621.jpg", team: juventus, nation: "Portugal"},
+  {first_name: "Leonardo", last_name: "Bonucci", number: "19", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_15/15198.jpg", team: juventus, nation: "Italy"},
+  {first_name: "Giorgio", last_name: "Chiellini", number: "3", position: "leftcenterback", short_position: "CB", full_position: "Center Back",photo: "https://www.footballdatabase.eu/images/photos/players/a_4/4688.jpg", team: juventus, nation: "Italy"},
+  {first_name: "Alex", last_name: "Sandro", number: "12", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_48/48455.jpg", team: juventus, nation: "Brazil"},
+  {first_name: "Blaise", last_name: "Matuidi", number: "14", position: "defensivecentermidfield",short_position: "CDM", full_position: "Center Defensive Mid", photo: "https://www.footballdatabase.eu/images/photos/players/a_11/11646.jpg", team: juventus, nation: "France"},
+  {first_name: "Miralem", last_name: "Pjanic", number: "5", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_21/21817.jpg", team: juventus, nation: "Bosnia and Herzegovina"},
+  {first_name: "Paulo", last_name: "Dybala", number: "10", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_148/148984.jpg", team: juventus, nation: "Argentina"},
   {first_name: "Christiano", last_name: "Ronaldo", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_2/2058.jpg", team: juventus, nation: "Portugal"},
-  {first_name: "Juan", last_name: "Cuadrado", number: "16", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://peoplespostmedia.com/media/k2/items/cache/e6016113b58321823ef4c9ba6bd5a33c_XL.jpg", team: juventus},
-  {first_name: "Mario", last_name: "Mandzukic", number: "17", position: "centerforward", short_position: "CF", full_position: "Striker", photo: "https://images.performgroup.com/di/library/GOAL/7c/d5/mario-mandzukic-juventus-2018-19_54pwb6x4j00o1epgxdjs8pt9i.jpg?t=-1757177315&quality=90&w=1280", team: juventus}
+  {first_name: "Juan", last_name: "Cuadrado", number: "16", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_58/58207.jpg", team: juventus, nation: "Colombia"},
+  {first_name: "Mario", last_name: "Mandzukic", number: "17", position: "centerforward", short_position: "CF", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_20/20854.jpg", team: juventus, nation: "Croatia"}
 ]
 juventus_players.each do |player|
   Player.create(player)
