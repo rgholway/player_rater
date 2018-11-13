@@ -48,11 +48,11 @@ class PlayerShow extends Component{
     }
 
   handleSubmit(event) {
-  event.preventDefault()
-  let formPayload = {
-    description: this.state.ratingDescription,
-    score: this.state.ratingScore
-    }
+    event.preventDefault()
+    let formPayload = {
+      description: this.state.ratingDescription,
+      score: this.state.ratingScore
+      }
     this.addNewRating(formPayload)
   }
 
@@ -86,7 +86,6 @@ class PlayerShow extends Component{
       .then(body => {
         this.setState({ team: body });
       })
-
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
@@ -106,17 +105,15 @@ class PlayerShow extends Component{
     .then(body => {
       this.setState({ ratings: body });
     })
-
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.fetchRating()
     this.fetchPlayer()
   }
 
   render() {
-    console.log(this.state.ratings)
     return(
       <div className="rate">
           <img className= "player__image" src={this.state.player.photo} />
@@ -132,22 +129,21 @@ class PlayerShow extends Component{
               name="rating-score"
               handleScoreChange={this.handleScoreChange}
               />
-              <DescriptionTile
+            <DescriptionTile
                 content={this.state.ratingDescription}
                 label= {`How did ${this.state.player.last_name} play?`}
                 name="rating-description"
                 handleDescriptionChange={this.handleDescriptionChange}
                 />
-
-              <input className="button" type="submit" value="Add Rating"/>
+            <input className="button" type="submit" value="Add Rating"/>
           </form>
           <div>
-              <RatingTile
-                ratings= {this.state.ratings}
-                />
+            <RatingTile
+              ratings= {this.state.ratings}
+            />
           </div>
       </div>
     )}
   }
 
-  export default PlayerShow
+export default PlayerShow

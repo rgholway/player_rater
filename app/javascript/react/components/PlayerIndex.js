@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SoccerField from './SoccerField'
 
-
 class PlayerIndex extends Component {
   constructor(props) {
     super(props);

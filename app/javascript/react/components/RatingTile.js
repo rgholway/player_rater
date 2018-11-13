@@ -5,7 +5,7 @@ class RatingTile extends Component{
     super(props)
     this.state = {
       Totalscore: ""
-    }
+      }
     }
 
 render() {
@@ -22,8 +22,8 @@ render() {
 
     return(
       <div>
-      <div className="player__rate--ratings">{ratingsArray}</div>
-      <h1 className="player__rate--total--score">{(totalScore/length).toFixed(1)}</h1>
+        <div className="player__rate--ratings">{ratingsArray}</div>
+        <h1 className="player__rate--total--score">{(totalScore/length).toFixed(1)}</h1>
       </div>
     )}
   }

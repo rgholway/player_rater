@@ -44,22 +44,20 @@ render() {
       <Link to={`/teams/${this.props.teamId}/games/${game.id}`} key={game.id}>
       <div>
         <div className={`game--${game.week}--${this.props.selectedStatus}`} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-        <h1 className="home_team"> {game.home_team} </h1>
-        <h1 className="away_team"> {game.away_team} </h1>
-        <h1 className="home_score"> {game.home_score} </h1>
-        <h1 className="away_score"> {game.away_score} </h1>
-        <h1 className="date"> {game.date} </h1>
+          <h1 className="home_team"> {game.home_team} </h1>
+          <h1 className="away_team"> {game.away_team} </h1>
+          <h1 className="home_score"> {game.home_score} </h1>
+          <h1 className="away_score"> {game.away_score} </h1>
+          <h1 className="date"> {game.date} </h1>
         </div>
       </div></Link>
     )
   })
     return(
       <div>
-      {gamesArray}
-
+        {gamesArray}
       </div>
       )}
     }
 
-
-  export default GameTile
+export default GameTile

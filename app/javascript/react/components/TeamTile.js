@@ -43,15 +43,15 @@ class TeamTile extends Component {
             id= {team.id}
             badge={team.badge}
             name={team.name}
-            />
+          />
         )
       })
       return (
       <div className="team">
-      <h1 className="title__index"> 10 Out of 10 </h1>
-      <div className="flag--green"></div>
-      <div className="flag--white"></div>
-      <div className="flag--red"></div>
+        <h1 className="title__index"> 10 Out of 10 </h1>
+        <div className="flag--green"></div>
+        <div className="flag--white"></div>
+        <div className="flag--red"></div>
         <div className="badge__stage">
           <div> {badgeArray} </div>
         </div>
@@ -62,7 +62,6 @@ class TeamTile extends Component {
         <img className="italy" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Map_of_Italy_blank.svg"/>
         <div> {mapArray} </div>
       </div>
-
       )
     }
   }

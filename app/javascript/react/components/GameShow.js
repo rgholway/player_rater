@@ -7,7 +7,8 @@ class GameShow extends Component {
   constructor(props) {
     super(props)
     this.state = { game: "",
-      goals: []}
+      goals: []
+    }
     this.fetchGame = this.fetchGame.bind(this)
     this.fetchGoals = this.fetchGoals.bind(this)
   }
@@ -52,6 +53,7 @@ class GameShow extends Component {
     this.fetchGame()
     this.fetchGoals()
   }
+
   render(){
     let goalsArray = this.state.goals.map(goal => {
       return(
@@ -71,8 +73,8 @@ class GameShow extends Component {
             team={this.props.params.team_id}
             game={this.props.params.id}
             />
-            </div>
-          <div className="top__game">
+        </div>
+        <div className="top__game">
           <GameInfo
           home={this.state.game.home_team}
           away={this.state.game.away_team}
@@ -81,11 +83,10 @@ class GameShow extends Component {
           date={this.state.game.date}
           />
           <div className="all__goals"> {goalsArray} </div>
-          </div>
+        </div>
       </div>
     )
   }
 }
 
-
-  export default GameShow
+export default GameShow

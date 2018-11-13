@@ -36,7 +36,7 @@ fiorentina_players = [
   {first_name: "Jordan", last_name: "Veretout", number: "17", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_118/118887.jpg", team: fiorentina, nation: "France" },
   {first_name: "Federico", last_name: "Chiesa", number: "25", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_262/262615.jpg", team: fiorentina, nation: "Italy" },
   {first_name: "Valentin", last_name: "Eysseric", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_114/114647.jpg", team: fiorentina, nation: "France" },
-  {first_name: "Giovanni", last_name: "Simeone", number: "9", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_206/206189.jpg", team: fiorentina, nation: "France" }
+  {first_name: "Giovanni", last_name: "Simeone", number: "9", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_206/206189.jpg", team: fiorentina, nation: "Argentina" }
 ]
 fiorentina_players.each do |player|
   Player.create(player)
@@ -77,6 +77,41 @@ fiorentina_matchups.each do |matchup|
 end
 
 juventus = Team.find_by(name: "Juventus")
+
+juventus_games = [
+  {home_team: "Chievo Verona", away_team: "Juventus", home_score: "2", away_score: "3", date: "8/18", week: "1"},
+  {home_team: "Juventus", away_team: "Lazio", home_score: "2", away_score: "0", date: "8/25", week: "2"},
+  {home_team: "Parma", away_team: "Juventus", home_score: "1", away_score: "2", date: "9/1", week: "3"},
+  {home_team: "Juventus", away_team: "Sassuolo", home_score: "2", away_score: "1", date: "9/16", week: "4"},
+  {home_team: "Frosinone", away_team: "Juventus", home_score: "0", away_score: "2", date: "9/23", week: "5"},
+  {home_team: "Juventus", away_team: "Bologna", home_score: "2", away_score: "0", date: "9/26", week: "6"},
+  {home_team: "Juventus", away_team: "Napoli", home_score: "3", away_score: "1", date: "9/29", week: "7"},
+  {home_team: "Udinese", away_team: "Juventus", home_score: "0", away_score: "2", date: "10/6", week: "8"},
+  {home_team: "Juventus", away_team: "Genoa", home_score: "1", away_score: "1", date: "10/20", week: "9"},
+  {home_team: "Empoli", away_team: "Juventus", home_score: "1", away_score: "2", date: "10/27", week: "10"}
+]
+
+juventus_games.each do |game|
+  Game.create(game)
+end
+
+juventus_matchups = [
+  {game_id: 11, team_id: juventus.id},
+  {game_id: 12, team_id: juventus.id},
+  {game_id: 13, team_id: juventus.id},
+  {game_id: 14, team_id: juventus.id},
+  {game_id: 15, team_id: juventus.id},
+  {game_id: 16, team_id: juventus.id},
+  {game_id: 17, team_id: juventus.id},
+  {game_id: 18, team_id: juventus.id},
+  {game_id: 19, team_id: juventus.id},
+  {game_id: 20, team_id: juventus.id}
+]
+
+juventus_matchups.each do |matchup|
+  Matchup.create(matchup)
+end
+
 juventus_players = [
   {first_name: "Wojciech", last_name: "Szczesny", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://pbs.twimg.com/profile_images/891114812796796928/PVjctqFC.jpg", team: juventus},
   {first_name: "Joao", last_name: "Cancelo", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://b.fssta.com/uploads/application/soccer/players/649337.vresize.350.425.medium.73.png", team: juventus},
@@ -118,6 +153,7 @@ juventus_wins = [
   {team_id: juventus.id},
   {team_id: juventus.id},
   {team_id: juventus.id},
+  {team_id: juventus.id},
   {team_id: juventus.id}
 ]
 
@@ -149,6 +185,7 @@ fiorentina_wins = [
 fiorentina_draws = [
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
   {team_id: fiorentina.id}
 ]
 
@@ -168,6 +205,7 @@ end
 ac_milan = Team.find_by(name: "AC_Milan")
 
 ac_milan_wins = [
+  {team_id: ac_milan.id},
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
@@ -236,6 +274,7 @@ roma_wins = [
 roma_draws = [
   {team_id: roma.id},
   {team_id: roma.id},
+  {team_id: roma.id},
   {team_id: roma.id}
 ]
 
@@ -255,6 +294,7 @@ end
 lazio = Team.find_by(name: "Lazio")
 
 lazio_wins = [
+  {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id},
@@ -285,6 +325,7 @@ torino = Team.find_by(name: "Torino")
 torino_wins = [
   {team_id: torino.id},
   {team_id: torino.id},
+  {team_id: torino.id},
   {team_id: torino.id}
 ]
 
@@ -312,6 +353,7 @@ end
 atalanta = Team.find_by(name: "Atalanta")
 
 atalanta_wins = [
+  {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id}
@@ -427,6 +469,7 @@ sassuolo_wins = [
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
   {team_id: sassuolo.id}
 ]
 
@@ -487,6 +530,7 @@ parma_wins = [
 ]
 
 parma_draws = [
+  {team_id: parma.id},
   {team_id: parma.id}
 ]
 
@@ -516,7 +560,7 @@ spal_draws = [
   {team_id: spal.id}
 ]
 
-spal_points = 0
+spal_points = -1
 spal_wins.each do |win|
   Win.create(win)
   spal_points += 3
@@ -614,6 +658,7 @@ frosinone_wins = [
 
 frosinone_draws = [
   {team_id: frosinone.id},
+  {team_id: frosinone.id},
   {team_id: frosinone.id}
 ]
 
@@ -640,7 +685,7 @@ chievo_verona_draws = [
   {team_id: chievo_verona.id}
 ]
 
-chievo_verona_points = 0
+chievo_verona_points = -3
 chievo_verona_wins.each do |win|
   Win.create(win)
   chievo_verona_points += 3

@@ -10,9 +10,9 @@ class TeamInfo extends Component {
     return(
       <div>
         <a href={`teams/${this.props.id}`}><img className={`badge__icon badge__icon--${this.props.name}`} src={this.props.badge} alt={this.props.name}/></a>
-        </div>
+      </div>
     )
   }
 }
 
-  export default TeamInfo
+export default TeamInfo

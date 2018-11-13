@@ -4,8 +4,7 @@ import TeamTile from './TeamTile'
 class TeamIndex extends Component {
   constructor(props) {
     super(props);
-    this.state = { teams: [],
-        goals: []
+    this.state = { teams: []
       };
     this.fetchTeams = this.fetchTeams.bind(this)
   }
@@ -33,15 +32,13 @@ class TeamIndex extends Component {
   }
 
   render() {
-    console.log(this.state.goals)
     return (
       <div>
-      <div>
-        <TeamTile
-          teams= {this.state.teams}
+        <div>
+          <TeamTile
+            teams= {this.state.teams}
           />
-      </div>
-
+        </div>
       </div>
     )
   }
