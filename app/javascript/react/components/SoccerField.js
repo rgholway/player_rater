@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import GoalieTile from './GoalieTile'
 import { browserHistory } from 'react-router'
 import PlayerTile from './PlayerTile'
 
@@ -16,12 +15,12 @@ class SoccerField extends Component {
       selectedNationPhoto: "",
       selectedId: "",
       ratings: []
-         }
+     }
      this.playerHandleEnter = this.playerHandleEnter.bind(this)
      this.handleLeave = this.handleLeave.bind(this)
   }
 
-  playerHandleEnter(key, className, num, firstName, lastName, nation, id) {
+  playerHandleEnter(className, num, firstName, lastName, nation, id) {
         fetch(`/api/v1/players/${id}/ratings`)
         .then(response => {
           if (response.ok) {
@@ -34,7 +33,7 @@ class SoccerField extends Component {
         })
         .then(response => response.json())
         .then(body => {
-          this.setState({[key]: className, selectedClassName: className, selectedNumber: num,
+          this.setState({selectedClassName: className, selectedNumber: num,
               selectedFirstName: firstName, selectedLastName: lastName, selectedNation: nation, selectedId: id, ratings: body})
         })
 
@@ -50,7 +49,6 @@ class SoccerField extends Component {
   }
 
   render() {
-    console.log(this.state.ratings)
     let totalScore = 0
     this.state.ratings.map(rating => {
       totalScore += rating.score
@@ -106,4 +104,4 @@ class SoccerField extends Component {
     )}
   }
 
-  export default SoccerField
+export default SoccerField

@@ -41,22 +41,16 @@
 .player--text__position  {
   text-align: left;
   font-family: 'Cairo', sans-serif;
-  font-size: 125%;
+  font-size: 1.4vw;
 }
 
-.player--text__first  {
+.player--text__names  {
   position: absolute;
   text-align: left;
   font-family: 'Cairo', sans-serif;
-  font-size: 125%;
+  font-size: 1.4vw;
   width: 100%;
   left: 70%;
-}
-
-.player--text__last {
-  text-align: right;
-  font-family: 'Cairo', sans-serif;
-  font-size: 125%;
 }
 
 .position--rightback {

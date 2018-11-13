@@ -12,7 +12,6 @@ class TeamShow extends Component {
           players: [],
           selectedStatus: ""
         }
-
     this.fetchGames = this.fetchGames.bind(this)
     this.fetchTeam = this.fetchTeam.bind(this)
     this.fetchPlayers = this.fetchPlayers.bind(this)
@@ -93,44 +92,42 @@ class TeamShow extends Component {
     this.fetchPlayers()
   }
 
-
-
   render() {
     return (
       <div className="team">
-      <div>
-        <div className={`${this.state.team.name}--background`}>
-          <img className={`${this.state.team.name}--background__badge`} src={this.state.team.badge}></img>
-          <h1 className={`${this.state.team.name}--background__nickname`}> {this.state.team.nickname}></h1>
-          <h1 className={`${this.state.team.name}--background__name`}>{this.state.team.name}</h1>
-        </div>
-        <div className="score--title"><h3 className="scorer--text"> {this.state.team.name} Starters</h3></div>
-        <div className="title">
-          <h3 className="title__text">{this.state.team.name} Schedule</h3>
-        </div>
-        <div className="schedule">
-        < GameTile
-          games={this.state.games}
-          teamId={this.props.params.id}
-          mouseEnter={this.handleMouseEnter}
-          mouseLeave={this.handleMouseLeave}
-          selectedStatus={this.state.selectedStatus}
-        />
-        </div>
-        <div className="top__players">
-        < TopPlayer
-          players= {this.state.players}
-        />
-        </div>
+        <div>
+          <div className={`${this.state.team.name}--background`}>
+            <img className={`${this.state.team.name}--background__badge`} src={this.state.team.badge}></img>
+            <h1 className={`${this.state.team.name}--background__nickname`}> {this.state.team.nickname}></h1>
+            <h1 className={`${this.state.team.name}--background__name`}>{this.state.team.name}</h1>
+          </div>
+          <div className="score--title"><h3 className="scorer--text"> {this.state.team.name} Starters</h3></div>
+          <div className="title">
+            <h3 className="title__text">{this.state.team.name} Schedule</h3>
+          </div>
+          <div className="schedule">
+            < GameTile
+              games={this.state.games}
+              teamId={this.props.params.id}
+              mouseEnter={this.handleMouseEnter}
+              mouseLeave={this.handleMouseLeave}
+              selectedStatus={this.state.selectedStatus}
+              />
+          </div>
+          <div className="top__players">
+            < TopPlayer
+              players= {this.state.players}
+            />
+          </div>
         </div>
         <h1 className="stadium__title">{this.state.team.stadium}</h1>
         <div>
-        < MapContainer
-          latitude= {this.state.team.lat}
-          long= {this.state.team.long}
-        />
+          < MapContainer
+            latitude= {this.state.team.lat}
+            long= {this.state.team.long}
+          />
         </div>
-        </div>
+      </div>
     )
   }
 }

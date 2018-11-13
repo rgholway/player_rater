@@ -5,7 +5,6 @@ import TeamIndex from './TeamIndex'
 import PlayerShow from './PlayerShow'
 import TeamShow from './TeamShow'
 import GameShow from './GameShow'
-import RatePlayer from './RatePlayer'
 
 export const App = (props) => {
   return (

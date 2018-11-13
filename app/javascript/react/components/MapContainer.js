@@ -14,8 +14,6 @@ class MapContainer extends Component {
   }
 
   initMap() {
-    console.log(this.props.latitude)
-    console.log(this.props.long)
     let map = new google.maps.Map(document.getElementById('map'), {
       zoom: 17,
       center: {lat: Number(this.props.latitude), lng: Number(this.props.long)}
@@ -35,6 +33,7 @@ class MapContainer extends Component {
     let ref = window.document.getElementsByTagName("script")[0];
     let script = window.document.createElement("script");
     script.src = src;
-    script.async = true;
+    script.async = false;
+    script.defer = true;
     ref.parentNode.insertBefore(script, ref);
   }
