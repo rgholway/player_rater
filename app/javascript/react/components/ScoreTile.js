@@ -5,6 +5,7 @@ const ScoreTile = props => {
     for(let i = 1; i < 11; i++){
       nums.push(<option value={`${i}`} key={i}>{i}</option>)
     }
+    console.log(nums)
     return(
       <div>
         <label className="player__rate--text">{props.label}</label>

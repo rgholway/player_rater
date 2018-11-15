@@ -74,7 +74,8 @@ class SoccerField extends Component {
           selectedNation= {this.state.selectedNation}
           selectedId= {this.state.selectedId}
           game={this.props.game}
-          totalScore={(totalScore/this.state.ratings.length).toFixed(1)}
+          totalScore={totalScore}
+          length= {this.state.ratings.length}
         />
       )
     })

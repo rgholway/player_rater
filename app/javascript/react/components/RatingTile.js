@@ -19,11 +19,15 @@ render() {
       </div>
     )
   })
+  let averageScore = "No Ratings"
+  if (totalScore != 0) {
+    averageScore = (totalScore/length).toFixed(1)
+}
 
     return(
       <div>
         <div className="player__rate--ratings">{ratingsArray}</div>
-        <h1 className="player__rate--total--score">{(totalScore/length).toFixed(1)}</h1>
+        <h1 className="player__rate--total--score">{averageScore}</h1>
       </div>
     )}
   }
