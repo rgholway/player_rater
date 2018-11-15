@@ -18,6 +18,10 @@ class PlayerTile extends Component{
   }
 
 render(){
+  let averageScore = "No Ratings"
+  if (this.props.totalScore != 0) {
+    averageScore = (this.props.totalScore/this.props.length).toFixed(1)
+}
   return(
     <div>
       <div className={`player__stage player__stage--${this.props.css}`}>
@@ -33,7 +37,7 @@ render(){
         <p className="player__stage--info--name">{this.props.selectedFirstName} {this.props.selectedLastName}</p>
         <p className="player__stage--info--number">#{this.props.selectedNumber}</p>
         <p className="player__stage--info--nation">{this.props.selectedNation}</p>
-        <p className="player__stage--info--score">Score: {this.props.totalScore}</p>
+        <p className="player__stage--info--score">{averageScore}</p>
       </div>
     </div>
   )}
