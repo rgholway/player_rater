@@ -9,7 +9,9 @@ class PlayerShow extends Component{
     this.state = {
       player: "",
       ratingDescription: "",
+      descriptionError: "",
       ratingScore: "",
+      scoreError: "",
       ratings: [],
       team: ""
     }
@@ -49,11 +51,27 @@ class PlayerShow extends Component{
 
   handleSubmit(event) {
     event.preventDefault()
+    if (this.state.ratingScore != "" && this.state.ratingDescription != "") {
     let formPayload = {
       description: this.state.ratingDescription,
-      score: this.state.ratingScore
+      score: this.state.ratingScore,
       }
+      this.setState({
+        descriptionError: "",
+        scoreError: ""
+      })
     this.addNewRating(formPayload)
+    }
+    if (this.state.ratingDescription == "") {
+      this.setState({
+        descriptionError: "Please add a description!"
+      })
+    }
+    if (this.state.ratingScore == "") {
+      this.setState({
+        scoreError: "Please add a score!"
+      })
+    }
   }
 
   fetchPlayer(){
@@ -121,7 +139,9 @@ class PlayerShow extends Component{
           <h1 className="player__rate--name">{this.state.player.first_name} {this.state.player.last_name} </h1>
           <h1 className="player__rate--position">{this.state.player.full_position} #{this.state.player.number} </h1>
           <h1 className="player__rate--text--title">Average Score:</h1>
-          <h1 className="player__rate--form--title {">Rate {this.state.player.first_name} {this.state.player.last_name}</h1>
+          <h1 className="player__rate--form--title">Rate {this.state.player.first_name} {this.state.player.last_name}</h1>
+          <h1 className="description--error">{this.state.descriptionError}</h1>
+          <h1 className="score--error">{this.state.scoreError}</h1>
           <form className = "player__rate--form" onSubmit={this.handleSubmit}>
             <ScoreTile
               content={this.state.ratingScore}
