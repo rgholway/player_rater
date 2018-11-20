@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'players#index'
   devise_for :users
-
   namespace :api do
     namespace :v1 do
       resources :teams, only: [:index, :show] do

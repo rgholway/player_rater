@@ -1,3 +1,24 @@
+.description--error {
+  position: absolute;
+  height: 10%;
+  top: 22%;
+  right: 15%;
+  font-size: 2vw;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+}
+
+.score--error {
+  position: absolute;
+  height: 10%;
+  width: 30%;
+  top: 27%;
+  right: 15%;
+  font-size: 2vw;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+}
+
 .player__image {
   position: absolute;
   height: 32%;

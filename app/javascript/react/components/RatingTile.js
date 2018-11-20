@@ -23,7 +23,6 @@ render() {
   if (totalScore != 0) {
     averageScore = (totalScore/length).toFixed(1)
 }
-
     return(
       <div>
         <div className="player__rate--ratings">{ratingsArray}</div>

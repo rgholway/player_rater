@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to my app Ten Out of Ten!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app uses a React front end, a Ruby on Rails back end and a PostgreSQL database. All, the information for the teams, players and games have been seeded by me, which is a long process to find information and photos on each player and each game so not all the teams are completely built out! Right now Juventus and Fiorentina are the only teams that are fully built out so if you click on another team you should see their team name, team colors, and nickname but you may not see starters or any games in their schedule. Please bear with me as I continue to add information on the other teams in the league. I also added the Google Maps API to my app to show the location of each teams stadium, which has been very challenging and it does not always load correctly. I have been doing lots of reading trying to come up with a solution, however for right now if you click on a team and do not see a map please hard refresh your page, by either clicking on the refresh button on your browser or hitting command + shift + r and that should fix the issue. 
