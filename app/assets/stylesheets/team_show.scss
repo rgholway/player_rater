@@ -59,6 +59,7 @@
   position: absolute;
   z-index: 3;
   height: 100%;
+  width: 20%;
   left: 40%;
 }
 
@@ -66,8 +67,9 @@
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 62%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Fiorentina--background__name {
@@ -76,6 +78,7 @@
   color: white;
   left: 24%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Juventus--background {
@@ -92,7 +95,7 @@
   left: 40%;
   z-index: 3;
   height: 100%;
-
+  width: 20%;
 }
 
 .Juventus--background__nickname {
@@ -101,6 +104,7 @@
   color: white;
   left: 59%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Juventus--background__name {
@@ -109,6 +113,7 @@
   color: white;
   left: 27%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .AC_Milan--background {
@@ -125,22 +130,25 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .AC_Milan--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 61%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .AC_Milan--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 26%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Inter_Milan--background {
@@ -155,6 +163,7 @@
 .Inter_Milan--background__badge {
   position: absolute;
   left: 40%;
+  width: 20%;
   z-index: 3;
   height: 100%;
 }
@@ -163,8 +172,9 @@
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Inter_Milan--background__name {
@@ -173,6 +183,7 @@
   color: white;
   left: 22%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Roma--background {
@@ -190,7 +201,7 @@
   left: 40%;
   z-index: 3;
   height: 100%;
-
+  width: 20%;
 }
 
 .Roma--background__nickname {
@@ -199,14 +210,16 @@
   color: white;
   left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Roma--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 29%;
+  left: 30%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Lazio--background {
@@ -223,22 +236,25 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Lazio--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 59%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Lazio--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 32%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Torino--background {
@@ -255,22 +271,25 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Torino--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Torino--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 29%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Atalanta--background {
@@ -287,22 +306,25 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Atalanta--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 59%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Atalanta--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 27%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Genoa--background {
@@ -319,22 +341,25 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Genoa--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Genoa--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 28.5%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Sampdoria--background {
@@ -351,14 +376,16 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Sampdoria--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 57%;
+  left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Sampdoria--background__name {
@@ -368,6 +395,7 @@
   left: 23%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Napoli--background {
@@ -384,23 +412,26 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Napoli--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 63%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Napoli--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 26%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Sassuolo--background {
@@ -417,23 +448,26 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Sassuolo--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 61%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Sassuolo--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 24%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Cagliari--background {
@@ -450,23 +484,26 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Cagliari--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 62%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Cagliari--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 25.5%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Parma--background {
@@ -483,23 +520,26 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Parma--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 61%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Parma--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 28%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .SPAL--background {
@@ -517,6 +557,7 @@
   left: 38%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .SPAL--background__nickname {
@@ -525,15 +566,17 @@
   color: white;
   left: 58%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .SPAL--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 30%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Udinese--background {
@@ -550,14 +593,16 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Udinese--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 62%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Udinese--background__name {
@@ -567,6 +612,7 @@
   left: 25%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Bologna--background {
@@ -583,6 +629,7 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Bologna--background__nickname {
@@ -591,15 +638,17 @@
   color: white;
   left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Bologna--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 27%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Empoli--background {
@@ -616,6 +665,7 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Empoli--background__nickname {
@@ -624,15 +674,17 @@
   color: white;
   left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Empoli--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 28.5%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .Frosinone--background {
@@ -649,6 +701,7 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .Frosinone--background__nickname {
@@ -657,15 +710,17 @@
   color: white;
   left: 60%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .Frosinone--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 25%;
+  left: 24.5%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
 
 .ChievoVerona--background {
@@ -682,21 +737,24 @@
   left: 40%;
   z-index: 3;
   height: 100%;
+  width: 20%;
 }
 
 .ChievoVerona--background__nickname {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: white;
-  left: 60%;
+  left: 62%;
   top: 30%;
+  font-size: 3vw;
 }
 
 .ChievoVerona--background__name {
   position: absolute;
   font-family: 'Sarpanch', sans-serif;
   color: white;
-  left: 30%;
+  left: 17%;
   top: 30%;
   z-index: 4;
+  font-size: 3vw;
 }
