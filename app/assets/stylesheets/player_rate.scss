@@ -14,6 +14,7 @@
   left: 17%;
   top: 7%;
   font-family: 'Cairo', sans-serif;
+  font-size: 3vw;
 }
 
 .player__rate--position {
@@ -21,6 +22,7 @@
   left: 17%;
   top: 15%;
   font-family: 'Cairo', sans-serif;
+  font-size: 3vw;
 }
 
 .player__rate--form--title {
@@ -30,7 +32,7 @@
   left: 55%;
   top: 32%;
   font-family: 'Cairo', sans-serif;
-  border-bottom: solid 2.5px black;
+  font-size: 3vw;
 }
 
 .player__rate--form {
@@ -38,7 +40,8 @@
   height: auto;
   width: 36.5%;
   left: 55%;
-  top: 40%;
+  top: 39.25%;
+  border-top: solid 2.5px black;
   font-family: 'Cairo', sans-serif;
   background-color: #D3D3D3;
 }
@@ -87,6 +90,7 @@
   width: 30%;
   text-align: right;
   font-family: 'Cairo', sans-serif;
+  font-size: 3vw;
 }
 
 .player__rate--rating {
@@ -101,5 +105,5 @@
   top: 32%;
   left: 1%;
   font-family: 'Cairo', sans-serif;
-  font-size: 40px;
+  font-size: 3vw;
 }

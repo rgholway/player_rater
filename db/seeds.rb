@@ -154,6 +154,7 @@ juventus_wins = [
   {team_id: juventus.id},
   {team_id: juventus.id},
   {team_id: juventus.id},
+  {team_id: juventus.id},
   {team_id: juventus.id}
 ]
 
@@ -183,6 +184,7 @@ fiorentina_wins = [
 ]
 
 fiorentina_draws = [
+  {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
@@ -268,6 +270,7 @@ roma_wins = [
   {team_id: roma.id},
   {team_id: roma.id},
   {team_id: roma.id},
+  {team_id: roma.id},
   {team_id: roma.id}
 ]
 
@@ -304,6 +307,7 @@ lazio_wins = [
 ]
 
 lazio_draws = [
+  {team_id: lazio.id},
   {team_id: lazio.id}
 ]
 
@@ -353,6 +357,7 @@ end
 atalanta = Team.find_by(name: "Atalanta")
 
 atalanta_wins = [
+  {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id},
@@ -443,6 +448,7 @@ napoli_wins = [
   {team_id: napoli.id},
   {team_id: napoli.id},
   {team_id: napoli.id},
+  {team_id: napoli.id},
   {team_id: napoli.id}
 ]
 
@@ -476,6 +482,7 @@ sassuolo_wins = [
 sassuolo_draws = [
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
   {team_id: sassuolo.id}
 ]
 
@@ -504,6 +511,7 @@ cagliari_draws = [
   {team_id: cagliari.id},
   {team_id: cagliari.id},
   {team_id: cagliari.id},
+  {team_id: cagliari.id},
   {team_id: cagliari.id}
 ]
 
@@ -523,6 +531,7 @@ end
 parma = Team.find_by(name: "Parma")
 
 parma_wins = [
+  {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id},
@@ -560,7 +569,7 @@ spal_draws = [
   {team_id: spal.id}
 ]
 
-spal_points = -1
+spal_points = 0
 spal_wins.each do |win|
   Win.create(win)
   spal_points += 3
@@ -609,6 +618,7 @@ bologna_wins = [
 bologna_draws = [
   {team_id: bologna.id},
   {team_id: bologna.id},
+  {team_id: bologna.id},
   {team_id: bologna.id}
 ]
 
@@ -628,6 +638,7 @@ end
 empoli = Team.find_by(name: "Empoli")
 
 empoli_wins = [
+  {team_id: empoli.id},
   {team_id: empoli.id}
 ]
 
@@ -659,6 +670,7 @@ frosinone_wins = [
 frosinone_draws = [
   {team_id: frosinone.id},
   {team_id: frosinone.id},
+  {team_id: frosinone.id},
   {team_id: frosinone.id}
 ]
 
@@ -681,6 +693,7 @@ chievo_verona_wins = [
 ]
 
 chievo_verona_draws = [
+  {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
   {team_id: chievo_verona.id}
 ]
