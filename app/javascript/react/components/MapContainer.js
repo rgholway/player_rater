@@ -1,39 +1,30 @@
 import React, { Component } from 'react';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-class MapContainer extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      }
-    this.initMap = this.initMap.bind(this)
-  }
+const mapStyles = {
+  height: '500px',
+  width: '500px',
+  top: '610px',
+  left: '50px',
+  border: 'solid 1px'
+};
 
-  componentDidMount() {
-    window.initMap = this.initMap
-    loadJS("https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxnHzBWgF6lrFcT79qgE7p3aqdsc87bQ&callback=initMap")
-  }
-
-  initMap() {
-    let map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 17,
-      center: {lat: Number(this.props.latitude), lng: Number(this.props.long)}
-    })
-  }
-
+export class MapContainer extends Component {
   render() {
-   return(
-     <div id="map" className="map__location"></div>
-   )
+    return (
+      <Map
+        google={this.props.google}
+        zoom={17}
+        style={mapStyles}
+        initialCenter={{
+         lat: Number(this.props.latitude),
+         lng: Number(this.props.long)
+        }}
+      />
+    );
   }
 }
 
-  export default MapContainer;
-
-  function loadJS(src) {
-    let ref = window.document.getElementsByTagName("script")[0];
-    let script = window.document.createElement("script");
-    script.src = src;
-    script.async = false;
-    script.defer = true;
-    ref.parentNode.insertBefore(script, ref);
-  }
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyDyxnHzBWgF6lrFcT79qgE7p3aqdsc87bQ&callback=initMap"
+})(MapContainer);
