@@ -155,6 +155,8 @@ juventus_wins = [
   {team_id: juventus.id},
   {team_id: juventus.id},
   {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
   {team_id: juventus.id}
 ]
 
@@ -184,6 +186,7 @@ fiorentina_wins = [
 ]
 
 fiorentina_draws = [
+  {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
@@ -218,6 +221,7 @@ ac_milan_wins = [
 ac_milan_draws = [
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
   {team_id: ac_milan.id}
 ]
 
@@ -237,6 +241,7 @@ end
 inter_milan = Team.find_by(name: "Inter_Milan")
 
 inter_milan_wins = [
+  {team_id: inter_milan.id},
   {team_id: inter_milan.id},
   {team_id: inter_milan.id},
   {team_id: inter_milan.id},
@@ -308,6 +313,7 @@ lazio_wins = [
 
 lazio_draws = [
   {team_id: lazio.id},
+  {team_id: lazio.id},
   {team_id: lazio.id}
 ]
 
@@ -334,6 +340,7 @@ torino_wins = [
 ]
 
 torino_draws = [
+  {team_id: torino.id},
   {team_id: torino.id},
   {team_id: torino.id},
   {team_id: torino.id},
@@ -394,6 +401,7 @@ genoa_wins = [
 
 genoa_draws = [
   {team_id: genoa.id},
+  {team_id: genoa.id},
   {team_id: genoa.id}
 ]
 
@@ -416,10 +424,12 @@ sampdoria_wins = [
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
   {team_id: sampdoria.id}
 ]
 
 sampdoria_draws = [
+  {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id}
@@ -453,7 +463,8 @@ napoli_wins = [
 ]
 
 napoli_draws = [
-  {team_id: napoli.id}
+  {team_id: napoli.id},
+  {team_id: napoli.id},
 ]
 
 napoli_points = 0
@@ -512,6 +523,7 @@ cagliari_draws = [
   {team_id: cagliari.id},
   {team_id: cagliari.id},
   {team_id: cagliari.id},
+  {team_id: cagliari.id},
   {team_id: cagliari.id}
 ]
 
@@ -531,6 +543,7 @@ end
 parma = Team.find_by(name: "Parma")
 
 parma_wins = [
+  {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id},
@@ -566,6 +579,7 @@ spal_wins = [
 ]
 
 spal_draws = [
+  {team_id: spal.id},
   {team_id: spal.id}
 ]
 
@@ -585,6 +599,7 @@ end
 udinese = Team.find_by(name: "Udinese")
 
 udinese_wins = [
+  {team_id: udinese.id},
   {team_id: udinese.id},
   {team_id: udinese.id}
 ]
@@ -619,6 +634,7 @@ bologna_draws = [
   {team_id: bologna.id},
   {team_id: bologna.id},
   {team_id: bologna.id},
+  {team_id: bologna.id},
   {team_id: bologna.id}
 ]
 
@@ -639,10 +655,12 @@ empoli = Team.find_by(name: "Empoli")
 
 empoli_wins = [
   {team_id: empoli.id},
+  {team_id: empoli.id},
   {team_id: empoli.id}
 ]
 
 empoli_draws = [
+  {team_id: empoli.id},
   {team_id: empoli.id},
   {team_id: empoli.id},
   {team_id: empoli.id}
@@ -693,6 +711,7 @@ chievo_verona_wins = [
 ]
 
 chievo_verona_draws = [
+  {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
   {team_id: chievo_verona.id}
