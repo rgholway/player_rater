@@ -130,19 +130,58 @@ juventus_players.each do |player|
 end
 
 roma = Team.find_by(name: "Roma")
-roma_players = [
-  {first_name: "Robin", last_name: "Olsen", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://pbs.twimg.com/profile_images/891114812796796928/PVjctqFC.jpg", team: roma},
-  {first_name: "Allesandro", last_name: "Florenzi", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://b.fssta.com/uploads/application/soccer/players/649337.vresize.350.425.medium.73.png", team: roma},
-  {first_name: "Juan", last_name: "Jesus", number: "19", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo: "http://www4.pictures.zimbio.com/gi/Leonardo+Bonucci+Juventus+FC+v+AC+Milan+Serie+jiq1utkVIk_l.jpg", team: roma},
-  {first_name: "Kostas", last_name: "Manolas", number: "3", position: "leftcenterback", short_position: "CB", full_position: "Center Back",photo: "https://cdn.images.dailystar.co.uk/dynamic/58/photos/242000/620x/Giorgio-Chiellini-649385.jpg", team: roma},
-  {first_name: "Bryan", last_name: "Cristante", number: "12", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://images.performgroup.com/di/library/GOAL/46/84/alex-sandro-juventus_ljtik0hfcmgm16evpyhrbz94v.jpg", team: roma},
-  {first_name: "Daniele", last_name: "De Rossi", number: "14", position: "defensivecentermidfield",short_position: "CDM", full_position: "Center Defensive Mid", photo: "https://www.africatopsports.com/wp-content/uploads/2017/11/matuidi-juventus-710x509.jpg", team: roma},
-  {first_name: "Lorenzo", last_name: "Pelligrini", number: "5", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "http://cdn.24.co.za/files/Cms/General/d/7830/f188732bdce34745bdf33b50c5e6b65e.png", team: roma},
-  {first_name: "Javier", last_name: "Pastore", number: "10", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://pbs.twimg.com/media/DZpXs0QX4AAiqQi.jpg", team: roma},
-  {first_name: "Justin", last_name: "Kluivert", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_2/2058.jpg", team: roma, nation: "Portugal"},
-  {first_name: "Cengiz", last_name: "Under", number: "16", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://peoplespostmedia.com/media/k2/items/cache/e6016113b58321823ef4c9ba6bd5a33c_XL.jpg", team: roma},
-  {first_name: "Edin", last_name: "Dzeko", number: "17", position: "centerforward", short_position: "CF", full_position: "Striker", photo: "https://images.performgroup.com/di/library/GOAL/7c/d5/mario-mandzukic-juventus-2018-19_54pwb6x4j00o1epgxdjs8pt9i.jpg?t=-1757177315&quality=90&w=1280", team: juventus}
+
+roma_games = [
+  {home_team: "Torino", away_team: "Roma", home_score: "1", away_score: "0", date: "8/19", week: "1"},
+  {home_team: "Roma", away_team: "Atalanta", home_score: "3", away_score: "3", date: "8/27", week: "2"},
+  {home_team: "Milan", away_team: "Roma", home_score: "2", away_score: "1", date: "8/31", week: "3"},
+  {home_team: "Roma", away_team: "Chievo", home_score: "2", away_score: "2", date: "9/16", week: "4"},
+  {home_team: "Bologna", away_team: "Roma", home_score: "2", away_score: "0", date: "9/23", week: "5"},
+  {home_team: "Roma", away_team: "Frosinone", home_score: "4", away_score: "0", date: "9/26", week: "6"},
+  {home_team: "Roma", away_team: "Lazio", home_score: "3", away_score: "1", date: "9/29", week: "7"},
+  {home_team: "Empoli", away_team: "Roma", home_score: "0", away_score: "2", date: "10/6", week: "8"},
+  {home_team: "Roma", away_team: "SPAL", home_score: "0", away_score: "2", date: "10/20", week: "9"},
+  {home_team: "Napoli", away_team: "Roma", home_score: "1", away_score: "1", date: "10/28", week: "10"}
 ]
+
+roma_games.each do |game|
+  Game.create(game)
+end
+
+roma_matchups = [
+  {game_id: 21, team_id: roma.id},
+  {game_id: 22, team_id: roma.id},
+  {game_id: 23, team_id: roma.id},
+  {game_id: 24, team_id: roma.id},
+  {game_id: 25, team_id: roma.id},
+  {game_id: 26, team_id: roma.id},
+  {game_id: 27, team_id: roma.id},
+  {game_id: 28, team_id: roma.id},
+  {game_id: 29, team_id: roma.id},
+  {game_id: 30, team_id: roma.id}
+]
+
+roma_matchups.each do |matchup|
+  Matchup.create(matchup)
+end
+
+roma_players = [
+  {first_name: "Robin", last_name: "Olsen", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_153/153869.jpg", team: roma},
+  {first_name: "Allesandro", last_name: "Florenzi", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_84/84134.jpg", team: roma},
+  {first_name: "Juan", last_name: "Jesus", number: "19", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_98/98554.jpg", team: roma},
+  {first_name: "Kostas", last_name: "Manolas", number: "3", position: "leftcenterback", short_position: "CB", full_position: "Center Back",photo: "https://www.footballdatabase.eu/images/photos/players/a_61/61690.jpg", team: roma},
+  {first_name: "Bryan", last_name: "Cristante", number: "12", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_154/154455.jpg", team: roma},
+  {first_name: "Daniele", last_name: "De Rossi", number: "14", position: "defensivecentermidfield",short_position: "CDM", full_position: "Center Defensive Mid", photo: "https://www.footballdatabase.eu/images/photos/players/a_1/1539.jpg", team: roma},
+  {first_name: "Lorenzo", last_name: "Pelligrini", number: "5", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_208/208858.jpg", team: roma},
+  {first_name: "Javier", last_name: "Pastore", number: "10", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_30/30222.jpg", team: roma},
+  {first_name: "Justin", last_name: "Kluivert", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_289/289224.jpg", team: roma, nation: "Netherlands"},
+  {first_name: "Cengiz", last_name: "Under", number: "16", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_244/244985.jpg", team: roma},
+  {first_name: "Edin", last_name: "Dzeko", number: "17", position: "centerforward", short_position: "CF", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_20/20112.jpg", team: roma}
+]
+
+roma_players.each do |player|
+  Player.create(player)
+end
 
 juventus_wins = [
   {team_id: juventus.id},
