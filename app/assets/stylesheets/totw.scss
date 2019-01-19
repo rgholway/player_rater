@@ -1,0 +1,251 @@
+.gray {
+  height: 1700px;
+  width: 100%;
+  background-color: #E8E8E8;
+}
+
+.world_totw {
+  position: absolute;
+  top: 20%;
+  width: 125%;
+  height: 230%;
+  transform: translateZ(-210px);
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.stage_totw {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 10%;
+  perspective-origin: 55% -200px;
+  perspective: 1100px;
+  z-index: 0;
+  top: 50px;
+
+}
+
+.field_totw {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 90%;
+  background-color: #eee;
+  z-index: 2;
+  transform: rotateX(50deg) translateZ(0);
+  transform-origin: 50% 50%;
+  box-sizing: content-box;
+}
+
+.field__texture_totw {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.field__texture--gradient_totw {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
+  z-index: 4;
+}
+
+.field__texture--grass_totw {
+  background-image: url("https://opengameart.org/sites/default/files/tileable-grass_clover_tt7010116-sample_1.png");
+  background-repeat: repeat;
+  background-size: 75px 75px;
+  background-position: -20px -20px;
+}
+
+.field__line_totw {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  z-index: 4;
+}
+
+.field__line--goal_totw {
+  width: 16%;
+  height: 6%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 4%;
+  pointer-events: none;
+}
+
+.field__line--goal--far_totw {
+  top: 4%;
+  bottom: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc_totw {
+  width: 20%;
+  height: 20%;
+  overflow: hidden;
+  bottom: 16%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc_totw:after {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  content: ' ';
+  display: block;
+  border-radius: 50% 50% 0 0;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc--far_totw {
+  bottom: auto;
+  top: 16%;
+  pointer-events: none;
+}
+
+.field__line--penalty-arc--far_totw:after {
+  bottom: 70%;
+  top: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-radius: 0 0 50% 50%;
+  pointer-events: none;
+}
+
+.field__line--penalty_totw {
+  width: 44%;
+  height: 16%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0%;
+  pointer-events: none;
+}
+
+.field__line--penalty--far_totw {
+  top: 0%;
+  bottom: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-top: none;
+  pointer-events: none;
+}
+
+.field__line--outline_totw {
+  width: 92%;
+  height: 92%;
+  top: 4%;
+  left: 4%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  z-index: 5;
+
+}
+
+.field__line--mid_totw {
+  top: 50%;
+  width: 100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+.field__line--circle_totw {
+  width: 20%;
+  height: 20%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.select_formation {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  height: 20%;
+  width: 20%;
+  background: gray;
+  overflow: scroll;
+}
+
+.title_formation {
+  position: absolute;
+  top: 17%;
+  right: 5%;
+  height: 3%;
+  width: 20%;
+  background-color: black;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  border-bottom: solid 1px white;
+}
+
+.button_formation {
+  background: #424242;
+  width: 100%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.second--4-4-2 {
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: red;
+  z-index: 5;
+}
+
+.second--4-1-2-1-2 {
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: red;
+  z-index: 5;
+}
+
+.second--4-3-3 {
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: red;
+  z-index: 5;
+}
+
+.second--3-5-2 {
+  position: absolute;
+  top: 75%;
+  right: 20%;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: red;
+  z-index: 5;
+}
