@@ -4,14 +4,18 @@ class PositionTile extends Component {
   constructor(props) {
     super(props)
     this.state = { formation: ""}
+    this.handleClick = this.handleClick.bind(this)
+}
+
+handleClick(){
+  this.props.addPlayer("add_player")
 }
 
 render() {
-  console.log(this.props.position)
-  console.log(this.props.selectedFormation)
     return(
       <div>
-        <div className={`${this.props.position}--${this.props.selectedFormation}`}></div>
+        <div className={`${this.props.position}--${this.props.selectedFormation}`} onClick={this.handleClick}></div>
+        <div className={`${this.props.choosePlayer}`}></div>
       </div>
       )}
     }

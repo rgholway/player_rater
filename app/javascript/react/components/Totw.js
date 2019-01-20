@@ -7,15 +7,26 @@ class Totw extends Component {
     super(props)
     this.state = {selectedFormation: "",
       formations: [],
-      positions: []
+      positions: [],
+      addPlayer: ""
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
     this.handleClick = this.handleClick.bind(this)
+    this.handleAdd = this.handleAdd.bind(this)
+    this.handleExit = this.handleExit.bind(this)
   }
 
   handleClick(userFormation) {
     this.setState({selectedFormation: userFormation })
+  }
+
+  handleAdd(choosePlayer) {
+    this.setState({addPlayer: choosePlayer})
+  }
+
+  handleExit(choosePlayer) {
+    this.setState({addPlayer: ""})
   }
 
   fetchFormation(){
@@ -60,8 +71,6 @@ class Totw extends Component {
   }
 
   render() {
-    console.log(this.state.positions)
-    console.log(this.state.selectedFormation)
     let formationArray = this.state.formations.map(item => {
       return(
         <FormationTile
@@ -77,11 +86,15 @@ class Totw extends Component {
           key= {item.id}
           position= {item.name}
           selectedFormation= {this.state.selectedFormation}
+          addPlayer= {this.handleAdd}
         />
       )
     })
     return(
     <div className="gray">
+      <div className={this.state.addPlayer}>
+        <div className="exit" onClick={this.handleExit}></div>
+      </div>
     <div className="stage_totw">
       <div className="world_totw">
         <div className="terrain_totw">
