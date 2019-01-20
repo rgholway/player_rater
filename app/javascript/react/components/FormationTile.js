@@ -8,7 +8,7 @@ class FormationTile extends Component {
 }
 
 handleClick(){
-  this.props.selectedFormation(`${this.props.formation}`)
+  this.props.selectedFormation(`${this.props.formation}`, `${this.props.id}`)
 }
 
 render() {

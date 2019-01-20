@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_01_19_213624) do
 
   create_table "formations", force: :cascade do |t|
     t.string "formation", null: false
+    t.boolean "active"
   end
 
   create_table "games", force: :cascade do |t|
@@ -82,6 +83,7 @@ ActiveRecord::Schema.define(version: 2019_01_19_213624) do
 
   create_table "positions", force: :cascade do |t|
     t.string "name", null: false
+    t.string "photo"
   end
 
   create_table "ratings", force: :cascade do |t|
