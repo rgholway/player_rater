@@ -217,9 +217,35 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #FDF9F9;
-  opacity: 0.8;
+  background:rgba(255,255,255, 0.8);
   z-index: 10;
+}
+
+.add_player--active {
+  position: absolute;
+  height: 50%;
+  width: 80%;
+  left: 10%;
+  top: 20%;
+  background-color: white;
+  opacity: 1;
+  overflow: scroll;
+}
+
+.--active {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.totw_photo {
+  position: relative;
+  height: 75%;
+  width: 15%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  cursor: pointer;
 }
 
 .exit {
@@ -236,9 +262,18 @@
   position: absolute;
   top: 80%;
   right: 10%;
-  height: 10px;
-  width: 10px;
-  background: red;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.third--4-4-2 {
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  height: 100px;
+  width: 100px;
+  background: black;
   cursor: pointer;
 }
 
@@ -246,31 +281,48 @@
   position: absolute;
   top: 80%;
   right: 10%;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background: red;
+  height: 100px;
+  width: 100px;
   z-index: 5;
+  cursor: pointer;
 }
 
 .second--4-3-3 {
   position: absolute;
   top: 80%;
   right: 10%;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background: red;
+  height: 100px;
+  width: 100px;
   z-index: 5;
+  cursor: pointer;
+}
+
+.third--4-3-3 {
+  position: absolute;
+  top: 80%;
+  right: 20%;
+  height: 100px;
+  width: 100px;
+  z-index: 5;
+  cursor: pointer;
 }
 
 .second--3-5-2 {
   position: absolute;
   top: 75%;
   right: 20%;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background: red;
+  height: 100px;
+  width: 100px;
   z-index: 5;
+  cursor: pointer;
+}
+
+.third--3-5-2 {
+  position: absolute;
+  top: 75%;
+  right: 30%;
+  height: 100px;
+  width: 100px;
+  z-index: 5;
+  cursor: pointer;
 }

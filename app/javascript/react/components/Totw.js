@@ -1,31 +1,62 @@
 import React, { Component } from 'react'
 import FormationTile from './FormationTile'
 import PositionTile from './PositionTile'
+import PlayerTotw from './PlayerTotw'
+import { browserHistory } from 'react-router';
 
 class Totw extends Component {
   constructor(props) {
     super(props)
-    this.state = {selectedFormation: "",
+    this.state = {selectedFormation: "4-4-2",
       formations: [],
       positions: [],
-      addPlayer: ""
+      addPlayer: "",
+      players: [],
+      selectedPosition: "",
+      selectedId: "",
+      second__photo: "",
+      formationId: ""
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
-    this.handleClick = this.handleClick.bind(this)
     this.handleAdd = this.handleAdd.bind(this)
     this.handleExit = this.handleExit.bind(this)
+    this.fetchPlayers = this.fetchPlayers.bind(this)
+    this.updatePosition = this.updatePosition.bind(this)
+    this.updateFormation = this.updateFormation.bind(this)
   }
 
-  handleClick(userFormation) {
-    this.setState({selectedFormation: userFormation })
-  }
+  updateFormation(userFormation, id) {
+    let jsonInfo = JSON.stringify(userFormation)
+    fetch(`/api/v1/formations/${id}`, {
+      method: 'PUT',
+      body: jsonInfo,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      this.setState({selectedFormation: userFormation, formationId: id })
+    }
 
-  handleAdd(choosePlayer) {
-    this.setState({addPlayer: choosePlayer})
+  handleAdd(choosePlayer, add, id) {
+    this.setState({addPlayer: choosePlayer, selectedPosition: add, selectedId: id})
   }
 
   handleExit(choosePlayer) {
+    this.setState({addPlayer: ""})
+  }
+
+  updatePosition(selectedPlayer) {
+    let jsonInfo = JSON.stringify(selectedPlayer)
+    fetch(`/api/v1/positions/${this.state.selectedId}`, {
+      method: 'PUT',
+      body: jsonInfo,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' },
+      credentials: 'same-origin'
+    })
     this.setState({addPlayer: ""})
   }
 
@@ -42,7 +73,30 @@ class Totw extends Component {
     })
     .then(response => response.json())
     .then(body => {
+      body.forEach(formation => {
+        if(formation.active) {
+          this.setState({selectedFormation: formation.formation})
+        }
+      })
       this.setState({ formations: body });
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+  fetchPlayers(){
+    fetch(`/api/v1/assists`)
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({ players: body });
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
@@ -68,6 +122,7 @@ class Totw extends Component {
   componentDidMount() {
     this.fetchFormation()
     this.fetchPosition()
+    this.fetchPlayers()
   }
 
   render() {
@@ -75,8 +130,20 @@ class Totw extends Component {
       return(
         <FormationTile
           key= {item.id}
+          id= {item.id}
           formation= {item.formation}
-          selectedFormation= {this.handleClick}
+          active= {item.active}
+          selectedFormation= {this.updateFormation}
+        />
+      )
+    })
+    let playerArray = this.state.players.map(player => {
+      return(
+        <PlayerTotw
+          key= {player.id}
+          name= {player.last_name}
+          photo= {player.photo}
+          selectPlayer= {this.updatePosition}
         />
       )
     })
@@ -84,15 +151,19 @@ class Totw extends Component {
       return(
         <PositionTile
           key= {item.id}
+          id= {item.id}
           position= {item.name}
           selectedFormation= {this.state.selectedFormation}
           addPlayer= {this.handleAdd}
+          image= {item.photo}
+          second__photo= {this.state.second__photo}
         />
       )
     })
     return(
     <div className="gray">
       <div className={this.state.addPlayer}>
+        <div className={`${this.state.addPlayer}--active`}>{playerArray}</div>
         <div className="exit" onClick={this.handleExit}></div>
       </div>
     <div className="stage_totw">

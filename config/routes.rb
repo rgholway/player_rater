@@ -18,8 +18,9 @@ Rails.application.routes.draw do
       resources :games, only: [:index, :show] do
         resources :goals, only: [:index]
       end
-      resources :formations, only: [:index]
-      resources :positions, only: [:index]
+      resources :formations, only: [:index, :update]
+      resources :positions, only: [:index, :update]
+      resources :assists, only: [:index]
     end
   end
   root 'players#index'
