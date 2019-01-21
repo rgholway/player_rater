@@ -8,12 +8,15 @@ class PlayerTotw extends Component {
 }
 
 handleClick(){
-  this.props.selectPlayer(`${this.props.photo}`)
+  this.props.selectPlayer(`${this.props.photo}`, `${this.props.name}`, `${this.props.position}`)
 }
 
 render() {
     return(
-      <a href="/totw">  <img type="image" src={this.props.photo} className="totw_photo" onClick={this.handleClick}></img></a>
+      <div className="totw_photo">
+        <a href="/totw">  <img type="image" src={this.props.photo} className="player_photo" onClick={this.handleClick}></img></a>
+        <div className="player_name">{this.props.name}</div>
+      </div>
       )}
     }
 

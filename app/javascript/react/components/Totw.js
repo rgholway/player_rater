@@ -14,7 +14,6 @@ class Totw extends Component {
       players: [],
       selectedPosition: "",
       selectedId: "",
-      second__photo: "",
       formationId: ""
     }
     this.fetchFormation = this.fetchFormation.bind(this)
@@ -47,8 +46,8 @@ class Totw extends Component {
     this.setState({addPlayer: ""})
   }
 
-  updatePosition(selectedPlayer) {
-    let jsonInfo = JSON.stringify(selectedPlayer)
+  updatePosition(selectedphoto, selectedName, selectedPos) {
+    let jsonInfo = JSON.stringify([selectedphoto, selectedName, selectedPos])
     fetch(`/api/v1/positions/${this.state.selectedId}`, {
       method: 'PUT',
       body: jsonInfo,
@@ -143,6 +142,7 @@ class Totw extends Component {
           key= {player.id}
           name= {player.last_name}
           photo= {player.photo}
+          position= {player.short_position}
           selectPlayer= {this.updatePosition}
         />
       )
@@ -156,6 +156,8 @@ class Totw extends Component {
           selectedFormation= {this.state.selectedFormation}
           addPlayer= {this.handleAdd}
           image= {item.photo}
+          playerPosition= {item.position}
+          playerName= {item.last_name}
           second__photo= {this.state.second__photo}
         />
       )
@@ -163,8 +165,9 @@ class Totw extends Component {
     return(
     <div className="gray">
       <div className={this.state.addPlayer}>
-        <div className={`${this.state.addPlayer}--active`}>{playerArray}</div>
-        <div className="exit" onClick={this.handleExit}></div>
+        <div className={`${this.state.addPlayer}--active`}>{playerArray}
+          <div className="exit" onClick={this.handleExit}>X</div>
+        </div>
       </div>
     <div className="stage_totw">
       <div className="world_totw">
@@ -189,6 +192,7 @@ class Totw extends Component {
       </div>
     </div>
     <div className="title_formation">Select Formation</div>
+    <div className="title_totw">Create a Team of the Week</div>
     <div className="select_formation">
       {formationArray}
     </div>
