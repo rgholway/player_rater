@@ -84,6 +84,8 @@ ActiveRecord::Schema.define(version: 2019_01_19_213624) do
   create_table "positions", force: :cascade do |t|
     t.string "name", null: false
     t.string "photo"
+    t.string "position"
+    t.string "last_name"
   end
 
   create_table "ratings", force: :cascade do |t|
