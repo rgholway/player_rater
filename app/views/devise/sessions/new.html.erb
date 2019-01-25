@@ -10,11 +10,6 @@
   <div class="form__password">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
-    <div class="password_match">
-    <% if resource.errors.messages[:email] || resource.errors.messages[:password] %>
-      <%= "Your password and email do not match!" %>
-    <% end %>
-    </div>
   </div>
 
   <% if devise_mapping.rememberable? -%>
@@ -26,7 +21,14 @@
 
   <div class="submit__log--in">
     <div class="text"><%= f.submit "Log in" %></div>
-  </div>
+    </div>
+    <div class="password_match">
+      <% if params[:user] %>
+        <% if params[:user][:permitted] == nil %>
+          <%= "Your Password and Email do not match" %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 <% end %>
 

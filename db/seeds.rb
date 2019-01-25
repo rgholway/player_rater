@@ -768,3 +768,33 @@ chievo_verona_draws.each do |draw|
   team = Team.find(draw[:team_id])
   team.update(points: chievo_verona_points)
 end
+
+formations = [
+  {formation: "4-4-2"},
+  {formation: "4-3-3"},
+  {formation: "4-1-2-1-2"},
+  {formation: "5-3-2"},
+  {formation: "3-5-2"}
+]
+
+formations.each do |item|
+  Formation.create(item)
+end
+
+positions = [
+  {name: "first"},
+  {name: "second"},
+  {name: "third"},
+  {name: "fourth"},
+  {name: "fifth"},
+  {name: "sixth"},
+  {name: "seventh"},
+  {name: "eigth"},
+  {name: "ninth"},
+  {name: "tenth"},
+  {name: "eleventh"}
+]
+
+positions.each do |item|
+  Position.create(item)
+end
