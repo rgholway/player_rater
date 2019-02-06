@@ -12,6 +12,7 @@ RSpec.describe Api::V1::TeamsController, type: :controller do
 
    describe "GET#index" do
     it "should return a list of all the games" do
+
       get :index
       returned_json = JSON.parse(response.body)
       expect(response.status).to eq 200
