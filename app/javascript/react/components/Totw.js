@@ -165,9 +165,8 @@ class Totw extends Component {
     return(
     <div className="gray">
       <div className={this.state.addPlayer}>
-        <div className={`${this.state.addPlayer}--active`}>{playerArray}
-          <div className="exit" onClick={this.handleExit}>X</div>
-        </div>
+        <div className={`${this.state.addPlayer}--active`}>{playerArray}</div>
+        <div className={`${this.state.addPlayer}--exit`} onClick={this.handleExit}></div>
       </div>
     <div className="stage_totw">
       <div className="world_totw">

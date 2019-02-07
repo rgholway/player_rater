@@ -239,6 +239,21 @@
   overflow: hidden;
 }
 
+
+.add_player--exit {
+  position: fixed;
+  left: 10%;
+  top: 26.5%;
+  height: 12px;
+  width: 10px;
+  background: red;
+  color: black;
+  font-size: .7vw;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+}
+
 .totw_photo {
   position: relative;
   height: 75%;
@@ -278,20 +293,6 @@
   color: black;
   font-family: 'Orbitron', sans-serif;
   font-size: 3vw;
-}
-
-.exit {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  height: 12px;
-  width: 10px;
-  background: red;
-  color: black;
-  font-size: .7vw;
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  cursor: pointer;
 }
 
 .photo {
