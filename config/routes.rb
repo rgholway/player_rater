@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get '/players/:id', to: 'players#index'
   get '/teams/:id', to: 'players#index'
   get '/totw', to: 'players#index'
+  get '/champions', to: 'players#index'
   get '/teams/:team_id/games/:id', to: 'players#index'
   get 'games/:game_id/players/:player_id', to: 'players#index'
 end

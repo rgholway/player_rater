@@ -15,14 +15,13 @@
 
   <nav class="top-bar">
     <ul class="title-area">
-      <li class="name">
-        <h1 class="text"><a href="/">Home</a></h1>
-      </li>
+      <li class="name"><h1 class="text"><a href="/">Home</a></h1></li>
     </ul>
 
     <section class="top-bar-section">
       <ul class="right__link">
         <%- if current_user -%>
+          <li><h6 class="text"><a href="/champions">Champions League Schedule</a></h1></li>
           <li><h6 class="text"><a href="/totw">Create a TOTW</a></h6></li>
           <li><h6  class="text"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></h6></li>
         <%- else -%>
