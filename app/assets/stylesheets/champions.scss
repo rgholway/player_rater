@@ -1,3 +1,27 @@
+.round__16 {
+  position: absolute;
+  top: 20%;
+  height: 70%;
+  left: 3%;
+  width: 5%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5vw;
+}
+
+.round__quarter {
+  position: absolute;
+  top: 15%;
+  height: 75%;
+  left: 26%;
+  width: 5%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5vw;
+}
+
 .first__16__line {
   position: absolute;
   top: 15%;
@@ -100,7 +124,7 @@
 
 .sixth__16__line {
   position: absolute;
-  top: 72.5%;
+  top: 70%;
   left: 10%;
   height: 1%;
   width: 15%;
@@ -110,7 +134,7 @@
 
 .fourteenth__16__line {
   position: absolute;
-  top: 72.5%;
+  top: 70%;
   right: 10%;
   height: 1%;
   width: 15%;
@@ -120,7 +144,7 @@
 
 .seventh__16__line {
   position: absolute;
-  top: 85%;
+  top: 82.5%;
   left: 10%;
   height: 1%;
   width: 15%;
@@ -130,7 +154,7 @@
 
 .fifteenth__16__line {
   position: absolute;
-  top: 85%;
+  top: 82.5%;
   right: 10%;
   height: 1%;
   width: 15%;
@@ -140,7 +164,7 @@
 
 .eigth__16__line {
   position: absolute;
-  top: 95%;
+  top: 92.5%;
   left: 10%;
   height: 1%;
   width: 15%;
@@ -150,8 +174,18 @@
 
 .sixteenth__16__line {
   position: absolute;
-  top: 95%;
+  top: 92.5%;
   right: 10%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
+.first__quarter__line {
+  position: absolute;
+  top: 17.5%;
+  left: 27%;
   height: 1%;
   width: 15%;
   border: 1px solid #3A00F7;
@@ -173,16 +207,26 @@
   position: absolute;
   top: 20%;
   height: 20%;
-  width: 70%;
+  width: 55%;
   left: 20%;
   font-family: 'Orbitron', sans-serif;
   text-align: right;
+  color: white;
 }
 
 .first__badge {
   position: absolute;
   height: 100%;
   width: 20%;
+}
+
+.first__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
 }
 
 .second__name {
@@ -200,16 +244,26 @@
   position: absolute;
   top: 20%;
   height: 20%;
-  width: 70%;
+  width: 55%;
   left: 20%;
   font-family: 'Orbitron', sans-serif;
   text-align: right;
+  color: white;
 }
 
 .second__badge {
   position: absolute;
   height: 100%;
   width: 20%;
+}
+
+.second__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
 }
 
 .third__name {
@@ -227,16 +281,26 @@
   position: absolute;
   top: 20%;
   height: 20%;
-  width: 70%;
+  width: 55%;
   left: 20%;
   font-family: 'Orbitron', sans-serif;
   text-align: right;
+  color: white;
 }
 
 .third__badge {
   position: absolute;
   height: 100%;
   width: 20%;
+}
+
+.third__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
 }
 
 .fourth__name {
@@ -254,16 +318,476 @@
   position: absolute;
   top: 20%;
   height: 20%;
-  width: 70%;
+  width: 55%;
   left: 20%;
   font-family: 'Orbitron', sans-serif;
   text-align: right;
+  color: white;
 }
 
 .fourth__badge {
   position: absolute;
   height: 100%;
   width: 20%;
+}
+
+.fourth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.fifth__name {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, black, #FF003A, white);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.fifth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.fifth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.fifth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.sixth__name {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #183C88, #FFB000, white);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.sixth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.sixth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.sixth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.seventh__name {
+  position: absolute;
+  top: 77.5%;
+  left: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, white, #263A89, #05105C);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.seventh__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.seventh__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.seventh__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.eigth__name {
+  position: absolute;
+  top: 87.5%;
+  left: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #FEF900, black);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.eigth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.eigth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.eigth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.ninth__name {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, white, #F40000, #03378D);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.ninth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.ninth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.ninth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.tenth__name {
+  position: absolute;
+  top: 20.1%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #E3B700, #AF0046, #FFE500);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.tenth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.tenth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.tenth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.eleventh__name {
+  position: absolute;
+  top: 32.5%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, white, #E20000);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.eleventh__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.eleventh__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.eleventh__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.twelfth__name {
+  position: absolute;
+  top: 42.5%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #F5003E, #0060B9);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.twelfth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 65%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.twelfth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.twelfth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.thirteenth__name {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #1B3AA3, #F20000);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.thirteenth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 65%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.thirteenth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.thirteenth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.fourteenth__name {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, white, black);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.fourteenth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 65%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.fourteenth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.fourteenth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.fifteenth__name {
+  position: absolute;
+  top: 77.5%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #002061, #5DACE4, white);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.fifteenth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 65%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.fifteenth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.fifteenth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
+.sixteenth__name {
+  position: absolute;
+  top: 87.5%;
+  right: 10%;
+  height: 5%;
+  background: linear-gradient(135deg, #002A53, #0245A1, white);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.sixteenth__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 65%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.sixteenth__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.sixteenth__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
 }
 
 .photo_champions {
