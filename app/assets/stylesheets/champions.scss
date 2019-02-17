@@ -192,6 +192,26 @@
   background-color: black;
 }
 
+.first__semi__line {
+  position: absolute;
+  top: 30.5%;
+  left: 42%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
+.second__semi__line {
+  position: absolute;
+  top: 30.5%;
+  left: 70%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
 .first__name {
   position: absolute;
   top: 10%;
@@ -448,6 +468,7 @@
   width: 20%;
   left: 75%;
   top: 20%;
+  color: white;
   text-align: right;
 }
 
@@ -485,6 +506,7 @@
   width: 20%;
   left: 75%;
   top: 20%;
+  color: white;
   text-align: right;
 }
 
