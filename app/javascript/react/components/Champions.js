@@ -48,25 +48,25 @@ class Champions extends Component {
         <div className="fifth__16__line"></div>
         <div className="fifth__name">
           <div className="fifth__text">Ajax</div>
-          <div className="fifth__score"></div>
+          <div className="fifth__score">1</div>
           <div className="fifth__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/15/clubs_large/245.png"/></div>
         </div>
         <div className="sixth__16__line"></div>
         <div className="sixth__name">
           <div className="sixth__text">Real Madrid</div>
-          <div className="sixth__score"></div>
+          <div className="sixth__score">2</div>
           <div className="sixth__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000063.png"/></div>
         </div>
         <div className="seventh__16__line"></div>
         <div className="seventh__name">
           <div className="seventh__text">Tottenham</div>
-          <div className="seventh__score"></div>
+          <div className="seventh__score">3</div>
           <div className="seventh__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000082.png"/></div>
         </div>
         <div className="eigth__16__line"></div>
         <div className="eigth__name">
           <div className="eigth__text">Dortmund</div>
-          <div className="eigth__score"></div>
+          <div className="eigth__score">0</div>
           <div className="eigth__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000080.png"/></div>
         </div>
         <div className="eleventh__16__line"></div>
@@ -105,7 +105,6 @@ class Champions extends Component {
           <div className="sixteenth__score"></div>
           <div className="sixteenth__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/17/items/badges/6000097.png"/></div>
         </div>
-        <div className="first__quarter__line"></div>
       </div>
     )}
   }
