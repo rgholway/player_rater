@@ -12,7 +12,7 @@ class Champions extends Component {
         <div className="first__16__line"></div>
         <div className="first__name">
           <div className="first__text">Roma</div>
-          <div className="first__score">2</div>
+          <div className="first__score">3</div>
           <div className="first__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/17/items/badges/6000084.png"/></div>
         </div>
         <div className="ninth__16__line"></div>
@@ -24,7 +24,7 @@ class Champions extends Component {
         <div className="second__16__line"></div>
         <div className="second__name">
           <div className="second__text">FC Porto</div>
-          <div className="second__score">1</div>
+          <div className="second__score">4</div>
           <div className="second__badge"><img className= "photo_champions" src= "http://futhead.cursecdn.com/static/img/17/clubs/236.png"/></div>
         </div>
         <div className="tenth__16__line"></div>
@@ -36,13 +36,13 @@ class Champions extends Component {
         <div className="third__16__line"></div>
         <div className="third__name">
           <div className="third__text">Man United</div>
-          <div className="third__score">0</div>
+          <div className="third__score">3</div>
           <div className="third__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000069.png"/></div>
         </div>
         <div className="fourth__16__line"></div>
         <div className="fourth__name">
           <div className="fourth__text">PSG</div>
-          <div className="fourth__score">2</div>
+          <div className="fourth__score">3</div>
           <div className="fourth__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/15/clubs_large/73.png"/></div>
         </div>
         <div className="fifth__16__line"></div>
