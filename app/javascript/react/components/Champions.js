@@ -18,7 +18,7 @@ class Champions extends Component {
         <div className="ninth__16__line"></div>
         <div className="ninth__name">
           <div className="ninth__text">Lyon</div>
-          <div className="ninth__score">0</div>
+          <div className="ninth__score">1</div>
           <div className="ninth__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/17/items/badges/6000100.png"/></div>
         </div>
         <div className="second__16__line"></div>
@@ -30,7 +30,7 @@ class Champions extends Component {
         <div className="tenth__16__line"></div>
         <div className="tenth__name">
           <div className="tenth__text">Barcelona</div>
-          <div className="tenth__score">0</div>
+          <div className="tenth__score">5</div>
           <div className="tenth__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/241.png"/></div>
         </div>
         <div className="third__16__line"></div>
@@ -72,7 +72,7 @@ class Champions extends Component {
         <div className="eleventh__16__line"></div>
         <div className="eleventh__name">
           <div className="eleventh__text">Liverpool</div>
-          <div className="eleventh__score">0</div>
+          <div className="eleventh__score">3</div>
           <div className="eleventh__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
         </div>
         <div className="twelfth__16__line"></div>
@@ -90,13 +90,13 @@ class Champions extends Component {
         <div className="fourteenth__16__line"></div>
         <div className="fourteenth__name">
           <div className="fourteenth__text">Juventus</div>
-          <div className="fourteenth__score">0</div>
+          <div className="fourteenth__score">3</div>
           <div className="fourteenth__badge"><img className= "photo_champions" src="https://www.moddingway.com/downloads/9b1f353621947f3f6171b8163cb8757d/4881/222673_logo1.png"/></div>
         </div>
         <div className="fifteenth__16__line"></div>
         <div className="fifteenth__name">
           <div className="fifteenth__text">Man City</div>
-          <div className="fifteenth__score">3</div>
+          <div className="fifteenth__score">10</div>
           <div className="fifteenth__badge"><img className= "photo_champions" src="http://futhead.cursecdn.com/static/img/17/clubs/10.png"/></div>
         </div>
         <div className="sixteenth__16__line"></div>
@@ -104,6 +104,54 @@ class Champions extends Component {
           <div className="sixteenth__text">Schalke 04</div>
           <div className="sixteenth__score">2</div>
           <div className="sixteenth__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/17/items/badges/6000097.png"/></div>
+        </div>
+        <div className="first__quarter__line"></div>
+        <div className="first__quarter__name">
+          <div className="first__quarter__text">Ajax</div>
+          <div className="first__quarter__score"></div>
+          <div className="first__quarter__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/15/clubs_large/245.png"/></div>
+        </div>
+        <div className="second__quarter__line"></div>
+        <div className="second__quarter__name">
+          <div className="second__quarter__text">Juventus</div>
+          <div className="second__quarter__score"></div>
+          <div className="second__quarter__badge"><img className= "photo_champions" src="https://www.moddingway.com/downloads/9b1f353621947f3f6171b8163cb8757d/4881/222673_logo1.png"/></div>
+        </div>
+        <div className="third__quarter__line"></div>
+        <div className="third__quarter__name">
+          <div className="third__quarter__text">Man City</div>
+          <div className="third__quarter__score"></div>
+          <div className="third__quarter__badge"><img className= "photo_champions" src="http://futhead.cursecdn.com/static/img/17/clubs/10.png"/></div>
+        </div>
+        <div className="fourth__quarter__line"></div>
+        <div className="fourth__quarter__name">
+          <div className="fourth__quarter__text">Tottenham</div>
+          <div className="fourth__quarter__score"></div>
+          <div className="fourth__quarter__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000082.png"/></div>
+        </div>
+        <div className="fifth__quarter__line"></div>
+        <div className="fifth__quarter__name">
+          <div className="fifth__quarter__text">Barcelona</div>
+          <div className="fifth__quarter__score"></div>
+          <div className="fifth__quarter__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/241.png"/></div>
+        </div>
+        <div className="sixth__quarter__line"></div>
+        <div className="sixth__quarter__name">
+          <div className="sixth__quarter__text">Man Utd</div>
+          <div className="sixth__quarter__score"></div>
+          <div className="sixth__quarter__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000069.png"/></div>
+        </div>
+        <div className="seventh__quarter__line"></div>
+        <div className="seventh__quarter__name">
+          <div className="seventh__quarter__text">Liverpool</div>
+          <div className="seventh__quarter__score"></div>
+          <div className="seventh__quarter__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
+        </div>
+        <div className="eigth__quarter__line"></div>
+        <div className="eigth__quarter__name">
+          <div className="eigth__quarter__text">FC Porto</div>
+          <div className="eigth__quarter__score"></div>
+          <div className="eigth__quarter__badge"><img className= "photo_champions" src= "http://futhead.cursecdn.com/static/img/17/clubs/236.png"/></div>
         </div>
       </div>
     )}
