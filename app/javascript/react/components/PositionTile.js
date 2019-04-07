@@ -23,7 +23,7 @@ handleMouseLeave(){
 }
 
 handleDelete(){
-debugger;
+  this.props.delete(this.props.id, null, null, null)
 }
 
 render() {
@@ -34,7 +34,7 @@ render() {
             <div className="plus_player" onClick={this.handleClick}>Add Player</div>
             <img className="field_photo" type="image" src={this.props.image} onClick={this.handleClick}></img>
             <div className={`${this.state.status}--delete`}>
-              <button className="delete__style" onClick={this.handleDelete}> X </button>
+              <button type="button" className="delete__style" onClick={this.handleDelete}> X </button>
             </div>
           </div>
           <div className="info_totw">{this.props.selectedFormation}</div>
