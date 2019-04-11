@@ -45,11 +45,6 @@ class TeamShow extends Component {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  componentDidMount() {
-    this.fetchTeam()
-    this.fetchGame()
-  }
-
   fetchGames() {
     fetch(`/api/v1/teams/${this.props.params.id}/games`)
     .then(response => {
