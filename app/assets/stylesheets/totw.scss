@@ -193,10 +193,13 @@
 }
 
 .delete__style {
-  color: white;
+  position: absolute;
+  top: 35%;
+  color: black;
   background: white;
-  height: 15%;
-  width: 5%;
+  height: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 .delete__style:hover {
@@ -212,143 +215,132 @@
 
 .first--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 10%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
+  background-color: white;
   text-align: right;
-  background-color: black;
   z-index: 12;
-  border-left: solid 1px black;
   cursor: pointer;
 }
 
 .second--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .third--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .fourth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .fifth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .sixth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .seventh--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .eigth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .ninth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .tenth--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }
 
 .eleventh--delete {
   position: absolute;
-  top: 0%;
-  right: -10%;
-  height: 15%;
-  width: 15%;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
   background-color: white;
   text-align: right;
-  border-left: solid 1px black;
   z-index: 12;
   cursor: pointer;
 }

@@ -14,7 +14,11 @@ class Totw extends Component {
       players: [],
       selectedPosition: "",
       selectedId: "",
-      formationId: ""
+      formationId: "",
+      selectedPhoto: "",
+      selectedName: "",
+      selectedPosition: "",
+
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
@@ -120,7 +124,7 @@ class Totw extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ positions: body });
+      this.setState({ positions: body })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
