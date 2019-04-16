@@ -34,7 +34,7 @@ render() {
             <div className="plus_player" onClick={this.handleClick}>Add Player</div>
             <img className="field_photo" type="image" src={this.props.image} onClick={this.handleClick}></img>
             <div className={`${this.state.status}--delete`}>
-              <div className="delete__style" onClick={this.handleDelete}> X </div>
+              <a href= "/totw"><div className="delete__style" onClick={this.handleDelete}> X </div></a>
             </div>
           </div>
           <div className="info_totw">{this.props.selectedFormation}</div>

@@ -14,7 +14,7 @@ handleClick(){
 render() {
     return(
       <div className="totw_photo">
-        <img type="image" src={this.props.photo} className="player_photo" onClick={this.handleClick}></img>
+        <a href="/totw"><img type="image" src={this.props.photo} className="player_photo" onClick={this.handleClick}></img></a>
         <div className="player_name">{this.props.name}</div>
       </div>
       )}
