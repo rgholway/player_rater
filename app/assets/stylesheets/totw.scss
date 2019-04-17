@@ -213,6 +213,206 @@
   z-index: -5;
 }
 
+.update__style {
+  position: absolute;
+  top: 70%;
+  color: black;
+  background: white;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.update__style:hover {
+  background-color: gray;
+  color: black;
+}
+
+.update__style:disabled {
+  background-color: red;
+  color: white;
+  z-index: -5;
+}
+
+.second_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.third_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.fourth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.fifth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.sixth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.seventh_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.eigth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.ninth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.tenth_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.eleventh_position {
+  position: absolute;
+  top: 20%;
+  right: -45%;
+  height: 60%;
+  width: 35%;
+  font-size: 1vw;
+  background-color: gray;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.active--first {
+  position: absolute;
+  top: 0%;
+  height: 25%;
+  width: 90%;
+  color: white;
+  text-align: right;
+  z-index: 13;
+  cursor: pointer;
+}
+
+.active--first:hover {
+  background-color: white;
+}
+
+.active--second {
+  position: absolute;
+  top: 25%;
+  height: 25%;
+  width: 90%;
+  background-color: white;
+  text-align: right;
+  z-index: 13;
+  cursor: pointer;
+}
+
+.active--third {
+  position: absolute;
+  top: 50%;
+  height: 25%;
+  width: 90%;
+  background-color: white;
+  text-align: right;
+  z-index: 13;
+  cursor: pointer;
+}
+
+.second--update {
+  position: absolute;
+  top: 20%;
+  right: -20%;
+  height: 60%;
+  width: 25%;
+  background-color: red;
+  text-align: right;
+  z-index: 12;
+  cursor: pointer;
+}
+
 .first--delete {
   position: absolute;
   top: 20%;
