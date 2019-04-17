@@ -28,6 +28,7 @@ class Totw extends Component {
     this.fetchPlayers = this.fetchPlayers.bind(this)
     this.updatePosition = this.updatePosition.bind(this)
     this.updateFormation = this.updateFormation.bind(this)
+    this.secondUpdatePosition = this.secondUpdatePosition.bind(this)
   }
 
   updateFormation(userFormation, id) {
@@ -60,6 +61,19 @@ class Totw extends Component {
   updatePosition(selectedphoto, selectedName, selectedPos) {
     let jsonInfo = JSON.stringify([selectedphoto, selectedName, selectedPos])
     fetch(`/api/v1/positions/${this.state.selectedId}`, {
+      method: 'PUT',
+      body: jsonInfo,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' },
+      credentials: 'same-origin'
+    })
+    this.setState({addPlayer: ""}, () => {this.fetchPosition()})
+  }
+
+  secondUpdatePosition(id, selectedphoto, selectedName, selectedPos) {
+    let jsonInfo = JSON.stringify([selectedphoto, selectedName, selectedPos])
+    fetch(`/api/v1/positions/${id}`, {
       method: 'PUT',
       body: jsonInfo,
       headers: {
@@ -166,7 +180,7 @@ class Totw extends Component {
           position= {item.name}
           selectedFormation= {this.state.selectedFormation}
           addPlayer= {this.handleAdd}
-          deletePlayer= {this.updatePosition}
+          changePosition= {this.secondUpdatePosition}
           delete= {this.handleDelete}
           image= {item.photo}
           playerPosition= {item.position}
