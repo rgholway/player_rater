@@ -108,31 +108,31 @@ class Champions extends Component {
         <div className="first__quarter__line"></div>
         <div className="first__quarter__name">
           <div className="first__quarter__text">Ajax</div>
-          <div className="first__quarter__score">1</div>
+          <div className="first__quarter__score">3</div>
           <div className="first__quarter__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/15/clubs_large/245.png"/></div>
         </div>
         <div className="second__quarter__line"></div>
         <div className="second__quarter__name">
           <div className="second__quarter__text">Juventus</div>
-          <div className="second__quarter__score">1</div>
+          <div className="second__quarter__score">2</div>
           <div className="second__quarter__badge"><img className= "photo_champions" src="https://www.moddingway.com/downloads/9b1f353621947f3f6171b8163cb8757d/4881/222673_logo1.png"/></div>
         </div>
         <div className="third__quarter__line"></div>
         <div className="third__quarter__name">
           <div className="third__quarter__text">Man City</div>
-          <div className="third__quarter__score">0</div>
+          <div className="third__quarter__score">4</div>
           <div className="third__quarter__badge"><img className= "photo_champions" src="http://futhead.cursecdn.com/static/img/17/clubs/10.png"/></div>
         </div>
         <div className="fourth__quarter__line"></div>
         <div className="fourth__quarter__name">
           <div className="fourth__quarter__text">Tottenham</div>
-          <div className="fourth__quarter__score">1</div>
+          <div className="fourth__quarter__score">4</div>
           <div className="fourth__quarter__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000082.png"/></div>
         </div>
         <div className="fifth__quarter__line"></div>
         <div className="fifth__quarter__name">
           <div className="fifth__quarter__text">Barcelona</div>
-          <div className="fifth__quarter__score">1</div>
+          <div className="fifth__quarter__score">4</div>
           <div className="fifth__quarter__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/241.png"/></div>
         </div>
         <div className="sixth__quarter__line"></div>
@@ -144,13 +144,13 @@ class Champions extends Component {
         <div className="seventh__quarter__line"></div>
         <div className="seventh__quarter__name">
           <div className="seventh__quarter__text">Liverpool</div>
-          <div className="seventh__quarter__score">2</div>
+          <div className="seventh__quarter__score">6</div>
           <div className="seventh__quarter__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
         </div>
         <div className="eigth__quarter__line"></div>
         <div className="eigth__quarter__name">
           <div className="eigth__quarter__text">FC Porto</div>
-          <div className="eigth__quarter__score">0</div>
+          <div className="eigth__quarter__score">1</div>
           <div className="eigth__quarter__badge"><img className= "photo_champions" src= "http://futhead.cursecdn.com/static/img/17/clubs/236.png"/></div>
         </div>
       </div>
