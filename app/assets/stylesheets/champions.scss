@@ -188,7 +188,7 @@
   background: linear-gradient(135deg, black, #FF003A, white);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #79FF8F;
   text-align: center;
 }
 
@@ -236,7 +236,7 @@
   background: linear-gradient(135deg, white, black);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #F70000;
   text-align: center;
 }
 
@@ -285,7 +285,7 @@
   background: linear-gradient(135deg, #002061, #5DACE4, white);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #F70000;
   text-align: center;
 }
 
@@ -333,7 +333,7 @@
   background: linear-gradient(135deg, white, #263A89, #05105C);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #79FF8F;
   text-align: center;
 }
 
@@ -382,7 +382,7 @@
   background: linear-gradient(135deg, #E3B700, #AF0046, #FFE500);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #79FF8F;
   text-align: center;
 }
 
@@ -430,7 +430,7 @@
   background: linear-gradient(135deg, #D00000, #F76800);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #F70000;
   text-align: center;
 }
 
@@ -478,7 +478,7 @@
   background: linear-gradient(135deg, white, #E20000);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #79FF8F;
   text-align: center;
 }
 
@@ -526,7 +526,7 @@
   background: linear-gradient(135deg, #00326C, #0093D2);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid black;
+  border: 2px solid #F70000;
   text-align: center;
 }
 
@@ -558,23 +558,52 @@
 
 .first__semi__line {
   position: absolute;
-  top: 30.5%;
-  left: 42%;
+  top: 27.5%;
+  left: 35%;
   height: 1%;
   width: 15%;
   border: 1px solid #3A00F7;
   background-color: black;
 }
 
-.second__semi__line {
+.first__semi__name {
   position: absolute;
-  top: 30.5%;
-  left: 70%;
-  height: 1%;
+  top: 80%;
+  right: 19%;
+  height: 5%;
+  background: linear-gradient(135deg, #00326C, #0093D2);
   width: 15%;
-  border: 1px solid #3A00F7;
-  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid #F70000;
+  text-align: center;
 }
+
+.first__semi__text {
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 55%;
+  left: 20%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  color: white;
+}
+
+.first__semi__badge {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.first__semi__score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+}
+
 
 .first__name {
   position: absolute;
