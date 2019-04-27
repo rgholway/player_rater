@@ -192,32 +192,6 @@
   text-align: center;
 }
 
-.first__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.first__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.first__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .second__quarter__line {
   position: absolute;
   top: 40%;
@@ -238,33 +212,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #F70000;
   text-align: center;
-}
-
-.second__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.second__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.second__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-  color: white;
 }
 
 .third__quarter__line {
@@ -289,32 +236,6 @@
   text-align: center;
 }
 
-.third__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.third__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.third__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .fourth__quarter__line {
   position: absolute;
   top: 85%;
@@ -335,33 +256,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #79FF8F;
   text-align: center;
-}
-
-.fourth__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.fourth__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fourth__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-  color: white;
 }
 
 .fifth__quarter__line {
@@ -386,32 +280,6 @@
   text-align: center;
 }
 
-.fifth__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.fifth__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fifth__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .sixth__quarter__line {
   position: absolute;
   top: 40%;
@@ -432,32 +300,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #F70000;
   text-align: center;
-}
-
-.sixth__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.sixth__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.sixth__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .seventh__quarter__line {
@@ -482,32 +324,6 @@
   text-align: center;
 }
 
-.seventh__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.seventh__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.seventh__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .eigth__quarter__line {
   position: absolute;
   top: 85%;
@@ -530,36 +346,10 @@
   text-align: center;
 }
 
-.eigth__quarter__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.eigth__quarter__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.eigth__quarter__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .first__semi__line {
   position: absolute;
   top: 27.5%;
-  left: 35%;
+  left: 32%;
   height: 1%;
   width: 15%;
   border: 1px solid #3A00F7;
@@ -568,34 +358,110 @@
 
 .first__semi__name {
   position: absolute;
-  top: 80%;
-  right: 19%;
+  top: 22.4%;
+  left: 32%;
   height: 5%;
-  background: linear-gradient(135deg, #00326C, #0093D2);
+  background: linear-gradient(135deg, black, #FF003A, white);
   width: 15%;
   font-family: 'Orbitron', sans-serif;
-  border: 2px solid #F70000;
+  border: 2px solid black;
   text-align: center;
 }
 
-.first__semi__text {
+.second__semi__line {
+  position: absolute;
+  top: 75%;
+  left: 32%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
+.second__semi__name {
+  position: absolute;
+  top: 70%;
+  left: 32%;
+  height: 5%;
+  background: linear-gradient(135deg, #002061, #5DACE4, white);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.third__semi__line {
+  position: absolute;
+  top: 27.5%;
+  right: 32%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
+.third__semi__name {
+  position: absolute;
+  top: 22.4%;
+  right: 32%;
+  height: 5%;
+  background: linear-gradient(135deg, #E3B700, #AF0046, #FFE500);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.fourth__semi__line {
+  position: absolute;
+  top: 75%;
+  right: 32%;
+  height: 1%;
+  width: 15%;
+  border: 1px solid #3A00F7;
+  background-color: black;
+}
+
+.fourth__semi__name {
+  position: absolute;
+  top: 70%;
+  right: 32%;
+  height: 5%;
+  background: linear-gradient(135deg, white, #E20000);
+  width: 15%;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.team__name {
   position: absolute;
   top: 20%;
   height: 20%;
-  width: 55%;
-  left: 20%;
+  width: 75%;
+  left: 10%;
   font-family: 'Orbitron', sans-serif;
   text-align: right;
   color: white;
 }
 
-.first__semi__badge {
+.badge {
   position: absolute;
   height: 100%;
   width: 20%;
 }
 
-.first__semi__score {
+.score {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  left: 75%;
+  top: 20%;
+  text-align: right;
+  color: white;
+}
+
+.score__black {
   position: absolute;
   height: 30%;
   width: 20%;
@@ -603,7 +469,6 @@
   top: 20%;
   text-align: right;
 }
-
 
 .first__name {
   position: absolute;
@@ -615,32 +480,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #F70000;
   text-align: center;
-}
-
-.first__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.first__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.first__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .second__name {
@@ -655,32 +494,6 @@
   text-align: center;
 }
 
-.second__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.second__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.second__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .third__name {
   position: absolute;
   top: 32.5%;
@@ -691,32 +504,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #79FF8F;
   text-align: center;
-}
-
-.third__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.third__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.third__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .fourth__name {
@@ -731,32 +518,6 @@
   text-align: center;
 }
 
-.fourth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.fourth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fourth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .fifth__name {
   position: absolute;
   top: 55%;
@@ -767,32 +528,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #79FF8F;
   text-align: center;
-}
-
-.fifth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.fifth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fifth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .sixth__name {
@@ -807,32 +542,6 @@
   text-align: center;
 }
 
-.sixth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.sixth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.sixth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .seventh__name {
   position: absolute;
   top: 77.5%;
@@ -843,33 +552,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #79FF8F;
   text-align: center;
-}
-
-.seventh__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.seventh__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.seventh__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  color: white;
-  text-align: right;
 }
 
 .eigth__name {
@@ -884,33 +566,6 @@
   text-align: center;
 }
 
-.eigth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.eigth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.eigth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  color: white;
-  text-align: right;
-}
-
 .ninth__name {
   position: absolute;
   top: 10%;
@@ -921,33 +576,6 @@
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   border: 2px solid #F70000;
-}
-
-.ninth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.ninth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.ninth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  color: white;
-  text-align: right;
 }
 
 .tenth__name {
@@ -962,32 +590,6 @@
   text-align: center;
 }
 
-.tenth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-}
-
-.tenth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.tenth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .eleventh__name {
   position: absolute;
   top: 32.5%;
@@ -998,33 +600,6 @@
   font-family: 'Orbitron', sans-serif;
   border: 2px solid #79FF8F;
   text-align: center;
-}
-
-.eleventh__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 55%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.eleventh__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.eleventh__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .twelfth__name {
@@ -1039,33 +614,6 @@
   text-align: center;
 }
 
-.twelfth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 65%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.twelfth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.twelfth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .thirteenth__name {
   position: absolute;
   top: 55%;
@@ -1076,33 +624,6 @@
   width: 15%;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
-}
-
-.thirteenth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 65%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.thirteenth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.thirteenth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .fourteenth__name {
@@ -1117,34 +638,6 @@
   text-align: center;
 }
 
-.fourteenth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 65%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.fourteenth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fourteenth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  color: white;
-  text-align: right;
-}
-
 .fifteenth__name {
   position: absolute;
   top: 77.5%;
@@ -1157,33 +650,6 @@
   text-align: center;
 }
 
-.fifteenth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 65%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.fifteenth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.fifteenth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
-}
-
 .sixteenth__name {
   position: absolute;
   top: 87.5%;
@@ -1194,33 +660,6 @@
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   border: 2px solid #F70000;
-}
-
-.sixteenth__text {
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 65%;
-  left: 20%;
-  font-family: 'Orbitron', sans-serif;
-  text-align: right;
-  color: white;
-  font-size: 1.1vw;
-}
-
-.sixteenth__badge {
-  position: absolute;
-  height: 100%;
-  width: 20%;
-}
-
-.sixteenth__score {
-  position: absolute;
-  height: 30%;
-  width: 20%;
-  left: 75%;
-  top: 20%;
-  text-align: right;
 }
 
 .photo_champions {
