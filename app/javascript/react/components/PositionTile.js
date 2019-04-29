@@ -14,7 +14,7 @@ class PositionTile extends Component {
     thirdPosition: "",
     thirdOption: "",
     fourthPosition: "",
-    fourthOprion: "",
+    fourthOption: "",
     fifthPosition: "",
     fithOption: "",
     firstSelected: "",
@@ -117,10 +117,9 @@ handleDelete(){
 }
 
 render() {
-  console.log(this.state.positionStatus)
     return(
       <div>
-      <div className={`${this.props.position}--${this.props.selectedFormation}`}>
+        <div className={`${this.props.position}--${this.props.selectedFormation}`}>
           <div className="photo" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
             <div className="plus_player" onClick={this.handleClick}>Add Player</div>
             <img className="field_photo" type="image" src={this.props.image} onClick={this.handleClick}></img>

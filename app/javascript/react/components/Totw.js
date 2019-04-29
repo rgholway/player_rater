@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import FormationTile from './FormationTile'
 import PositionTile from './PositionTile'
 import PlayerTotw from './PlayerTotw'
+import TitleTile from './TitleTile'
 import { browserHistory } from 'react-router';
 
 class Totw extends Component {
@@ -18,13 +19,18 @@ class Totw extends Component {
       selectedPhoto: "",
       selectedName: "",
       selectedPosition: "",
-
+      create: "",
+      title: "",
+      week: ""
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
     this.handleAdd = this.handleAdd.bind(this)
     this.handleExit = this.handleExit.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.addNewWeek = this.addNewWeek.bind(this)
+    this.handleTitleChange = this.handleTitleChange.bind(this)
     this.fetchPlayers = this.fetchPlayers.bind(this)
     this.updatePosition = this.updatePosition.bind(this)
     this.updateFormation = this.updateFormation.bind(this)
@@ -126,7 +132,7 @@ class Totw extends Component {
   }
 
   fetchPosition(){
-    fetch(`/api/v1/positions`)
+    fetch(`/api/v1/weeks/${this.state.week}`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -138,15 +144,44 @@ class Totw extends Component {
     })
     .then(response => response.json())
     .then(body => {
+      debugger;
       this.setState({ positions: body })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
+  handleTitleChange(event) {
+  this.setState({ title: event.target.value })
+  }
+
+  handleSubmit(event) {
+    event.preventDefault()
+    let formPayload = {
+      title: this.state.title
+      }
+    this.addNewWeek(formPayload)
+  }
+
+  addNewWeek(formPayload){
+    let jsonStringInfo = JSON.stringify(formPayload)
+      fetch(`/api/v1/weeks`, {
+        method: 'POST',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(response => response.json())
+      .then(body => {
+        this.setState({ week: body}, () => {this.fetchPosition()})
+      })
+    }
+
   componentDidMount() {
     this.fetchFormation()
-    this.fetchPosition()
     this.fetchPlayers()
+    this.fetchPosition()
   }
 
   render() {
@@ -219,6 +254,17 @@ class Totw extends Component {
     </div>
     <div className="title_formation">Select Formation</div>
     <div className="title_totw">Create a Team of the Week</div>
+    <div className={`creating--${this.state.create}`}>Create a Team
+      <form className = "team__create--form" onSubmit={this.handleSubmit}>
+        <TitleTile
+          content={this.state.title}
+          label="Name Your Team"
+          name="rating-score"
+          handleTitleChange={this.handleTitleChange}
+          />
+        <input className="button" type="submit" value="Create Team"/>
+      </form>
+    </div>
     <div className="select_formation">
       {formationArray}
     </div>

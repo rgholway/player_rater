@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_19_213624) do
+ActiveRecord::Schema.define(version: 2019_04_28_211436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,9 +83,11 @@ ActiveRecord::Schema.define(version: 2019_01_19_213624) do
 
   create_table "positions", force: :cascade do |t|
     t.string "name", null: false
+    t.string "last_name"
     t.string "photo"
     t.string "position"
-    t.string "last_name"
+    t.bigint "week_id"
+    t.index ["week_id"], name: "index_positions_on_week_id"
   end
 
   create_table "ratings", force: :cascade do |t|
@@ -124,6 +126,15 @@ ActiveRecord::Schema.define(version: 2019_01_19_213624) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "weeks", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_weeks_on_user_id"
   end
 
   create_table "wins", force: :cascade do |t|
