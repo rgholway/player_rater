@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import FormationTile from './FormationTile'
 import PositionTile from './PositionTile'
 import PlayerTotw from './PlayerTotw'
-import TitleTile from './TitleTile'
 import { browserHistory } from 'react-router';
 
 class Totw extends Component {
@@ -28,9 +27,6 @@ class Totw extends Component {
     this.handleAdd = this.handleAdd.bind(this)
     this.handleExit = this.handleExit.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.addNewWeek = this.addNewWeek.bind(this)
-    this.handleTitleChange = this.handleTitleChange.bind(this)
     this.fetchPlayers = this.fetchPlayers.bind(this)
     this.updatePosition = this.updatePosition.bind(this)
     this.updateFormation = this.updateFormation.bind(this)
@@ -132,7 +128,7 @@ class Totw extends Component {
   }
 
   fetchPosition(){
-    fetch(`/api/v1/weeks/${this.state.week}`)
+    fetch(`/api/v1/weeks/${this.props.params.id}`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -144,39 +140,10 @@ class Totw extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      debugger;
       this.setState({ positions: body })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
-
-  handleTitleChange(event) {
-  this.setState({ title: event.target.value })
-  }
-
-  handleSubmit(event) {
-    event.preventDefault()
-    let formPayload = {
-      title: this.state.title
-      }
-    this.addNewWeek(formPayload)
-  }
-
-  addNewWeek(formPayload){
-    let jsonStringInfo = JSON.stringify(formPayload)
-      fetch(`/api/v1/weeks`, {
-        method: 'POST',
-        body: jsonStringInfo,
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json' },
-        credentials: 'same-origin'
-      })
-      .then(response => response.json())
-      .then(body => {
-        this.setState({ week: body}, () => {this.fetchPosition()})
-      })
-    }
 
   componentDidMount() {
     this.fetchFormation()
@@ -185,6 +152,7 @@ class Totw extends Component {
   }
 
   render() {
+    debugger;
     let formationArray = this.state.formations.map(item => {
       return(
         <FormationTile
@@ -204,6 +172,7 @@ class Totw extends Component {
           photo= {player.photo}
           position= {player.short_position}
           selectPlayer= {this.updatePosition}
+          params= {this.props.params.id}
         />
       )
     })
@@ -221,6 +190,7 @@ class Totw extends Component {
           playerPosition= {item.position}
           playerName= {item.last_name}
           second__photo= {this.state.second__photo}
+          params= {this.props.params.id}
         />
       )
     })
@@ -254,17 +224,6 @@ class Totw extends Component {
     </div>
     <div className="title_formation">Select Formation</div>
     <div className="title_totw">Create a Team of the Week</div>
-    <div className={`creating--${this.state.create}`}>Create a Team
-      <form className = "team__create--form" onSubmit={this.handleSubmit}>
-        <TitleTile
-          content={this.state.title}
-          label="Name Your Team"
-          name="rating-score"
-          handleTitleChange={this.handleTitleChange}
-          />
-        <input className="button" type="submit" value="Create Team"/>
-      </form>
-    </div>
     <div className="select_formation">
       {formationArray}
     </div>
