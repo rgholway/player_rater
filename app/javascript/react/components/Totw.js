@@ -18,7 +18,9 @@ class Totw extends Component {
       selectedPhoto: "",
       selectedName: "",
       selectedPosition: "",
-
+      create: "",
+      title: "",
+      week: ""
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
@@ -126,7 +128,7 @@ class Totw extends Component {
   }
 
   fetchPosition(){
-    fetch(`/api/v1/positions`)
+    fetch(`/api/v1/weeks/${this.props.params.id}`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -145,11 +147,12 @@ class Totw extends Component {
 
   componentDidMount() {
     this.fetchFormation()
-    this.fetchPosition()
     this.fetchPlayers()
+    this.fetchPosition()
   }
 
   render() {
+    debugger;
     let formationArray = this.state.formations.map(item => {
       return(
         <FormationTile
@@ -169,6 +172,7 @@ class Totw extends Component {
           photo= {player.photo}
           position= {player.short_position}
           selectPlayer= {this.updatePosition}
+          params= {this.props.params.id}
         />
       )
     })
@@ -186,6 +190,7 @@ class Totw extends Component {
           playerPosition= {item.position}
           playerName= {item.last_name}
           second__photo= {this.state.second__photo}
+          params= {this.props.params.id}
         />
       )
     })

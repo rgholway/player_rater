@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :encrypted_password, presence: true
 
   has_many :ratings
+  has_many :weeks
 end

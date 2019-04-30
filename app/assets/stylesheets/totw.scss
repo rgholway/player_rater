@@ -175,6 +175,20 @@
   pointer-events: none;
 }
 
+.creating--active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:rgba(255,255,255, 0.8);
+  z-index: 15;
+}
+
+.creating-- {
+  position: absolute;
+  width: 00%;
+  height: 00%;
+}
+
 .select_formation {
   position: absolute;
   top: 20%;

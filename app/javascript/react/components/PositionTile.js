@@ -14,7 +14,7 @@ class PositionTile extends Component {
     thirdPosition: "",
     thirdOption: "",
     fourthPosition: "",
-    fourthOprion: "",
+    fourthOption: "",
     fifthPosition: "",
     fithOption: "",
     firstSelected: "",
@@ -117,22 +117,21 @@ handleDelete(){
 }
 
 render() {
-  console.log(this.state.positionStatus)
     return(
       <div>
-      <div className={`${this.props.position}--${this.props.selectedFormation}`}>
+        <div className={`${this.props.position}--${this.props.selectedFormation}`}>
           <div className="photo" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
             <div className="plus_player" onClick={this.handleClick}>Add Player</div>
             <img className="field_photo" type="image" src={this.props.image} onClick={this.handleClick}></img>
             <div className={`${this.state.positionStatus}`} onMouseLeave={this.secondMouseLeave}>
-              <a href= "/totw"><div className={`${this.state.positionActive}--first${this.state.firstOption}${this.state.firstSelected}`} onClick={this.handleFirst}>{this.state.firstPosition}</div></a>
-              <a href= "/totw"><div className={`${this.state.positionActive}--second${this.state.secondOption}${this.state.secondSelected}`} onClick={this.handleSecond}>{this.state.secondPosition}</div></a>
-              <a href= "/totw"><div className={`${this.state.positionActive}--third${this.state.thirdOption}${this.state.thirdSelected}`} onClick={this.handleThird}>{this.state.thirdPosition}</div></a>
-              <a href= "/totw"><div className={`${this.state.positionActive}--fourth${this.state.fourthOption}${this.state.fourthSelected}`} onClick={this.handleFourth}>{this.state.fourthPosition}</div></a>
-              <a href= "/totw"><div className={`${this.state.positionActive}--fifth${this.state.fifthOption}${this.state.fifthSelected}`} onClick={this.handleFifth}>{this.state.fifthPosition}</div></a>
+              <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--first${this.state.firstOption}${this.state.firstSelected}`} onClick={this.handleFirst}>{this.state.firstPosition}</div></a>
+              <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--second${this.state.secondOption}${this.state.secondSelected}`} onClick={this.handleSecond}>{this.state.secondPosition}</div></a>
+              <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--third${this.state.thirdOption}${this.state.thirdSelected}`} onClick={this.handleThird}>{this.state.thirdPosition}</div></a>
+              <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--fourth${this.state.fourthOption}${this.state.fourthSelected}`} onClick={this.handleFourth}>{this.state.fourthPosition}</div></a>
+              <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--fifth${this.state.fifthOption}${this.state.fifthSelected}`} onClick={this.handleFifth}>{this.state.fifthPosition}</div></a>
             </div>
             <div className={`${this.state.status}--delete`}>
-              <a href= "/totw"><div className="delete__style" onClick={this.handleDelete}> X </div></a>
+              <a href={`/totw/${this.props.params}`}><div className="delete__style" onClick={this.handleDelete}> X </div></a>
               <div className="update__style" onMouseEnter={this.secondMouseEnter}> U </div>
             </div>
           </div>

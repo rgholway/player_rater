@@ -22,7 +22,7 @@
       <ul class="right__link">
         <%- if current_user -%>
           <li><h6 class="text"><a href="/champions">Champions League Schedule</a></h6></li>
-          <li><h6 class="text"><a href="/totw">Create a TOTW</a></h6></li>
+          <li><h6 class="text"><a href="/create_team">Create a TOTW</a></h6></li>
           <li><h6  class="text"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></h6></li>
         <%- else -%>
           <li><h6 class="text"><a href="/champions">Champions League Schedule</a></h6></li>
