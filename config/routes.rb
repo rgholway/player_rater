@@ -21,6 +21,7 @@ Rails.application.routes.draw do
       resources :formations, only: [:index, :update]
       resources :positions, only: [:index, :update]
       resources :assists, only: [:index]
+      resources :losses, only: [:index]
       resources :weeks, only: [:index, :show, :new, :create]
     end
   end
