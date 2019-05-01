@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import FormationTile from './FormationTile'
 import PositionTile from './PositionTile'
 import PlayerTotw from './PlayerTotw'
+import WeekTotw from './WeekTotw'
 import { browserHistory } from 'react-router';
 
 class Totw extends Component {
@@ -20,13 +21,16 @@ class Totw extends Component {
       selectedPosition: "",
       create: "",
       title: "",
-      week: ""
+      week: "",
+      weeks: []
     }
     this.fetchFormation = this.fetchFormation.bind(this)
     this.fetchPosition = this.fetchPosition.bind(this)
     this.handleAdd = this.handleAdd.bind(this)
+    this.fetchWeeks = this.fetchWeeks.bind(this)
     this.handleExit = this.handleExit.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
+    this.handleTeam = this.handleTeam.bind(this)
     this.fetchPlayers = this.fetchPlayers.bind(this)
     this.updatePosition = this.updatePosition.bind(this)
     this.updateFormation = this.updateFormation.bind(this)
@@ -53,6 +57,11 @@ class Totw extends Component {
   handleExit(choosePlayer) {
     this.setState({addPlayer: ""})
   }
+
+  handleTeam(selectedTeam) {
+    browserHistory.push(`/totw/${selectedTeam}`)
+    location.reload();
+    }
 
   handleDelete(id) {
     this.setState({selectedId: id},
@@ -145,14 +154,32 @@ class Totw extends Component {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
+  fetchWeeks(){
+    fetch(`/api/v1/losses`)
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({ weeks: body })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
   componentDidMount() {
     this.fetchFormation()
     this.fetchPlayers()
     this.fetchPosition()
+    this.fetchWeeks()
   }
 
   render() {
-    debugger;
     let formationArray = this.state.formations.map(item => {
       return(
         <FormationTile
@@ -173,6 +200,16 @@ class Totw extends Component {
           position= {player.short_position}
           selectPlayer= {this.updatePosition}
           params= {this.props.params.id}
+        />
+      )
+    })
+    let weeksArray = this.state.weeks.map(week => {
+      return(
+        <WeekTotw
+          key= {week.id}
+          id= {week.id}
+          title= {week.title}
+          handleClick= {this.handleTeam}
         />
       )
     })
@@ -226,6 +263,9 @@ class Totw extends Component {
     <div className="title_totw">Create a Team of the Week</div>
     <div className="select_formation">
       {formationArray}
+    </div>
+    <div className="user__team__space--active">
+      {weeksArray}
     </div>
     </div>
     )}
