@@ -156,25 +156,25 @@ class Champions extends Component {
         <div className="first__semi__line"></div>
         <div className="first__semi__name">
           <div className="team__name">Ajax</div>
-          <div className="score"></div>
+          <div className="score">1</div>
           <div className="badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/15/clubs_large/245.png"/></div>
         </div>
         <div className="second__semi__line"></div>
         <div className="second__semi__name">
-          <div className="team__name">Man City</div>
-          <div className="score__black"></div>
-          <div className="badge"><img className= "photo_champions" src="http://futhead.cursecdn.com/static/img/17/clubs/10.png"/></div>
+          <div className="team__name">Tottenham</div>
+          <div className="score">0</div>
+          <div className="badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000082.png"/></div>
         </div>
         <div className="third__semi__line"></div>
         <div className="third__semi__name">
           <div className="team__name">Barcelona</div>
-          <div className="score__black"></div>
+          <div className="score">3</div>
           <div className="badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/241.png"/></div>
         </div>
         <div className="fourth__semi__line"></div>
         <div className="fourth__semi__name">
           <div className="team__name">Liverpool</div>
-          <div className="score__black"></div>
+          <div className="score">0</div>
           <div className="badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
         </div>
       </div>
