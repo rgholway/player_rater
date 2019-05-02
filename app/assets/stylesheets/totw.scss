@@ -189,80 +189,111 @@
   height: 00%;
 }
 
-.user__team__space-- {
-  position: absolute;
-  right: 0%;
-  top: 17%;
-  text-align: left;
-  color: white;
-  width: 5%;
-  height: 80%;
-  background: gray;
-}
-
 .user__team__space__title {
   position: absolute;
   text-align: center;
   color: white;
   width: 100%;
-  height: 10%;
-  background: gray;
+  height: 40%;
+  background: black;
   font-family: 'Orbitron', sans-serif;
-  border-bottom: solid .5px black;
+  border-bottom: solid .5px white;
+  z-index: 12;
 }
 
-.user__team__space__button {
+.user__team__space__title--active {
   position: absolute;
-  left: 0%;
-  top: 40%;
+  text-align: center;
   color: white;
-  width: 10%;
+  width: 100%;
   height: 10%;
-  background: gray;
+  background: black;
   font-family: 'Orbitron', sans-serif;
+  border-bottom: solid .5px white;
+  z-index: 12;
 }
 
-.user__team__space__button--active {
+.user__team__space {
   position: absolute;
-  left: 0%;
-  top: 40%;
+  right: 5%;
+  top: 45%;
+  text-align: center;
   color: white;
-  width: 10%;
+  width: 20%;
   height: 10%;
   background: gray;
+  overflow: hidden;
+}
+
+.expand__button {
+  position: absolute;
+  top: 40%;
+  color: white;
+  width: 100%;
+  height: 60%;
+  background: black;
   font-family: 'Orbitron', sans-serif;
+  z-index: 13;
+  cursor: pointer;
+}
+
+.close__button--close {
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  color: white;
+  background: black;
+  width: 20%;
+  height: 5%;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 15;
+  text-align: center;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.--close {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  z-index: -1;
 }
 
 .user__team__space--active {
   position: absolute;
-  overflow: scroll;
-  top: 17%;
-  right: 0%;
-  width: 25%;
-  height: 80%;
-  background: gray;
+  right: 5%;
+  top: 45%;
+  text-align: center;
   color: white;
+  width: 20%;
+  height: 50%;
+  background: gray;
+  overflow: scroll;
 }
 
 .user__teams {
-  height: 20%;
+  position: relative;
+  height: 50%;
   width: 100%;
   background: grey;
+  color: grey;
   border-bottom: solid 1px black;
   cursor: pointer;
 }
 
-.teams__title:hover {
-  height: 100%;
-  width: 100%;
-  background: darkgrey;
-  border-bottom: solid 1px black;
-  cursor: pointer;
+.user__teams:hover {
+  animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+  from, to { background-color: grey }
+ 50% { background-color: black; }
 }
 
 .teams__title {
   position: relative;
-  height: 20%;
+  top: 2.5%;
+  height: 10%;
   width: 100%;
   text-align: center;
   color: white;
@@ -271,12 +302,111 @@
 
 .teams__field {
   position: relative;
-  top: 20%;
-  left: 25%;
-  height: 70%;
-  width: 50%;
-  background: green;
+  top: 10%;
+  left: 30%;
+  height: 75%;
+  width: 40%;
+  background: #295E13;
   cursor: pointer;
+}
+
+.teams__field--first__position {
+  position: absolute;
+  top: 82%;
+  right: 49.5%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--second__position {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--third__position {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--fourth__position {
+  position: absolute;
+  top: 65%;
+  right: 60%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--fifth__position {
+  position: absolute;
+  top: 60%;
+  right: 80%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--sixth__position {
+  position: absolute;
+  top: 45%;
+  right: 49.5%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--seventh__position {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--eighth__position {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--ninth__position {
+  position: absolute;
+  top: 20%;
+  right: 49.5%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--tenth__position {
+  position: absolute;
+  top: 2%;
+  right: 65%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+
+.teams__field--eleventh__position {
+  position: absolute;
+  top: 2%;
+  left: 65%;
+  height: 5%;
+  width: 5%;
+  color: black;
 }
 
 .select_formation {

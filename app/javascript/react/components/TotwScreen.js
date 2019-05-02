@@ -11,26 +11,29 @@ class TotwScreen extends Component {
     title: "",
     create: "active"}
 
-    // this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
     this.addNewWeek = this.addNewWeek.bind(this)
-    // this.handleTitleChange = this.handleTitleChange.bind(this)
+    this.switch = this.switch.bind(this)
+    this.handleTitleChange = this.handleTitleChange.bind(this)
 }
 
-  // handleTitleChange(event) {
-  //   this.setState({ title: event.target.value })
-  // }
-  //
-  // handleSubmit(event) {
-  //   event.preventDefault()
-  //   let formPayload = {
-  //     title: this.state.title
-  //     }
-  //   this.addNewWeek(formPayload)
-  // }
+  handleTitleChange(event) {
+    this.setState({ title: event.target.value })
+  }
 
-  addNewWeek(){
+  handleSubmit(event) {
+    event.preventDefault()
+    let formPayload = {
+      title: this.state.title
+      }
+    this.addNewWeek(formPayload)
+  }
+
+  addNewWeek(formPayload){
+    let jsonStringInfo = JSON.stringify(formPayload)
       fetch(`/api/v1/weeks`, {
         method: 'POST',
+        body: jsonStringInfo,
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json' },
@@ -49,14 +52,14 @@ class TotwScreen extends Component {
       })
       .then(response => response.json())
       .then(body => {
-        this.setState({ selectedWeek: body })
-        browserHistory.push(`/totw/${body}`)
+        this.setState({ selectedWeek: body }, () => this.switch())
       })
       .catch(error => console.error(`Error in fetch: ${error.message}`));
     }
 
-    componentDidMount() {
-      this.addNewWeek()
+    switch() {
+      browserHistory.push(`/totw/${this.state.selectedWeek}`)
+      location.reload()
     }
 
 render() {
