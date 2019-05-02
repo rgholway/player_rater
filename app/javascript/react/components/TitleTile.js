@@ -2,8 +2,8 @@ import React from 'react'
 
 const TitleTile = props => {
     return(
-      <label className="team__create--text"> {props.label}
-        <input className="team__create--field--form"
+      <label className="create__text"> {props.label}
+        <input className="create__form"
           name={props.name}
           type="text"
           value={props.content}

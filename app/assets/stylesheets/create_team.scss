@@ -1,0 +1,91 @@
+.creating--active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:rgba(255,255,255, 0.8);
+  z-index: 15;
+}
+
+.creating-- {
+  position: absolute;
+  width: 00%;
+  height: 00%;
+}
+
+.team__create--form {
+  position: absolute;
+  top: 12.5%;
+  left: 15%;
+  height: 50%;
+  width: 60%;
+  background: #747474;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.create__title {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  height: 7.5%;
+  width: 60%;
+  text-align: center;
+  font-size: 2vw;
+  background: black;
+  color: white;
+  border-bottom: solid 2px yellow;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+}
+
+.create__text {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  height: 25%;
+  width: 40%;
+  font-size: 1.2vw;
+  z-index: 13;
+  color: black;
+  background: #747474;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.create__form {
+  position: absolute;
+  top: 30%;
+  left: -25%;
+}
+
+.create__submit {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  font-size: 1vw;
+  background: black;
+  color: yellow;
+  top: 35%;
+  left: 40%;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+}
+
+.create__submit:hover {
+  animation: shine 2s linear infinite,
+    color 2s linear infinite,
+    border 2s linear infinite;
+}
+
+@keyframes shine {
+  from, to { background-color: black }
+ 100% { background-color: white; }
+}
+
+@keyframes color {
+  from, to { color: yellow }
+ 100% { color: black; }
+}
+
+@keyframes border {
+  from, to { border-color: white }
+ 100% { border-color: black; }
+}
