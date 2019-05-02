@@ -87,7 +87,8 @@ render() {
             </div>
           </div>
         </div>
-        <div className={`creating--${this.state.create}`}>Create a Team
+        <div className={`creating--${this.state.create}`}>
+          <h1 className="create__title">Create your own Team</h1>
           <form className= "team__create--form" onSubmit={this.handleSubmit}>
             <TitleTile
               content={this.state.title}
@@ -95,7 +96,7 @@ render() {
               name="title"
               handleTitleChange={this.handleTitleChange}
               />
-            <input className="button" type="submit" value="Create Team"/>
+            <input className="create__submit" type="submit" value="Create Team"/>
           </form>
         </div>
         </div>
