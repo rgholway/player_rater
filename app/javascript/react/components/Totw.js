@@ -22,6 +22,8 @@ class Totw extends Component {
       create: "",
       title: "",
       week: "",
+      expand: "",
+      button: "",
       weeks: []
     }
     this.fetchFormation = this.fetchFormation.bind(this)
@@ -29,6 +31,8 @@ class Totw extends Component {
     this.handleAdd = this.handleAdd.bind(this)
     this.fetchWeeks = this.fetchWeeks.bind(this)
     this.handleExit = this.handleExit.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    this.secondHandleClick = this.secondHandleClick.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
     this.handleTeam = this.handleTeam.bind(this)
     this.fetchPlayers = this.fetchPlayers.bind(this)
@@ -56,6 +60,14 @@ class Totw extends Component {
 
   handleExit(choosePlayer) {
     this.setState({addPlayer: ""})
+  }
+
+  handleClick(choosePlayer) {
+    this.setState({expand: "--active", button: "close__button"})
+  }
+
+  secondHandleClick(choosePlayer) {
+    this.setState({expand: "", button: ""})
   }
 
   handleTeam(selectedTeam) {
@@ -264,9 +276,12 @@ class Totw extends Component {
     <div className="select_formation">
       {formationArray}
     </div>
-    <div className="user__team__space--active">
+    <div className={`user__team__space${this.state.expand}`}>
+      <div className={`user__team__space__title${this.state.expand}`}>My Teams</div>
+      <div className={`expand__button${this.state.expand}`} onClick={this.handleClick}>V</div>
       {weeksArray}
     </div>
+    <div className={`${this.state.button}--close`} onClick={this.secondHandleClick}>{`^`}</div>
     </div>
     )}
   }
