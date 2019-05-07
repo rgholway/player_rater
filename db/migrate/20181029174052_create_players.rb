@@ -7,6 +7,7 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string :position, null: false
       t.string :goals
       t.string :games
+      t.string :badge
       t.string :photo
       t.string :nation
       t.string :short_position

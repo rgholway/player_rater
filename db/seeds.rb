@@ -183,6 +183,25 @@ roma_players.each do |player|
   Player.create(player)
 end
 
+milan = Team.find_by(name: "AC_Milan")
+milan_players = [
+  {first_name: "Gianluigi", last_name: "Donnarumma", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_255/255127.jpg", team: milan, nation: "Italy", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png"},
+  {first_name: "Ignazio", last_name: "Abate", number: "20", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_5/5419.jpg", team: milan, nation: "Italy" , badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png"},
+  {first_name: "Alessio", last_name: "Romagnoli", number: "13", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo:"https://www.footballdatabase.eu/images/photos/players/a_178/178485.jpg", team: milan, nation: "Italy", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Matteo", last_name: "Mussachio", number: "22", position: "leftcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_30/30867.jpg", team: milan, nation: "Argentina", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Ricardo", last_name: "Rodriguez", number: "68", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_92/92150.jpg", team: milan, nation: "Switzerland", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Franck", last_name: "Kessie", number: "79", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_242/242568.jpg", team: milan, nation: "Ivory Coast", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Hakan", last_name: "Calhanoglu", number: "10", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_158/158977.jpg", team: milan, nation: "Turkey", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Giacomo", last_name: "Bonaventura", number: "5", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_35/35295.jpg", team: milan, nation: "Italy", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Jesus", last_name: "Suso", number: "8", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_116/116389.jpg", team: milan, nation: "Spain", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Samuel", last_name: "Castillejo", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_192/192846.jpg", team: milan, nation: "Spain", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Krzysztof", last_name: "Piatek", number: "19", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_233/233602.jpg", team: milan, nation: "Poland", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" }
+]
+milan_players.each do |player|
+  Player.create(player)
+end
+
+
 juventus_wins = [
   {team_id: juventus.id},
   {team_id: juventus.id},
