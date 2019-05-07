@@ -81,8 +81,8 @@ class Totw extends Component {
     )
   }
 
-  updatePosition(selectedphoto, selectedName, selectedPos) {
-    let jsonInfo = JSON.stringify([selectedphoto, selectedName, selectedPos])
+  updatePosition(selectedphoto, selectedName, selectedPos, selectedBadge) {
+    let jsonInfo = JSON.stringify([selectedphoto, selectedName, selectedPos, selectedBadge])
     fetch(`/api/v1/positions/${this.state.selectedId}`, {
       method: 'PUT',
       body: jsonInfo,
@@ -209,6 +209,7 @@ class Totw extends Component {
           key= {player.id}
           name= {player.last_name}
           photo= {player.photo}
+          badge= {player.badge}
           position= {player.short_position}
           selectPlayer= {this.updatePosition}
           params= {this.props.params.id}
@@ -237,6 +238,7 @@ class Totw extends Component {
           delete= {this.handleDelete}
           image= {item.photo}
           playerPosition= {item.position}
+          badge= {item.badge}
           playerName= {item.last_name}
           second__photo= {this.state.second__photo}
           params= {this.props.params.id}

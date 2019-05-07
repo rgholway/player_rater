@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 2019_04_28_211436) do
     t.string "last_name"
     t.string "photo"
     t.string "position"
+    t.string "badge"
     t.bigint "week_id"
     t.index ["week_id"], name: "index_positions_on_week_id"
   end

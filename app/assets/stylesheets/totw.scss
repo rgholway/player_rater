@@ -888,6 +888,15 @@
   width: 100%;
 }
 
+.player__badge {
+  position: absolute;
+  top: 105%;
+  right: 0%;
+  height: 15%;
+  width: 25%;
+  border-color: black;
+}
+
 .player_name {
   position: absolute;
   top: 90%;
