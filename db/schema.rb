@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2019_04_28_211436) do
     t.string "position", null: false
     t.string "goals"
     t.string "games"
+    t.string "badge"
     t.string "photo"
     t.string "nation"
     t.string "short_position"
