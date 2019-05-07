@@ -5,6 +5,7 @@ class CreatePosition < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :photo
       t.string :position
+      t.string :badge
 
       t.belongs_to :week
     end
