@@ -84,7 +84,7 @@ secondMouseLeave(){
 }
 
 handleMouseLeave(){
-  this.setState({status: ""})
+  this.setState({status: "", positionStatus: ""})
 }
 
 handleFirst(){
