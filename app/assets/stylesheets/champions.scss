@@ -662,6 +662,83 @@
   border: 2px solid #F70000;
 }
 
+.final {
+  position: absolute;
+  top: 35%;
+  left: 37.5%;
+  height: 30%;
+  width: 25%;
+  border: solid 1px black;
+}
+
+.final__title {
+  position: absolute;
+  top: 0%;
+  background: black;
+  height: 20%;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  border-bottom: solid 2px white;
+}
+
+.final__first {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  height: 40%;
+  width: 50%;
+  background: linear-gradient(135deg, white, #263A89, #05105C);
+}
+
+.final__second {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  height: 40%;
+  border-left: solid 2px white;
+  width: 50%;
+  background: linear-gradient(135deg, white, #E20000);
+}
+
+.final__badge {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  height: 70%;
+  width: 50%;
+}
+
+.final__badge__second {
+  position: absolute;
+  top: 5%;
+  right: -5%;
+  height: 70%;
+  width: 50%;
+}
+
+.final__name {
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+  height: 40%;
+  width: 50%;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.final__champion {
+  position: absolute;
+  bottom: 0%;
+  left: 38%;
+  width: 100%;
+  height: 10%;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
 .photo_champions {
   height: 95%;
   width: 100%;
