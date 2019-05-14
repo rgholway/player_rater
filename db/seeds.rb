@@ -201,6 +201,25 @@ milan_players.each do |player|
   Player.create(player)
 end
 
+napoli = Team.find_by(name: "Napoli")
+napoli_badge = "https://futhead.cursecdn.com/static/img/17/items/badges/6000083.png"
+napoli_players = [
+  {first_name: "David", last_name: "Ospina", number: "25", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_18/18686.jpg", team: napoli, nation: "Colombia", badge: napoli_badge},
+  {first_name: "Elseid", last_name: "Hysaj", number: "23", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_153/153666.jpg", team: napoli, nation: "Albania" , badge: napoli_badge},
+  {first_name: "Kalidou", last_name: "Koulibaly", number: "26", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo:"https://www.footballdatabase.eu/images/photos/players/a_113/113078.jpg", team: napoli, nation: "Sengal", badge: napoli_badge},
+  {first_name: "Raul", last_name: "Albiol", number: "33", position: "leftcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_7/7829.jpg", team: napoli, nation: "Spain", badge: napoli_badge},
+  {first_name: "Mario", last_name: "Rui", number: "6", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_92/92150.jpg", team: napoli, nation: "Portugal", badge: napoli_badge},
+  {first_name: "", last_name: "Allan", number: "5", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_242/242568.jpg", team: napoli, nation: "Brazil", badge: napoli_badge},
+  {first_name: "Dries", last_name: "Mertens", number: "14", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_46/46513.jpg", team: napoli, nation: "Belgium", badge: napoli_badge},
+  {first_name: "Piotr", last_name: "Zielinski", number: "20", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_185/185580.jpg", team: napoli, nation: "Poland", badge: napoli_badge},
+  {first_name: "Jose", last_name: "Callejon", number: "7", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_46/46747.jpg", team: napoli, nation: "Spain", badge: napoli_badge},
+  {first_name: "Lorenzo", last_name: "Insigne", number: "24", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_94/94169.jpg", team: napoli, nation: "Italy", badge: napoli_badge},
+  {first_name: "Arkadiusz", last_name: "Milik", number: "99", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_144/144602.jpg", team: napoli, nation: "Poland", badge: napoli_badge }
+]
+napoli_players.each do |player|
+  Player.create(player)
+end
+
 
 juventus_wins = [
   {team_id: juventus.id},
