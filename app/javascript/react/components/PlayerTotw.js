@@ -16,6 +16,7 @@ render() {
       <div className="totw_photo">
         <a href={`/totw/${this.props.params}`}><img type="image" src={this.props.photo} className="player_photo" onClick={this.handleClick}></img></a>
         <div className="player_name">{this.props.name}</div>
+        <div className="player__badge__image">{this.props.position}</div>
       </div>
       )}
     }
