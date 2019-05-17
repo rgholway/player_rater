@@ -123,7 +123,6 @@ render() {
           <div className="photo" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
             <div className="plus_player" onClick={this.handleClick}>Add Player</div>
             <img className="field_photo" type="image" src={this.props.image} onClick={this.handleClick}></img>
-            <img className="player__badge" type="image" src={this.props.badge}></img>
             <div className={`${this.state.positionStatus}`} onMouseLeave={this.secondMouseLeave}>
               <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--first${this.state.firstOption}${this.state.firstSelected}`} onClick={this.handleFirst}>{this.state.firstPosition}</div></a>
               <a href= {`/totw/${this.props.params}`}><div className={`${this.state.positionActive}--second${this.state.secondOption}${this.state.secondSelected}`} onClick={this.handleSecond}>{this.state.secondPosition}</div></a>

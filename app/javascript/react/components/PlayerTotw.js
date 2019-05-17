@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SearchBar from './SearchBar'
 
 class PlayerTotw extends Component {
   constructor(props) {
