@@ -24,6 +24,7 @@ class Totw extends Component {
       week: "",
       expand: "",
       button: "",
+      searchString: "",
       weeks: []
     }
     this.fetchFormation = this.fetchFormation.bind(this)
@@ -35,6 +36,8 @@ class Totw extends Component {
     this.secondHandleClick = this.secondHandleClick.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
     this.handleTeam = this.handleTeam.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.fetchPlayers = this.fetchPlayers.bind(this)
     this.updatePosition = this.updatePosition.bind(this)
     this.updateFormation = this.updateFormation.bind(this)
@@ -55,6 +58,7 @@ class Totw extends Component {
     }
 
   handleAdd(choosePlayer, add, id) {
+    debugger;
     this.setState({addPlayer: choosePlayer, selectedPosition: add, selectedId: id})
   }
 
@@ -79,6 +83,28 @@ class Totw extends Component {
     this.setState({selectedId: id},
     () => this.updatePosition(null, null, null)
     )
+  }
+
+  handleChange(event) {
+    const newSearchString = event.target.value
+    this.setState({ searchString: newSearchString })
+  }
+
+  handleSubmit(event) {
+    event.preventDefault()
+    const body = JSON.stringify({
+      search_string: this.state.searchString
+    })
+    fetch('/api/v1/assists/search', {
+      method: 'POST',
+      body: body,
+      credentials: 'same-origin',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({ players: body })
+    })
   }
 
   updatePosition(selectedphoto, selectedName, selectedPos, selectedBadge) {
@@ -248,8 +274,14 @@ class Totw extends Component {
     return(
     <div className="gray">
       <div className={this.state.addPlayer}>
-        <div className={`${this.state.addPlayer}--active`}>{playerArray}</div>
-        <div className={`${this.state.addPlayer}--exit`} onClick={this.handleExit}></div>
+        <div className={`${this.state.addPlayer}--active`}>{playerArray}
+          <form className= {`${this.state.addPlayer}--form`} onSubmit={this.handleSubmit}>
+            <label className= "form__label">Search by Last Name</label>
+            <input type='text' className="form__input" name='searchString' value={this.state.searchString} onChange={this.handleChange} />
+            <input className= "form__submit" type='submit' value='Submit' />
+          </form>
+          <div className={`${this.state.addPlayer}--exit`} onClick={this.handleExit}></div>
+        </div>
       </div>
     <div className="stage_totw">
       <div className="world_totw">

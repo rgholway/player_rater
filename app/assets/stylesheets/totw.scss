@@ -838,10 +838,10 @@
 
 .add_player--active {
   position: absolute;
-  height: 50%;
+  height: 60%;
   width: 80%;
   left: 10%;
-  top: 20%;
+  top: 10%;
   background-color: white;
   opacity: 1;
   overflow: scroll;
@@ -854,6 +854,52 @@
   overflow: hidden;
 }
 
+.add_player--form {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  height: 5%;
+  width: 30%;
+  background: red;
+}
+
+.--form {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}
+
+.form__submit {
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  height: 100%;
+  width: 25%;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background: black;
+}
+
+.form__submit:hover {
+  color: black;
+  background: white;
+}
+
+.form__input {
+  position: absolute;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}
 
 .add_player--exit {
   position: fixed;
@@ -871,13 +917,14 @@
 
 .totw_photo {
   position: relative;
-  height: 75%;
+  top: 20%;
+  height: 65%;
   width: 15%;
   margin-right: 2.5%;
   margin-left: 2.5%;
   margin-bottom: 2.5%;
   cursor: pointer;
-  float: right;
+  float: left;
 }
 
 .player_photo {

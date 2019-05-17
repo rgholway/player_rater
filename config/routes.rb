@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       resources :games, only: [:index, :show] do
         resources :goals, only: [:index]
       end
+      post 'assists/search', to: 'assists#search'
       resources :formations, only: [:index, :update]
       resources :positions, only: [:index, :update]
       resources :assists, only: [:index]
@@ -34,4 +35,5 @@ Rails.application.routes.draw do
   get '/champions', to: 'players#index'
   get '/teams/:team_id/games/:id', to: 'players#index'
   get 'games/:game_id/players/:player_id', to: 'players#index'
+  post 'assists/search', to: 'assists#search'
 end
