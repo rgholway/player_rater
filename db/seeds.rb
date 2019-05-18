@@ -216,7 +216,28 @@ napoli_players = [
   {first_name: "Lorenzo", last_name: "Insigne", number: "24", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_94/94169.jpg", team: napoli, nation: "Italy", badge: napoli_badge},
   {first_name: "Arkadiusz", last_name: "Milik", number: "99", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_144/144602.jpg", team: napoli, nation: "Poland", badge: napoli_badge }
 ]
+
 napoli_players.each do |player|
+  Player.create(player)
+end
+
+lazio = Team.find_by(name: "Lazio")
+lazio_badge = "https://futhead.cursecdn.com/static/img/15/clubs_large/46.png"
+lazio_players = [
+  {first_name: "Thomas", last_name: "Strakosha", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_163/163827.jpg", team: lazio, nation: "Albania", badge: lazio_badge},
+  {first_name: "Dusan", last_name: "Basta", number: "8", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_11/11906.jpg", team: lazio, nation: "Serbia" , badge: lazio_badge},
+  {first_name: "Francesco", last_name: "Acerbi", number: "33", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo:"https://www.footballdatabase.eu/images/photos/players/a_110/110489.jpg", team: lazio, nation: "Italy", badge: lazio_badge},
+  {first_name: "Bartolomeu", last_name: "Bastos", number: "15", position: "leftcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_146/146213.jpg", team: lazio, nation: "Angola", badge: lazio_badge},
+  {first_name: "Jordan", last_name: "Lukaku", number: "5", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_147/147467.jpg", team: lazio, nation: "Belgium", badge: lazio_badge},
+  {first_name: "Marco", last_name: "Parolo", number: "16", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_38/38094.jpg", team: lazio, nation: "Italy", badge: lazio_badge},
+  {first_name: "Sergej", last_name: "Milinkovic-Savic", number: "21", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_203/203707.jpg", team: lazio, nation: "Serbia", badge: lazio_badge},
+  {first_name: "Senad", last_name: "Lulic", number: "19", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_36/36536.jpg", team: lazio, nation: "Bosnia and Herzegovina", badge: lazio_badge},
+  {first_name: "Luis", last_name: "Alberto", number: "10", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_111/111290.jpg", team: lazio, nation: "Spain", badge: lazio_badge},
+  {first_name: "Joaquin", last_name: "Correa", number: "11", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_168/168273.jpg", team: lazio, nation: "Argentina", badge: lazio_badge},
+  {first_name: "Ciro", last_name: "Immobile", number: "17", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_62/62666.jpg", team: lazio, nation: "Italy", badge: lazio_badge }
+]
+
+lazio_players.each do |player|
   Player.create(player)
 end
 
