@@ -261,6 +261,25 @@ inter_players.each do |player|
   Player.create(player)
 end
 
+atalanta = Team.find_by(name: "Atalanta")
+atalanta_badge = "https://futhead.cursecdn.com/static/img/17/items/badges/6000181.png"
+atalanta_players = [
+  {first_name: "Pierluigi", last_name: "Gollini", number: "95", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_213/213600.jpg", team: atalanta, nation: "Italy", badge: atalanta_badge},
+  {first_name: "Timothy", last_name: "Castagne", number: "21", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_202/202896.jpg", team: atalanta, nation: "Belgium" , badge: atalanta_badge},
+  {first_name: "Hans", last_name: "Hateboer", number: "33", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo:"https://www.footballdatabase.eu/images/photos/players/a_223/223668.jpg", team: atalanta, nation: "Netherlands", badge: atalanta_badge},
+  {first_name: "Berat", last_name: "Djimisti", number: "19", position: "leftcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_158/158720.jpg", team: atalanta, nation: "Albania", badge: atalanta_badge},
+  {first_name: "Robin", last_name: "Gosens", number: "8", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_223/223558.jpg", team: atalanta, nation: "Germany", badge: atalanta_badge},
+  {first_name: "Marten", last_name: "de Roon", number: "15", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_100/100114.jpg", team: atalanta, nation: "Netherlands", badge: atalanta_badge},
+  {first_name: "Remo", last_name: "Freuler", number: "11", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_118/118011.jpg", team: atalanta, nation: "Switzerland", badge: atalanta_badge},
+  {first_name: "Josep", last_name: "Ilicic", number: "72", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_43/43109.jpg", team: atalanta, nation: "Slovenia", badge: atalanta_badge},
+  {first_name: "Musa", last_name: "Barrow", number: "99", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_345/345308.jpg", team: atalanta, nation: "Gambia", badge: atalanta_badge},
+  {first_name: "Alejandro", last_name: "Gomez", number: "10", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_21/21330.jpg", team: atalanta, nation: "Argentina", badge: atalanta_badge},
+  {first_name: "Duvan", last_name: "Zapata", number: "99", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_59/59180.jpg", team: atalanta, nation: "Colombia", badge: atalanta_badge }
+]
+
+atalanta_players.each do |player|
+  Player.create(player)
+end
 
 juventus_wins = [
   {team_id: juventus.id},
