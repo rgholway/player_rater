@@ -192,7 +192,7 @@ milan_players = [
   {first_name: "Ricardo", last_name: "Rodriguez", number: "68", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_92/92150.jpg", team: milan, nation: "Switzerland", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
   {first_name: "Franck", last_name: "Kessie", number: "79", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_242/242568.jpg", team: milan, nation: "Ivory Coast", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
   {first_name: "Hakan", last_name: "Calhanoglu", number: "10", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_158/158977.jpg", team: milan, nation: "Turkey", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
-  {first_name: "Giacomo", last_name: "Bonaventura", number: "5", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_35/35295.jpg", team: milan, nation: "Italy", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
+  {first_name: "Giacomo", last_name: "Bonaventura", number: "5", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_35/35295.jpg", team: milan, nation: "Italy", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
   {first_name: "Jesus", last_name: "Suso", number: "8", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_116/116389.jpg", team: milan, nation: "Spain", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
   {first_name: "Samuel", last_name: "Castillejo", number: "7", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_192/192846.jpg", team: milan, nation: "Spain", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" },
   {first_name: "Krzysztof", last_name: "Piatek", number: "19", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_233/233602.jpg", team: milan, nation: "Poland", badge: "https://futhead.cursecdn.com/static/img/15/clubs_large/47.png" }
@@ -211,7 +211,7 @@ napoli_players = [
   {first_name: "Mario", last_name: "Rui", number: "6", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_122/122471.jpg", team: napoli, nation: "Portugal", badge: napoli_badge},
   {first_name: "Marques", last_name: "Allan", number: "5", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_110/110553.jpg", team: napoli, nation: "Brazil", badge: napoli_badge},
   {first_name: "Dries", last_name: "Mertens", number: "14", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_46/46513.jpg", team: napoli, nation: "Belgium", badge: napoli_badge},
-  {first_name: "Piotr", last_name: "Zielinski", number: "20", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_185/185580.jpg", team: napoli, nation: "Poland", badge: napoli_badge},
+  {first_name: "Piotr", last_name: "Zielinski", number: "20", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_185/185580.jpg", team: napoli, nation: "Poland", badge: napoli_badge},
   {first_name: "Jose", last_name: "Callejon", number: "7", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_46/46747.jpg", team: napoli, nation: "Spain", badge: napoli_badge},
   {first_name: "Lorenzo", last_name: "Insigne", number: "24", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_94/94169.jpg", team: napoli, nation: "Italy", badge: napoli_badge},
   {first_name: "Arkadiusz", last_name: "Milik", number: "99", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_144/144602.jpg", team: napoli, nation: "Poland", badge: napoli_badge }
@@ -231,13 +231,33 @@ lazio_players = [
   {first_name: "Jordan", last_name: "Lukaku", number: "5", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_147/147467.jpg", team: lazio, nation: "Belgium", badge: lazio_badge},
   {first_name: "Marco", last_name: "Parolo", number: "16", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_38/38094.jpg", team: lazio, nation: "Italy", badge: lazio_badge},
   {first_name: "Sergej", last_name: "Milinkovic-Savic", number: "21", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_203/203707.jpg", team: lazio, nation: "Serbia", badge: lazio_badge},
-  {first_name: "Senad", last_name: "Lulic", number: "19", position: "rightcentermidfield", short_position: "RCM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_36/36536.jpg", team: lazio, nation: "Bosnia and Herzegovina", badge: lazio_badge},
+  {first_name: "Senad", last_name: "Lulic", number: "19", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_36/36536.jpg", team: lazio, nation: "Bosnia and Herzegovina", badge: lazio_badge},
   {first_name: "Luis", last_name: "Alberto", number: "10", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_111/111290.jpg", team: lazio, nation: "Spain", badge: lazio_badge},
   {first_name: "Joaquin", last_name: "Correa", number: "11", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_168/168273.jpg", team: lazio, nation: "Argentina", badge: lazio_badge},
   {first_name: "Ciro", last_name: "Immobile", number: "17", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_62/62666.jpg", team: lazio, nation: "Italy", badge: lazio_badge }
 ]
 
 lazio_players.each do |player|
+  Player.create(player)
+end
+
+inter = Team.find_by(name: "Inter_Milan")
+inter_badge = "https://futhead.cursecdn.com/static/img/15/clubs_large/44.png"
+inter_players = [
+  {first_name: "Samir", last_name: "Handanovic", number: "1", position: "goalie", short_position: "GK", full_position: "Goalie", photo: "https://www.footballdatabase.eu/images/photos/players/a_11/11916.jpg", team: inter, nation: "Slovenia", badge: inter_badge},
+  {first_name: "Sime", last_name: "Vrsaljko", number: "2", position: "rightback", short_position: "RB", full_position: "Right Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_95/95647.jpg", team: inter, nation: "Croatia" , badge: inter_badge},
+  {first_name: "Milan", last_name: "Skriniar", number: "37", position: "rightcenterback", short_position: "CB", full_position: "Center Back", photo:"https://www.footballdatabase.eu/images/photos/players/a_163/163739.jpg", team: inter, nation: "Slovakia", badge: inter_badge},
+  {first_name: "Stefan", last_name: "De Vrij", number: "6", position: "leftcenterback", short_position: "CB", full_position: "Center Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_84/84435.jpg", team: inter, nation: "Netherlands", badge: inter_badge},
+  {first_name: "Dalbert", last_name: "Henrique", number: "29", position: "leftback", short_position: "LB", full_position: "Left Back", photo: "https://www.footballdatabase.eu/images/photos/players/a_225/225884.jpg", team: inter, nation: "Brazil", badge: inter_badge},
+  {first_name: "Marcelo", last_name: "Brozovic", number: "77", position: "defensivecentermidfield", short_position: "CDM", full_position: "Center Defensive Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_112/112559.jpg", team: inter, nation: "Croatia", badge: inter_badge},
+  {first_name: "Radja", last_name: "Nainggolan", number: "14", position: "leftcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_34/34814.jpg", team: inter, nation: "Belgium", badge: inter_badge},
+  {first_name: "Ivan", last_name: "Perisic", number: "4", position: "rightcentermidfield", short_position: "CM", full_position: "Center Midfield", photo: "https://www.footballdatabase.eu/images/photos/players/a_20/20966.jpg", team: inter, nation: "Croatia", badge: inter_badge},
+  {first_name: "Antonio", last_name: "Candreva", number: "87", position: "rightforward", short_position: "RW", full_position: "Right Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_21/21889.jpg", team: inter, nation: "Italy", badge: inter_badge},
+  {first_name: "Lautaro", last_name: "Martinez", number: "10", position: "leftforward", short_position: "LW", full_position: "Left Wing", photo: "https://www.footballdatabase.eu/images/photos/players/a_279/279784.jpg", team: inter, nation: "Argentina", badge: inter_badge},
+  {first_name: "Mauro", last_name: "Icardi", number: "9", position: "centerforward", short_position: "ST", full_position: "Striker", photo: "https://www.footballdatabase.eu/images/photos/players/a_128/128748.jpg", team: inter, nation: "Argentina", badge: inter_badge }
+]
+
+inter_players.each do |player|
   Player.create(player)
 end
 
