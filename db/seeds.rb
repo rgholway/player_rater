@@ -294,10 +294,30 @@ juventus_wins = [
   {team_id: juventus.id},
   {team_id: juventus.id},
   {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
   {team_id: juventus.id}
 ]
 
 juventus_draws = [
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
+  {team_id: juventus.id},
   {team_id: juventus.id}
 ]
 
@@ -319,10 +339,25 @@ fiorentina_wins = [
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
   {team_id: fiorentina.id}
 ]
 
 fiorentina_draws = [
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
+  {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
   {team_id: fiorentina.id},
@@ -352,10 +387,30 @@ ac_milan_wins = [
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
   {team_id: ac_milan.id}
 ]
 
 ac_milan_draws = [
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
+  {team_id: ac_milan.id},
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
   {team_id: ac_milan.id},
@@ -386,10 +441,29 @@ inter_milan_wins = [
   {team_id: inter_milan.id},
   {team_id: inter_milan.id},
   {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
   {team_id: inter_milan.id}
 ]
 
 inter_milan_draws = [
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
+  {team_id: inter_milan.id},
   {team_id: inter_milan.id}
 ]
 
@@ -413,10 +487,31 @@ roma_wins = [
   {team_id: roma.id},
   {team_id: roma.id},
   {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
   {team_id: roma.id}
 ]
 
 roma_draws = [
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
+  {team_id: roma.id},
   {team_id: roma.id},
   {team_id: roma.id},
   {team_id: roma.id},
@@ -445,10 +540,25 @@ lazio_wins = [
   {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
   {team_id: lazio.id}
 ]
 
 lazio_draws = [
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
+  {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id}
@@ -473,10 +583,31 @@ torino_wins = [
   {team_id: torino.id},
   {team_id: torino.id},
   {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
   {team_id: torino.id}
 ]
 
 torino_draws = [
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
+  {team_id: torino.id},
   {team_id: torino.id},
   {team_id: torino.id},
   {team_id: torino.id},
@@ -505,10 +636,31 @@ atalanta_wins = [
   {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
   {team_id: atalanta.id}
 ]
 
 atalanta_draws = [
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
+  {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id},
   {team_id: atalanta.id}
@@ -533,10 +685,25 @@ genoa_wins = [
   {team_id: genoa.id},
   {team_id: genoa.id},
   {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
   {team_id: genoa.id}
 ]
 
 genoa_draws = [
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
+  {team_id: genoa.id},
   {team_id: genoa.id},
   {team_id: genoa.id},
   {team_id: genoa.id}
@@ -562,10 +729,24 @@ sampdoria_wins = [
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
   {team_id: sampdoria.id}
 ]
 
 sampdoria_draws = [
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
+  {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
   {team_id: sampdoria.id},
@@ -596,12 +777,33 @@ napoli_wins = [
   {team_id: napoli.id},
   {team_id: napoli.id},
   {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
   {team_id: napoli.id}
 ]
 
 napoli_draws = [
   {team_id: napoli.id},
   {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id},
+  {team_id: napoli.id}
 ]
 
 napoli_points = 0
@@ -624,10 +826,26 @@ sassuolo_wins = [
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
   {team_id: sassuolo.id}
 ]
 
 sassuolo_draws = [
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
+  {team_id: sassuolo.id},
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
   {team_id: sassuolo.id},
@@ -652,10 +870,22 @@ cagliari = Team.find_by(name: "Cagliari")
 cagliari_wins = [
   {team_id: cagliari.id},
   {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
   {team_id: cagliari.id}
 ]
 
 cagliari_draws = [
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
+  {team_id: cagliari.id},
   {team_id: cagliari.id},
   {team_id: cagliari.id},
   {team_id: cagliari.id},
@@ -685,10 +915,23 @@ parma_wins = [
   {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
   {team_id: parma.id}
 ]
 
 parma_draws = [
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
+  {team_id: parma.id},
   {team_id: parma.id},
   {team_id: parma.id}
 ]
@@ -712,10 +955,24 @@ spal_wins = [
   {team_id: spal.id},
   {team_id: spal.id},
   {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
   {team_id: spal.id}
 ]
 
 spal_draws = [
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
+  {team_id: spal.id},
   {team_id: spal.id},
   {team_id: spal.id}
 ]
@@ -738,10 +995,25 @@ udinese = Team.find_by(name: "Udinese")
 udinese_wins = [
   {team_id: udinese.id},
   {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
   {team_id: udinese.id}
 ]
 
 udinese_draws = [
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
+  {team_id: udinese.id},
   {team_id: udinese.id},
   {team_id: udinese.id},
   {team_id: udinese.id}
@@ -764,10 +1036,25 @@ bologna = Team.find_by(name: "Bologna")
 
 bologna_wins = [
   {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
   {team_id: bologna.id}
 ]
 
 bologna_draws = [
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
+  {team_id: bologna.id},
   {team_id: bologna.id},
   {team_id: bologna.id},
   {team_id: bologna.id},
@@ -793,10 +1080,21 @@ empoli = Team.find_by(name: "Empoli")
 empoli_wins = [
   {team_id: empoli.id},
   {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
   {team_id: empoli.id}
 ]
 
 empoli_draws = [
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
+  {team_id: empoli.id},
   {team_id: empoli.id},
   {team_id: empoli.id},
   {team_id: empoli.id},
@@ -819,10 +1117,20 @@ end
 frosinone = Team.find_by(name: "Frosinone")
 
 frosinone_wins = [
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
   {team_id: frosinone.id}
 ]
 
 frosinone_draws = [
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
+  {team_id: frosinone.id},
   {team_id: frosinone.id},
   {team_id: frosinone.id},
   {team_id: frosinone.id},
@@ -845,9 +1153,21 @@ end
 chievo_verona = Team.find_by(name: "ChievoVerona")
 
 chievo_verona_wins = [
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id}
 ]
 
 chievo_verona_draws = [
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
+  {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
   {team_id: chievo_verona.id},
