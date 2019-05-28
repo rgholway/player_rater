@@ -561,6 +561,7 @@ lazio_draws = [
   {team_id: lazio.id},
   {team_id: lazio.id},
   {team_id: lazio.id},
+  {team_id: lazio.id},
   {team_id: lazio.id}
 ]
 
@@ -796,7 +797,6 @@ napoli_wins = [
 ]
 
 napoli_draws = [
-  {team_id: napoli.id},
   {team_id: napoli.id},
   {team_id: napoli.id},
   {team_id: napoli.id},
