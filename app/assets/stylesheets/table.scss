@@ -11,7 +11,7 @@
 
 .position {
   position: absolute;
-  width: 40%;
+  width: 25%;
   left: 0%;
   color: black;
   text-align: left;
@@ -20,8 +20,10 @@
 }
 
 .badge_image {
-  height: 25%;
-  width: 25%;
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 40%;
   right: 0%;
 }
 
