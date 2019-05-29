@@ -24,11 +24,14 @@ class TeamTile extends Component {
           />
         )
       })
+      let i = 0
       let tableArray = this.props.teams.map(team => {
+        i += 1
         return(
         <TableInfo
           key= {team.id}
           id= {team.id}
+          position= {i}
           name= {team.name}
           points={team.points}
           badge={team.badge}
