@@ -181,17 +181,21 @@ class Champions extends Component {
           <div className="final__title">Final</div>
           <div className="final__second">
             <div className="final__name">Liverpool</div>
-            <div className="final__score"></div>
+            <div className="final__score__second">2</div>
             <div className="final__badge__second"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
           </div>
           <div className="final__first">
             <div className="final__name">Tottenham</div>
-            <div className="final__score"></div>
+            <div className="final__score">0</div>
             <div className="final__badge"><img className= "photo_champions" src= "https://futhead.cursecdn.com/static/img/17/items/badges/6000082.png"/></div>
           </div>
-          <div className="final__champion">Champion</div>
+          <div className="final__champion">Champion:</div>
+          <div className="final__team">
+            <div className="champion__name">Liverpool</div>
+            <div className="champion__badge"><img className= "photo_champions" src="https://futhead.cursecdn.com/static/img/15/clubs_large/9.png"/></div>
+          </div>
         </div>
-      </div>
+        </div>
     )}
   }
 
