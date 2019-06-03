@@ -714,9 +714,9 @@
 .final__badge__second {
   position: absolute;
   top: 5%;
-  right: -5%;
+  right: 0%;
   height: 70%;
-  width: 50%;
+  width: 30%;
 }
 
 .final__name {
@@ -729,14 +729,62 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+.final__score {
+  position: absolute;
+  right: 5%;
+  top: 70%;
+  font-family: 'Orbitron', sans-serif;
+  width: 10%;
+  height: 100%;
+  color: white;
+}
+
+.final__score__second {
+  position: absolute;
+  left: 5%;
+  top: 70%;
+  font-family: 'Orbitron', sans-serif;
+  width: 10%;
+  height: 100%;
+  color: white;
+}
+
 .final__champion {
   position: absolute;
   bottom: 0%;
-  left: 38%;
-  width: 100%;
+  left: 15%;
+  width: auto;
   height: 10%;
   color: black;
   font-family: 'Orbitron', sans-serif;
+  z-index: 12;
+}
+
+.final__team {
+  position: absolute;
+  top: 60%;
+  right: 0%;
+  height: 40%;
+  border-top: solid 2px black;
+  width: 100%;
+  background: linear-gradient(135deg, white, #E20000);
+}
+
+.champion__name {
+  position: absolute;
+  bottom: -15%;
+  left: 42%;
+  height: 40%;
+  width: auto;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.champion__badge {
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 20%;
 }
 
 .photo_champions {
