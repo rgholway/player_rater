@@ -3,7 +3,6 @@ import TitleTile from './TitleTile'
 import Totw from './Totw'
 import { browserHistory } from 'react-router';
 
-
 class TotwScreen extends Component {
   constructor(props) {
     super(props)
@@ -104,4 +103,4 @@ render() {
       )}
     }
 
-export default TotwScreen
+    export default TotwScreen
