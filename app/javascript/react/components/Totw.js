@@ -58,7 +58,6 @@ class Totw extends Component {
     }
 
   handleAdd(choosePlayer, add, id) {
-    debugger;
     this.setState({addPlayer: choosePlayer, selectedPosition: add, selectedId: id})
   }
 
@@ -276,7 +275,7 @@ class Totw extends Component {
       <div className={this.state.addPlayer}>
         <div className={`${this.state.addPlayer}--active`}>{playerArray}
           <form className= {`${this.state.addPlayer}--form`} onSubmit={this.handleSubmit}>
-            <label className= "form__label">Search by Last Name</label>
+            <label className= "form__label">Search by Name, Position, or Nation</label>
             <input type='text' className="form__input" name='searchString' value={this.state.searchString} onChange={this.handleChange} />
             <input className= "form__submit" type='submit' value='Submit' />
           </form>

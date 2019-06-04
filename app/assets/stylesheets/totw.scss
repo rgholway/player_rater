@@ -278,7 +278,7 @@
 
 .teams__title {
   position: relative;
-  top: 2.5%;
+  top: 8%;
   height: 10%;
   width: 100%;
   text-align: center;
@@ -873,9 +873,10 @@
 .form__label {
   position: absolute;
   top: 50%;
-  left: -50%;
+  left: -80%;
   font-family: 'Orbitron', sans-serif;
   color: black;
+  font-size: .95vw;
 }
 
 .form__submit {
@@ -925,6 +926,7 @@
   margin-bottom: 2.5%;
   cursor: pointer;
   float: left;
+  border: solid 1px black;
 }
 
 .player_photo {
@@ -1014,6 +1016,11 @@
   color: white;
 }
 
+.plus_player:hover {
+  background: lightgrey;
+  color: black;
+}
+
 .field_photo {
   position: absolute;
   height: 100%;
@@ -1033,11 +1040,12 @@
 
 .name_totw {
   position: absolute;
-  left: 35%;
+  left: 30%;
   top: 80%;
   color: #E9CC74;
   height: 20%;
-  width: 80%;
+  width: 70%;
+  font-size: 1.1vw;
 }
 
 .first--4-4-2 {
